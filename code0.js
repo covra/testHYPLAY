@@ -10,35 +10,56 @@ gdjs.SplashSceneCode.GDtxt_9595debugObjects2= [];
 gdjs.SplashSceneCode.GDtxt_9595debugObjects3= [];
 
 
-gdjs.SplashSceneCode.userFunc0x75b018 = function GDJSInlineCode(runtimeScene) {
+gdjs.SplashSceneCode.userFunc0x78f110 = function GDJSInlineCode(runtimeScene) {
 "use strict";
-var iframe = document.createElement("form");
-var oauth2EndPoint = "https://hyplay.com/oauth/authorize/?appId=ae6b8795-169f-40c9-bf60-a3736dceeffc&chain=HYCHAIN_TESTNET&responseType=token&redirectUri=https://covra.github.io/testHYPLAY/index.html"
-var oauth2EndPointRURI = "https://covra.github.io/testHYPLAY/index.html";
-iframe.setAttribute("width", "1080");
-iframe.setAttribute("height", "720");
-iframe.align = "center";
-window.open(oauth2EndPoint);
+    var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
+    var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
+    var url = "https://hyplay.com/oauth/authorize/?appId=" + appId + "&chain=HYCHAIN&responseType=token&redirectUri=" + redirectUri;
 
-iframe.setAttribute('method', 'GET');
-iframe.setAttribute('action', oauth2EndPoint);
+    // Open a new popup window
+    const popup = window.open(url, "PopupWindow", "width=600,height=600");
+    //const popup = window.open(url, "PopupWindow", "width=600,height=600");
 
-let params = {
-    "appId":"ae6b8795-169f-40c9-bf60-a3736dceeffc",
-    "chain":"HYCHAIN_TESTNET",
-    "responseType":"",
-    "redirectUri":"https://gd.games/covra/hyplay-test"
-}
+    // Function to check URL changes
+    var checkUrlChange = function() {
+        try {
+            // Check if popup was closed
+            if (popup.closed) {
+                console.log("Popup has been closed.");
+                //clearInterval(interval);
+            } else {
 
-//iframe.src = "https://hyplay.com/oauth/authorize/?appId=ae6b8795-169f-40c9-bf60-a3736dceeffc&chain=HYCHAIN_TESTNET&responseType=token&redirectUri=https://gd.games/covra/hyplay-test";
+                // Do something if URL meets certain criteria
+                var hash = popup.location.hash.substring(1);
+                var params = new URLSearchParams(hash);
+                var accessToken = params.get('token');
 
-document.body.appendChild(iframe);
+                if (accessToken) {
+                    console.log('Access token:', accessToken);
+                    // However gdevelop wants you to send a message bacn to your game
+                    popup.close();
+                }
+            }
+        } catch (e) {
+            // Errors are thrown if the popup navigates to a different origin
+            console.error("Error accessing popup URL: ", e);
+        }
+    };
 
-iframe.style.position = "absolute";
-iframe.style.zIndex = 1000;
+    // Set interval to check URL every 500 milliseconds
+    var interval = setInterval(checkUrlChange, 500);
+
 
 };
 gdjs.SplashSceneCode.eventsList0 = function(runtimeScene) {
+
+{
+
+
+gdjs.SplashSceneCode.userFunc0x78f110(runtimeScene);
+
+}
+
 
 {
 
@@ -53,7 +74,6 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.SplashSceneCode.userFunc0x75b018(runtimeScene);
 
 }
 
@@ -75,6 +95,16 @@ gdjs.SplashSceneCode.userFunc0x75b018(runtimeScene);
 {
 
 
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
 
 }
 
@@ -112,16 +142,6 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.SplashSceneCode.eventsList1(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
 }
 
 }
