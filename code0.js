@@ -10,11 +10,12 @@ gdjs.SplashSceneCode.GDtxt_9595debugObjects2= [];
 gdjs.SplashSceneCode.GDtxt_9595debugObjects3= [];
 
 
-gdjs.SplashSceneCode.userFunc0x7880f8 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0x7d69e0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
     var url = "https://hyplay.com/oauth/authorize/?appId=" + appId + "&chain=HYCHAIN&responseType=token&redirectUri=" + redirectUri;
+    var interval = null;
 
     // Open a new popup window
     const popup = window.open(url, "PopupWindow", "width=600,height=600");
@@ -39,6 +40,7 @@ gdjs.SplashSceneCode.userFunc0x7880f8 = function GDJSInlineCode(runtimeScene, ob
                     console.log('Access token:', accessToken);
                     // However gdevelop wants you to send a message bacn to your game
                     popup.close();
+                    clearInterval(interval);
                     // Checking 
                     objects[0].setString("Token succesful: " + accessToken);
                     runtimeScene.setBackgroundColor(0,204,100);
@@ -51,7 +53,7 @@ gdjs.SplashSceneCode.userFunc0x7880f8 = function GDJSInlineCode(runtimeScene, ob
     };
 
     // Set interval to check URL every 500 milliseconds
-    var interval = setInterval(checkUrlChange, 500);
+    interval = setInterval(checkUrlChange, 500);
 
 
 };
@@ -64,7 +66,7 @@ gdjs.copyArray(gdjs.SplashSceneCode.GDtxt_9595debugObjects1, gdjs.SplashSceneCod
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debugObjects2);
-gdjs.SplashSceneCode.userFunc0x7880f8(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0x7d69e0(runtimeScene, objects);
 
 }
 
