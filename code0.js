@@ -10,7 +10,7 @@ gdjs.SplashSceneCode.GDtxt_9595debugObjects2= [];
 gdjs.SplashSceneCode.GDtxt_9595debugObjects3= [];
 
 
-gdjs.SplashSceneCode.userFunc0x7d69e0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0x815118 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -28,7 +28,7 @@ gdjs.SplashSceneCode.userFunc0x7d69e0 = function GDJSInlineCode(runtimeScene, ob
             // Check if popup was closed
             if (popup.closed) {
                 console.log("Popup has been closed.");
-                //clearInterval(interval);
+                clearInterval(interval);
             } else {
 
                 // Do something if URL meets certain criteria
@@ -66,7 +66,7 @@ gdjs.copyArray(gdjs.SplashSceneCode.GDtxt_9595debugObjects1, gdjs.SplashSceneCod
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debugObjects2);
-gdjs.SplashSceneCode.userFunc0x7d69e0(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0x815118(runtimeScene, objects);
 
 }
 
