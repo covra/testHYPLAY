@@ -10,7 +10,7 @@ gdjs.SplashSceneCode.GDtxt_9595debugObjects2= [];
 gdjs.SplashSceneCode.GDtxt_9595debugObjects3= [];
 
 
-gdjs.SplashSceneCode.userFunc0x78f110 = function GDJSInlineCode(runtimeScene) {
+gdjs.SplashSceneCode.userFunc0x7d08b8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -23,6 +23,7 @@ gdjs.SplashSceneCode.userFunc0x78f110 = function GDJSInlineCode(runtimeScene) {
     // Function to check URL changes
     var checkUrlChange = function() {
         try {
+            objects[0].setString("Checking auth....");
             // Check if popup was closed
             if (popup.closed) {
                 console.log("Popup has been closed.");
@@ -38,6 +39,9 @@ gdjs.SplashSceneCode.userFunc0x78f110 = function GDJSInlineCode(runtimeScene) {
                     console.log('Access token:', accessToken);
                     // However gdevelop wants you to send a message bacn to your game
                     popup.close();
+                    // Checking 
+                    objects[0].setString("Token succesful: " + accessToken);
+                    runtimeScene.setBackgroundColor(0,204,100);
                 }
             }
         } catch (e) {
@@ -51,12 +55,58 @@ gdjs.SplashSceneCode.userFunc0x78f110 = function GDJSInlineCode(runtimeScene) {
 
 
 };
+gdjs.SplashSceneCode.userFunc0x8aac48 = function GDJSInlineCode(runtimeScene) {
+"use strict";
+runtimeScene.setBackgroundColor(100,100,240);
+
+};
 gdjs.SplashSceneCode.eventsList0 = function(runtimeScene) {
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("txt_debug"), gdjs.SplashSceneCode.GDtxt_9595debugObjects2);
 
-gdjs.SplashSceneCode.userFunc0x78f110(runtimeScene);
+var objects = [];
+objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debugObjects2);
+gdjs.SplashSceneCode.userFunc0x7d08b8(runtimeScene, objects);
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
 
 }
 
@@ -74,37 +124,7 @@ let isConditionTrue_0 = false;
 {
 
 
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-}
+gdjs.SplashSceneCode.userFunc0x8aac48(runtimeScene);
 
 }
 
