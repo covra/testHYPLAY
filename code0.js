@@ -10,7 +10,7 @@ gdjs.SplashSceneCode.GDtxt_9595debugObjects2= [];
 gdjs.SplashSceneCode.GDtxt_9595debugObjects3= [];
 
 
-gdjs.SplashSceneCode.userFunc0x7d08b8 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0x7880f8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -55,20 +55,16 @@ gdjs.SplashSceneCode.userFunc0x7d08b8 = function GDJSInlineCode(runtimeScene, ob
 
 
 };
-gdjs.SplashSceneCode.userFunc0x8aac48 = function GDJSInlineCode(runtimeScene) {
-"use strict";
-runtimeScene.setBackgroundColor(100,100,240);
-
-};
 gdjs.SplashSceneCode.eventsList0 = function(runtimeScene) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("txt_debug"), gdjs.SplashSceneCode.GDtxt_9595debugObjects2);
+gdjs.copyArray(gdjs.SplashSceneCode.GDtxt_9595debugObjects1, gdjs.SplashSceneCode.GDtxt_9595debugObjects2);
+
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debugObjects2);
-gdjs.SplashSceneCode.userFunc0x7d08b8(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0x7880f8(runtimeScene, objects);
 
 }
 
@@ -124,7 +120,6 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.SplashSceneCode.userFunc0x8aac48(runtimeScene);
 
 }
 
@@ -136,7 +131,11 @@ gdjs.SplashSceneCode.userFunc0x8aac48(runtimeScene);
 
 let isConditionTrue_0 = false;
 {
+gdjs.copyArray(runtimeScene.getObjects("txt_debug"), gdjs.SplashSceneCode.GDtxt_9595debugObjects1);
 {gdjs.evtTools.camera.hideLayer(runtimeScene, "IconLayer");
+}{for(var i = 0, len = gdjs.SplashSceneCode.GDtxt_9595debugObjects1.length ;i < len;++i) {
+    gdjs.SplashSceneCode.GDtxt_9595debugObjects1[i].setColor("255;255;255");
+}
 }
 { //Subevents
 gdjs.SplashSceneCode.eventsList0(runtimeScene);} //End of subevents
