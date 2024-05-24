@@ -4,14 +4,12 @@ gdjs.MainCode.GDtxt_9595tituloObjects2= [];
 gdjs.MainCode.GDtxt_9595tituloObjects3= [];
 
 
-gdjs.MainCode.eventsList0 = function(runtimeScene, asyncObjectsList) {
+gdjs.MainCode.userFunc0x8dfed8 = function GDJSInlineCode(runtimeScene) {
+"use strict";
+ window.resizeTo(window.screen.availWidth , window.screen.availHeight );
 
-{
-
-
-
-}
-
+};
+gdjs.MainCode.eventsList0 = function(runtimeScene) {
 
 {
 
@@ -23,21 +21,32 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.MainCode.asyncCallback9475372 = function (runtimeScene, asyncObjectsList) {
+{
 
+
+gdjs.MainCode.userFunc0x8dfed8(runtimeScene);
+
+}
+
+
+};gdjs.MainCode.eventsList1 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Right");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8156220);
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.advancedWindow.setFullScreenable(true, runtimeScene);
+}
 { //Subevents
-gdjs.MainCode.eventsList0(runtimeScene, asyncObjectsList);} //End of subevents
-}
-gdjs.MainCode.eventsList1 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "HYPLAYLogin", runtimeScene.getScene().getVariables().get("statusResponse"), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.MainCode.asyncCallback9475372(runtimeScene, asyncObjectsList)));
-}
+gdjs.MainCode.eventsList0(runtimeScene);} //End of subevents
 }
 
 }
@@ -55,40 +64,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteR
 {
 
 
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-if (isConditionTrue_0) {
-{gdjs.evtsExt__AdvancedHTTP__CreateRequest.func(runtimeScene, "HYPLAYLogin", gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(3)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}{gdjs.evtsExt__AdvancedHTTP__SetRequestMethod.func(runtimeScene, "HYPLAYLogin", "GET", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, "application/json", "HYPLAYLogin", "Content-Type", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, "user_at_kKbC7274_LV1SU4bHupVLzZglUEgUcluxE9ocauom_eA0PY7r-hoPszGqke5cNRz", "HYPLAYLogin", "Authorization", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-{ //Subevents
-gdjs.MainCode.eventsList1(runtimeScene);} //End of subevents
-}
-
+gdjs.MainCode.eventsList1(runtimeScene);
 }
 
 
