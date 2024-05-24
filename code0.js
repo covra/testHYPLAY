@@ -16,7 +16,7 @@ gdjs.SplashSceneCode.GDtxt_9595debug2Objects2= [];
 gdjs.SplashSceneCode.GDtxt_9595debug2Objects3= [];
 
 
-gdjs.SplashSceneCode.userFunc0x8658d0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0x859910 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -107,7 +107,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
-gdjs.SplashSceneCode.userFunc0x8658d0(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0x859910(runtimeScene, objects);
 
 }
 
@@ -124,7 +124,9 @@ isConditionTrue_0 = false;
 }
 }
 if (isConditionTrue_0) {
-
+{gdjs.evtTools.debuggerTools.log("Getting user....", "info", "");
+}{gdjs.evtTools.debuggerTools.log("with access token: " + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)), "info", "");
+}
 { //Subevents
 gdjs.SplashSceneCode.eventsList1(runtimeScene);} //End of subevents
 }
