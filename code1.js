@@ -23,7 +23,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.MainCode.asyncCallback9477076 = function (runtimeScene, asyncObjectsList) {
+};gdjs.MainCode.asyncCallback9475372 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
 gdjs.MainCode.eventsList0(runtimeScene, asyncObjectsList);} //End of subevents
@@ -36,7 +36,7 @@ gdjs.MainCode.eventsList1 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "HYPLAYLogin", runtimeScene.getScene().getVariables().get("statusResponse"), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.MainCode.asyncCallback9477076(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "HYPLAYLogin", runtimeScene.getScene().getVariables().get("statusResponse"), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.MainCode.asyncCallback9475372(runtimeScene, asyncObjectsList)));
 }
 }
 
