@@ -7,11 +7,13 @@ gdjs.MainCode.GDtxt_9595debugObjects2= [];
 gdjs.MainCode.GDtxt_9595debugObjects3= [];
 
 
-gdjs.MainCode.userFunc0x941ab8 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.MainCode.userFunc0x8da828 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
- window.resizeTo(window.screen.availWidth , window.screen.availHeight );
- console.log(window.screen.availWidth , window.screen.availHeight );
+ //window.resizeTo(window.screen.availWidth , window.screen.availHeight );
+ //console.log(window.screen.availWidth , window.screen.availHeight );
  objects[0].setString(window.screen.availWidth + " x " + window.screen.availHeight)
+
+ objects[0].setString(objects[0].getString() + window.document.webkitFullscreenEnabled);
 
 };
 gdjs.MainCode.eventsList0 = function(runtimeScene) {
@@ -32,7 +34,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug"), gdjs.MainCode.GDtxt_9595deb
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDtxt_9595debugObjects1);
-gdjs.MainCode.userFunc0x941ab8(runtimeScene, objects);
+gdjs.MainCode.userFunc0x8da828(runtimeScene, objects);
 
 }
 
