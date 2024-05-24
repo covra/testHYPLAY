@@ -16,7 +16,7 @@ gdjs.SplashSceneCode.GDtxt_9595debug2Objects2= [];
 gdjs.SplashSceneCode.GDtxt_9595debug2Objects3= [];
 
 
-gdjs.SplashSceneCode.userFunc0x93d3b8 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0x8c9c60 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -72,7 +72,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects1);
-gdjs.SplashSceneCode.userFunc0x93d3b8(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0x8c9c60(runtimeScene, objects);
 
 }
 
@@ -234,6 +234,22 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ReadResp
 {
 
 
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("txt_debug"), gdjs.SplashSceneCode.GDtxt_9595debugObjects1);
+{for(var i = 0, len = gdjs.SplashSceneCode.GDtxt_9595debugObjects1.length ;i < len;++i) {
+    gdjs.SplashSceneCode.GDtxt_9595debugObjects1[i].getBehavior("Text").setText("10:49");
+}
+}}
+
+}
+
+
+};gdjs.SplashSceneCode.eventsList8 = function(runtimeScene) {
+
+{
+
+
 gdjs.SplashSceneCode.eventsList2(runtimeScene);
 }
 
@@ -278,6 +294,13 @@ gdjs.SplashSceneCode.eventsList6(runtimeScene);} //End of subevents
 }
 
 
+{
+
+
+gdjs.SplashSceneCode.eventsList7(runtimeScene);
+}
+
+
 };
 
 gdjs.SplashSceneCode.func = function(runtimeScene) {
@@ -299,7 +322,7 @@ gdjs.SplashSceneCode.GDtxt_9595debug2Objects1.length = 0;
 gdjs.SplashSceneCode.GDtxt_9595debug2Objects2.length = 0;
 gdjs.SplashSceneCode.GDtxt_9595debug2Objects3.length = 0;
 
-gdjs.SplashSceneCode.eventsList7(runtimeScene);
+gdjs.SplashSceneCode.eventsList8(runtimeScene);
 
 return;
 
