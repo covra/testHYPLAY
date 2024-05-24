@@ -16,7 +16,7 @@ gdjs.SplashSceneCode.GDtxt_9595debug2Objects2= [];
 gdjs.SplashSceneCode.GDtxt_9595debug2Objects3= [];
 
 
-gdjs.SplashSceneCode.userFunc0x944e38 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0x8658d0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -64,7 +64,42 @@ gdjs.SplashSceneCode.userFunc0x944e38 = function GDJSInlineCode(runtimeScene, ob
 
 
 };
+gdjs.SplashSceneCode.asyncCallback9404348 = function (runtimeScene, asyncObjectsList) {
+}
 gdjs.SplashSceneCode.eventsList0 = function(runtimeScene) {
+
+{
+
+
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "HYPLAYGetUser", runtimeScene.getScene().getVariables().getFromIndex(1), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.SplashSceneCode.asyncCallback9404348(runtimeScene, asyncObjectsList)));
+}
+}
+
+}
+
+
+};gdjs.SplashSceneCode.eventsList1 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{gdjs.evtsExt__AdvancedHTTP__CreateRequest.func(runtimeScene, "HYPLAYGetUser", "https://api.hyplay.com/v1/users/me", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(0)), "HYPLAYGetUser", "x-session-authorization", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__AdvancedHTTP__SetRequestMethod.func(runtimeScene, "HYPLAYGetUser", "GET", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+{ //Subevents
+gdjs.SplashSceneCode.eventsList0(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.SplashSceneCode.eventsList2 = function(runtimeScene) {
 
 {
 
@@ -72,12 +107,32 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
-gdjs.SplashSceneCode.userFunc0x944e38(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0x8658d0(runtimeScene, objects);
 
 }
 
 
-};gdjs.SplashSceneCode.eventsList1 = function(runtimeScene) {
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9144964);
+}
+}
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.SplashSceneCode.eventsList1(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.SplashSceneCode.eventsList3 = function(runtimeScene) {
 
 {
 
@@ -99,31 +154,21 @@ gdjs.copyArray(gdjs.SplashSceneCode.GDloginObjects1, gdjs.SplashSceneCode.GDlogi
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("txt_debug"), gdjs.SplashSceneCode.GDtxt_9595debugObjects2);
+gdjs.copyArray(runtimeScene.getObjects("txt_debug"), gdjs.SplashSceneCode.GDtxt_9595debugObjects1);
 {gdjs.evtTools.camera.hideLayer(runtimeScene, "IconLayer");
 }{gdjs.evtTools.camera.hideLayer(runtimeScene, "Butons");
-}{for(var i = 0, len = gdjs.SplashSceneCode.GDtxt_9595debugObjects2.length ;i < len;++i) {
-    gdjs.SplashSceneCode.GDtxt_9595debugObjects2[i].setColor("255;255;255");
+}{for(var i = 0, len = gdjs.SplashSceneCode.GDtxt_9595debugObjects1.length ;i < len;++i) {
+    gdjs.SplashSceneCode.GDtxt_9595debugObjects1[i].setColor("255;255;255");
 }
 }
 { //Subevents
-gdjs.SplashSceneCode.eventsList0(runtimeScene);} //End of subevents
+gdjs.SplashSceneCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 }
 
 
-{
-
-
-let isConditionTrue_0 = false;
-{
-}
-
-}
-
-
-};gdjs.SplashSceneCode.eventsList2 = function(runtimeScene) {
+};gdjs.SplashSceneCode.eventsList4 = function(runtimeScene) {
 
 {
 
@@ -147,18 +192,75 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.SplashSceneCode.eventsList1(runtimeScene);} //End of subevents
+gdjs.SplashSceneCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.SplashSceneCode.eventsList3 = function(runtimeScene) {
+};gdjs.SplashSceneCode.eventsList5 = function(runtimeScene, asyncObjectsList) {
 
 {
 
 
-gdjs.SplashSceneCode.eventsList2(runtimeScene);
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
+{gdjs.evtTools.runtimeScene.setBackgroundColor(runtimeScene, "80;227;194");
+}{for(var i = 0, len = gdjs.SplashSceneCode.GDtxt_9595debug2Objects2.length ;i < len;++i) {
+    gdjs.SplashSceneCode.GDtxt_9595debug2Objects2[i].getBehavior("Text").setText("Welcome " + runtimeScene.getScene().getVariables().getFromIndex(2).getChild("username").getAsString());
+}
+}}
+
+}
+
+
+};gdjs.SplashSceneCode.asyncCallback9331516 = function (runtimeScene, asyncObjectsList) {
+
+{ //Subevents
+gdjs.SplashSceneCode.eventsList5(runtimeScene, asyncObjectsList);} //End of subevents
+}
+gdjs.SplashSceneCode.eventsList6 = function(runtimeScene) {
+
+{
+
+
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ReadResponseJSON.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1), runtimeScene.getScene().getVariables().getFromIndex(2), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.SplashSceneCode.asyncCallback9331516(runtimeScene, asyncObjectsList)));
+}
+}
+
+}
+
+
+};gdjs.SplashSceneCode.eventsList7 = function(runtimeScene) {
+
+{
+
+
+gdjs.SplashSceneCode.eventsList4(runtimeScene);
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__AdvancedHTTP__ResponseSuccess.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9475980);
+}
+}
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.SplashSceneCode.eventsList6(runtimeScene);} //End of subevents
+}
+
 }
 
 
@@ -183,7 +285,7 @@ gdjs.SplashSceneCode.GDtxt_9595debug2Objects1.length = 0;
 gdjs.SplashSceneCode.GDtxt_9595debug2Objects2.length = 0;
 gdjs.SplashSceneCode.GDtxt_9595debug2Objects3.length = 0;
 
-gdjs.SplashSceneCode.eventsList3(runtimeScene);
+gdjs.SplashSceneCode.eventsList7(runtimeScene);
 
 return;
 
