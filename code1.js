@@ -2,12 +2,16 @@ gdjs.MainCode = {};
 gdjs.MainCode.GDtxt_9595tituloObjects1= [];
 gdjs.MainCode.GDtxt_9595tituloObjects2= [];
 gdjs.MainCode.GDtxt_9595tituloObjects3= [];
+gdjs.MainCode.GDtxt_9595debugObjects1= [];
+gdjs.MainCode.GDtxt_9595debugObjects2= [];
+gdjs.MainCode.GDtxt_9595debugObjects3= [];
 
 
-gdjs.MainCode.userFunc0x8a6400 = function GDJSInlineCode(runtimeScene) {
+gdjs.MainCode.userFunc0x8ce768 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
  window.resizeTo(window.screen.availWidth , window.screen.availHeight );
  console.log(window.screen.availWidth , window.screen.availHeight );
+ objects[0].setString(window.screen.availWidth + " x " + window.screen.availHeight)
 
 };
 gdjs.MainCode.eventsList0 = function(runtimeScene) {
@@ -24,8 +28,11 @@ let isConditionTrue_0 = false;
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("txt_debug"), gdjs.MainCode.GDtxt_9595debugObjects1);
 
-gdjs.MainCode.userFunc0x8a6400(runtimeScene);
+var objects = [];
+objects.push.apply(objects,gdjs.MainCode.GDtxt_9595debugObjects1);
+gdjs.MainCode.userFunc0x8ce768(runtimeScene, objects);
 
 }
 
@@ -77,6 +84,9 @@ runtimeScene.getOnceTriggers().startNewFrame();
 gdjs.MainCode.GDtxt_9595tituloObjects1.length = 0;
 gdjs.MainCode.GDtxt_9595tituloObjects2.length = 0;
 gdjs.MainCode.GDtxt_9595tituloObjects3.length = 0;
+gdjs.MainCode.GDtxt_9595debugObjects1.length = 0;
+gdjs.MainCode.GDtxt_9595debugObjects2.length = 0;
+gdjs.MainCode.GDtxt_9595debugObjects3.length = 0;
 
 gdjs.MainCode.eventsList2(runtimeScene);
 
