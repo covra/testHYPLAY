@@ -4,9 +4,10 @@ gdjs.MainCode.GDtxt_9595tituloObjects2= [];
 gdjs.MainCode.GDtxt_9595tituloObjects3= [];
 
 
-gdjs.MainCode.userFunc0x8dfed8 = function GDJSInlineCode(runtimeScene) {
+gdjs.MainCode.userFunc0x8a6400 = function GDJSInlineCode(runtimeScene) {
 "use strict";
  window.resizeTo(window.screen.availWidth , window.screen.availHeight );
+ console.log(window.screen.availWidth , window.screen.availHeight );
 
 };
 gdjs.MainCode.eventsList0 = function(runtimeScene) {
@@ -24,7 +25,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.MainCode.userFunc0x8dfed8(runtimeScene);
+gdjs.MainCode.userFunc0x8a6400(runtimeScene);
 
 }
 
