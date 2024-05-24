@@ -16,7 +16,7 @@ gdjs.SplashSceneCode.GDtxt_9595debug2Objects2= [];
 gdjs.SplashSceneCode.GDtxt_9595debug2Objects3= [];
 
 
-gdjs.SplashSceneCode.userFunc0x8cf720 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0x944e38 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -47,7 +47,7 @@ gdjs.SplashSceneCode.userFunc0x8cf720 = function GDJSInlineCode(runtimeScene, ob
                     popup.close();
                     clearInterval(interval);
                     // Checking 
-                    objects[0].setString("Successful authentication! " + accessToken);
+                    objects[0].setString(accessToken);
                     runtimeScene.setBackgroundColor(0,204,100);
                     runtimeScene.getGame().getVariables().get("sessionAccessToken").setString(accessToken);
                     console.log('Access token:', accessToken);
@@ -68,11 +68,11 @@ gdjs.SplashSceneCode.eventsList0 = function(runtimeScene) {
 
 {
 
-/* Reuse gdjs.SplashSceneCode.GDtxt_9595debugObjects2 */
+gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
 
 var objects = [];
-objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debugObjects2);
-gdjs.SplashSceneCode.userFunc0x8cf720(runtimeScene, objects);
+objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
+gdjs.SplashSceneCode.userFunc0x944e38(runtimeScene, objects);
 
 }
 
