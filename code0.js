@@ -22,7 +22,7 @@ gdjs.SplashSceneCode.eventsList0 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9520340);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9809604);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("txt_debug"), gdjs.SplashSceneCode.GDtxt_9595debugObjects1);
