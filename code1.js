@@ -1,55 +1,35 @@
 gdjs.MainCode = {};
 gdjs.MainCode.GDtxt_9595tituloObjects1= [];
 gdjs.MainCode.GDtxt_9595tituloObjects2= [];
-gdjs.MainCode.GDtxt_9595tituloObjects3= [];
 gdjs.MainCode.GDtxt_9595debugObjects1= [];
 gdjs.MainCode.GDtxt_9595debugObjects2= [];
-gdjs.MainCode.GDtxt_9595debugObjects3= [];
+gdjs.MainCode.GDbtn_9595red2Objects1= [];
+gdjs.MainCode.GDbtn_9595red2Objects2= [];
+gdjs.MainCode.GDtest_9595shipObjects1= [];
+gdjs.MainCode.GDtest_9595shipObjects2= [];
+gdjs.MainCode.GDtest_9595targetObjects1= [];
+gdjs.MainCode.GDtest_9595targetObjects2= [];
 
 
-gdjs.MainCode.userFunc0x8b1f48 = function GDJSInlineCode(runtimeScene, objects) {
-"use strict";
- //window.resizeTo(window.screen.availWidth , window.screen.availHeight );
- //console.log(window.screen.availWidth , window.screen.availHeight );
- var elem = document.documentElement;
- var elem2 = window.document.documentElement;
- elem2.requestFullscreen();
- objects[0].setString(elem);
- objects[0].setString(objects[0].getString() + window.screen.availWidth + " x " + window.screen.availHeight)
+gdjs.MainCode.asyncCallback9428908 = function (runtimeScene, asyncObjectsList) {
+gdjs.copyArray(asyncObjectsList.getObjects("test_target"), gdjs.MainCode.GDtest_9595targetObjects2);
 
- objects[0].setString(objects[0].getString() + window.document.webkitFullscreenEnabled);
-
- addEventListener("click", function() {
-    var
-          el = document.documentElement
-        , rfs =
-               el.requestFullScreen
-            || el.webkitRequestFullScreen
-            || el.mozRequestFullScreen
-    ;
-    rfs.call(el);
-});
-
-};
+{for(var i = 0, len = gdjs.MainCode.GDtest_9595targetObjects2.length ;i < len;++i) {
+    gdjs.MainCode.GDtest_9595targetObjects2[i].getBehavior("Opacity").setOpacity(0);
+}
+}}
 gdjs.MainCode.eventsList0 = function(runtimeScene) {
 
 {
 
 
-let isConditionTrue_0 = false;
 {
-}
-
-}
-
-
 {
-
-gdjs.copyArray(runtimeScene.getObjects("txt_debug"), gdjs.MainCode.GDtxt_9595debugObjects1);
-
-var objects = [];
-objects.push.apply(objects,gdjs.MainCode.GDtxt_9595debugObjects1);
-gdjs.MainCode.userFunc0x8b1f48(runtimeScene, objects);
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+for (const obj of gdjs.MainCode.GDtest_9595targetObjects1) asyncObjectsList.addObject("test_target", obj);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.2), (runtimeScene) => (gdjs.MainCode.asyncCallback9428908(runtimeScene, asyncObjectsList)));
+}
+}
 
 }
 
@@ -59,12 +39,25 @@ gdjs.MainCode.userFunc0x8b1f48(runtimeScene, objects);
 {
 
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8156220);
+
 }
-if (isConditionTrue_0) {
-{gdjs.evtTools.advancedWindow.setFullScreenable(true, runtimeScene);
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("test_target"), gdjs.MainCode.GDtest_9595targetObjects1);
+{for(var i = 0, len = gdjs.MainCode.GDtest_9595targetObjects1.length ;i < len;++i) {
+    gdjs.MainCode.GDtest_9595targetObjects1[i].getBehavior("Opacity").setOpacity(255);
+}
+}{for(var i = 0, len = gdjs.MainCode.GDtest_9595targetObjects1.length ;i < len;++i) {
+    gdjs.MainCode.GDtest_9595targetObjects1[i].setX(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(4).getChild("x")));
+}
+}{for(var i = 0, len = gdjs.MainCode.GDtest_9595targetObjects1.length ;i < len;++i) {
+    gdjs.MainCode.GDtest_9595targetObjects1[i].setY(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(4).getChild("y")));
+}
 }
 { //Subevents
 gdjs.MainCode.eventsList0(runtimeScene);} //End of subevents
@@ -78,6 +71,46 @@ gdjs.MainCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
+let isConditionTrue_0 = false;
+{
+{runtimeScene.getScene().getVariables().getFromIndex(4).getChild("x").setNumber(gdjs.evtTools.input.getCursorX(runtimeScene, "", 0));
+}{runtimeScene.getScene().getVariables().getFromIndex(4).getChild("y").setNumber(gdjs.evtTools.input.getCursorY(runtimeScene, "", 0));
+}
+{ //Subevents
+gdjs.MainCode.eventsList1(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.MainCode.eventsList3 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(8688012);
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().getFromIndex(5), true);
+}
+{ //Subevents
+gdjs.MainCode.eventsList2(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.MainCode.eventsList4 = function(runtimeScene) {
+
+{
+
+
 
 }
 
@@ -85,7 +118,23 @@ gdjs.MainCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.MainCode.eventsList1(runtimeScene);
+gdjs.MainCode.eventsList3(runtimeScene);
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getScene().getVariables().getFromIndex(5), true);
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("test_ship"), gdjs.MainCode.GDtest_9595shipObjects1);
+{for(var i = 0, len = gdjs.MainCode.GDtest_9595shipObjects1.length ;i < len;++i) {
+    gdjs.MainCode.GDtest_9595shipObjects1[i].rotateTowardPosition(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(4).getChild("x")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(4).getChild("y")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(6)), runtimeScene);
+}
+}}
+
 }
 
 
@@ -96,12 +145,16 @@ runtimeScene.getOnceTriggers().startNewFrame();
 
 gdjs.MainCode.GDtxt_9595tituloObjects1.length = 0;
 gdjs.MainCode.GDtxt_9595tituloObjects2.length = 0;
-gdjs.MainCode.GDtxt_9595tituloObjects3.length = 0;
 gdjs.MainCode.GDtxt_9595debugObjects1.length = 0;
 gdjs.MainCode.GDtxt_9595debugObjects2.length = 0;
-gdjs.MainCode.GDtxt_9595debugObjects3.length = 0;
+gdjs.MainCode.GDbtn_9595red2Objects1.length = 0;
+gdjs.MainCode.GDbtn_9595red2Objects2.length = 0;
+gdjs.MainCode.GDtest_9595shipObjects1.length = 0;
+gdjs.MainCode.GDtest_9595shipObjects2.length = 0;
+gdjs.MainCode.GDtest_9595targetObjects1.length = 0;
+gdjs.MainCode.GDtest_9595targetObjects2.length = 0;
 
-gdjs.MainCode.eventsList2(runtimeScene);
+gdjs.MainCode.eventsList4(runtimeScene);
 
 return;
 
