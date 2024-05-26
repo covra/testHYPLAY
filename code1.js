@@ -403,6 +403,23 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1)
 
 let isConditionTrue_0 = false;
 {
+/* Reuse gdjs.MainCode.GDtest_9595imgRayObjects3 */
+/* Reuse gdjs.MainCode.GDtest_9595shipObjects3 */
+{for(var i = 0, len = gdjs.MainCode.GDtest_9595imgRayObjects3.length ;i < len;++i) {
+    gdjs.MainCode.GDtest_9595imgRayObjects3[i].setAngle((( gdjs.MainCode.GDtest_9595shipObjects3.length === 0 ) ? 0 :gdjs.MainCode.GDtest_9595shipObjects3[0].getAngle()) + 90);
+}
+}}
+
+}
+
+
+};gdjs.MainCode.eventsList10 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
 gdjs.copyArray(runtimeScene.getObjects("test_imgRay"), gdjs.MainCode.GDtest_9595imgRayObjects4);
 gdjs.copyArray(runtimeScene.getObjects("test_ship"), gdjs.MainCode.GDtest_9595shipObjects4);
 {for(var i = 0, len = gdjs.MainCode.GDtest_9595imgRayObjects4.length ;i < len;++i) {
@@ -438,7 +455,25 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.MainCode.eventsList10 = function(runtimeScene) {
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("test_imgRay"), gdjs.MainCode.GDtest_9595imgRayObjects3);
+gdjs.copyArray(runtimeScene.getObjects("test_ship"), gdjs.MainCode.GDtest_9595shipObjects3);
+{for(var i = 0, len = gdjs.MainCode.GDtest_9595imgRayObjects3.length ;i < len;++i) {
+    gdjs.MainCode.GDtest_9595imgRayObjects3[i].setPosition((( gdjs.MainCode.GDtest_9595shipObjects3.length === 0 ) ? 0 :gdjs.MainCode.GDtest_9595shipObjects3[0].getPointX("castRay")),(( gdjs.MainCode.GDtest_9595shipObjects3.length === 0 ) ? 0 :gdjs.MainCode.GDtest_9595shipObjects3[0].getPointY("castRay")));
+}
+}
+{ //Subevents
+gdjs.MainCode.eventsList9(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.MainCode.eventsList11 = function(runtimeScene) {
 
 {
 
@@ -447,7 +482,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("test_imgRay"), gdjs.MainCode.GDtest_9595imgRayObjects4);
 {for(var i = 0, len = gdjs.MainCode.GDtest_9595imgRayObjects4.length ;i < len;++i) {
-    gdjs.MainCode.GDtest_9595imgRayObjects4[i].getBehavior("Opacity").setOpacity(0);
+    gdjs.MainCode.GDtest_9595imgRayObjects4[i].getBehavior("Opacity").setOpacity(60);
 }
 }}
 
@@ -479,25 +514,10 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.MainCode.eventsList11 = function(runtimeScene) {
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-/* Reuse gdjs.MainCode.GDtest_9595imgRayObjects3 */
-/* Reuse gdjs.MainCode.GDtest_9595shipObjects3 */
-{for(var i = 0, len = gdjs.MainCode.GDtest_9595imgRayObjects3.length ;i < len;++i) {
-    gdjs.MainCode.GDtest_9595imgRayObjects3[i].setAngle((( gdjs.MainCode.GDtest_9595shipObjects3.length === 0 ) ? 0 :gdjs.MainCode.GDtest_9595shipObjects3[0].getAngle()) + 90);
-}
-}}
-
-}
-
-
 };gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDtest_95959595imgRayObjects2Objects = Hashtable.newFrom({"test_imgRay": gdjs.MainCode.GDtest_9595imgRayObjects2});
 gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDtest_95959595debrisObjects2Objects = Hashtable.newFrom({"test_debris": gdjs.MainCode.GDtest_9595debrisObjects2});
+gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDtest_95959595debrisObjects2Objects = Hashtable.newFrom({"test_debris": gdjs.MainCode.GDtest_9595debrisObjects2});
+gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDtest_95959595shipObjects2Objects = Hashtable.newFrom({"test_ship": gdjs.MainCode.GDtest_9595shipObjects2});
 gdjs.MainCode.eventsList12 = function(runtimeScene) {
 
 {
@@ -549,7 +569,7 @@ gdjs.MainCode.GDeneryBarObjects3.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.MainCode.eventsList9(runtimeScene);} //End of subevents
+gdjs.MainCode.eventsList10(runtimeScene);} //End of subevents
 }
 
 }
@@ -580,24 +600,6 @@ if(isConditionTrue_1) {
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.MainCode.eventsList10(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-gdjs.copyArray(runtimeScene.getObjects("test_imgRay"), gdjs.MainCode.GDtest_9595imgRayObjects3);
-gdjs.copyArray(runtimeScene.getObjects("test_ship"), gdjs.MainCode.GDtest_9595shipObjects3);
-{for(var i = 0, len = gdjs.MainCode.GDtest_9595imgRayObjects3.length ;i < len;++i) {
-    gdjs.MainCode.GDtest_9595imgRayObjects3[i].setPosition((( gdjs.MainCode.GDtest_9595shipObjects3.length === 0 ) ? 0 :gdjs.MainCode.GDtest_9595shipObjects3[0].getPointX("castRay")),(( gdjs.MainCode.GDtest_9595shipObjects3.length === 0 ) ? 0 :gdjs.MainCode.GDtest_9595shipObjects3[0].getPointY("castRay")));
-}
-}
-{ //Subevents
 gdjs.MainCode.eventsList11(runtimeScene);} //End of subevents
 }
 
@@ -608,13 +610,18 @@ gdjs.MainCode.eventsList11(runtimeScene);} //End of subevents
 
 gdjs.copyArray(runtimeScene.getObjects("test_debris"), gdjs.MainCode.GDtest_9595debrisObjects2);
 gdjs.copyArray(runtimeScene.getObjects("test_imgRay"), gdjs.MainCode.GDtest_9595imgRayObjects2);
+gdjs.copyArray(runtimeScene.getObjects("test_ship"), gdjs.MainCode.GDtest_9595shipObjects2);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDtest_95959595imgRayObjects2Objects, gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDtest_95959595debrisObjects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.distanceTest(gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDtest_95959595debrisObjects2Objects, gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDtest_95959595shipObjects2Objects, 1000, false);
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.MainCode.GDtest_9595debrisObjects2 */
-gdjs.copyArray(runtimeScene.getObjects("test_ship"), gdjs.MainCode.GDtest_9595shipObjects2);
+/* Reuse gdjs.MainCode.GDtest_9595shipObjects2 */
 {for(var i = 0, len = gdjs.MainCode.GDtest_9595debrisObjects2.length ;i < len;++i) {
     gdjs.MainCode.GDtest_9595debrisObjects2[i].addForceTowardObject((gdjs.MainCode.GDtest_9595shipObjects2.length !== 0 ? gdjs.MainCode.GDtest_9595shipObjects2[0] : null), 100, 0);
 }
@@ -766,7 +773,7 @@ gdjs.MainCode.eventsList14(runtimeScene);
 }
 
 
-};gdjs.MainCode.userFunc0xb59d08 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x8d4820 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var idInt = runtimeScene.getVariables().get("intervalID").getAsNumber();
 if (idInt >= 1) {
@@ -783,12 +790,12 @@ gdjs.copyArray(runtimeScene.getObjects("bad_Rock"), gdjs.MainCode.GDbad_9595Rock
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDbad_9595RockObjects3);
-gdjs.MainCode.userFunc0xb59d08(runtimeScene, objects);
+gdjs.MainCode.userFunc0x8d4820(runtimeScene, objects);
 
 }
 
 
-};gdjs.MainCode.userFunc0x9b8110 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x8d4c30 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 /*
 var bRock = runtimeScene.getVariables().get("bisAllowedRocks").getAsBoolean();
@@ -841,7 +848,7 @@ gdjs.copyArray(runtimeScene.getObjects("test_ship"), gdjs.MainCode.GDtest_9595sh
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDtest_9595shipObjects3);
-gdjs.MainCode.userFunc0x9b8110(runtimeScene, objects);
+gdjs.MainCode.userFunc0x8d4c30(runtimeScene, objects);
 
 }
 
@@ -1034,7 +1041,7 @@ gdjs.MainCode.eventsList20(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.MainCode.userFunc0xba5518 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0xb6a3f0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var idInt = runtimeScene.getVariables().get("intervalIDDebris").getAsNumber();
 if (idInt >= 1) {
@@ -1051,12 +1058,12 @@ gdjs.copyArray(runtimeScene.getObjects("bad_Rock"), gdjs.MainCode.GDbad_9595Rock
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDbad_9595RockObjects3);
-gdjs.MainCode.userFunc0xba5518(runtimeScene, objects);
+gdjs.MainCode.userFunc0xb6a3f0(runtimeScene, objects);
 
 }
 
 
-};gdjs.MainCode.userFunc0xba5938 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x8869a8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var bRunDebris = runtimeScene.getVariables().get("bIsAllowedDebris").getAsBoolean();
 var interval = setInterval(
@@ -1088,7 +1095,7 @@ gdjs.copyArray(runtimeScene.getObjects("test_ship"), gdjs.MainCode.GDtest_9595sh
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDtest_9595shipObjects3);
-gdjs.MainCode.userFunc0xba5938(runtimeScene, objects);
+gdjs.MainCode.userFunc0x8869a8(runtimeScene, objects);
 
 }
 
