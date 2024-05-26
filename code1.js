@@ -191,7 +191,7 @@ gdjs.MainCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.MainCode.userFunc0x8b1588 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x9217c0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var idInt = runtimeScene.getVariables().get("intervalID").getAsNumber();
 if (idInt >= 1) {
@@ -208,12 +208,12 @@ gdjs.copyArray(runtimeScene.getObjects("bad_Rock"), gdjs.MainCode.GDbad_9595Rock
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDbad_9595RockObjects3);
-gdjs.MainCode.userFunc0x8b1588(runtimeScene, objects);
+gdjs.MainCode.userFunc0x9217c0(runtimeScene, objects);
 
 }
 
 
-};gdjs.MainCode.userFunc0x8ba650 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x921b90 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 /*
 var bRock = runtimeScene.getVariables().get("bisAllowedRocks").getAsBoolean();
@@ -266,7 +266,7 @@ gdjs.copyArray(runtimeScene.getObjects("test_ship"), gdjs.MainCode.GDtest_9595sh
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDtest_9595shipObjects3);
-gdjs.MainCode.userFunc0x8ba650(runtimeScene, objects);
+gdjs.MainCode.userFunc0x921b90(runtimeScene, objects);
 
 }
 
@@ -459,7 +459,7 @@ gdjs.MainCode.eventsList8(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.MainCode.userFunc0x917e10 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x8bc8e8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var idInt = runtimeScene.getVariables().get("intervalIDDebris").getAsNumber();
 if (idInt >= 1) {
@@ -476,12 +476,12 @@ gdjs.copyArray(runtimeScene.getObjects("bad_Rock"), gdjs.MainCode.GDbad_9595Rock
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDbad_9595RockObjects3);
-gdjs.MainCode.userFunc0x917e10(runtimeScene, objects);
+gdjs.MainCode.userFunc0x8bc8e8(runtimeScene, objects);
 
 }
 
 
-};gdjs.MainCode.userFunc0x86a2c8 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x869fa8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 
 var bRunDebris = runtimeScene.getVariables().get("bIsAllowedDebris").getAsBoolean();
@@ -500,7 +500,7 @@ var interval = setInterval(
             r.addForceTowardObject(objects[0],100,0.5);
 
         }
-    , 2000);
+    , 300);
 
 
 var idInterval = runtimeScene.getVariables().get("intervalIDDebris").setNumber(interval);
@@ -514,7 +514,7 @@ gdjs.copyArray(runtimeScene.getObjects("test_ship"), gdjs.MainCode.GDtest_9595sh
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDtest_9595shipObjects3);
-gdjs.MainCode.userFunc0x86a2c8(runtimeScene, objects);
+gdjs.MainCode.userFunc0x869fa8(runtimeScene, objects);
 
 }
 
@@ -628,7 +628,12 @@ let isConditionTrue_0 = false;
 
 
 };gdjs.MainCode.asyncCallback9124252 = function (runtimeScene, asyncObjectsList) {
+gdjs.copyArray(asyncObjectsList.getObjects("test_debris"), gdjs.MainCode.GDtest_9595debrisObjects2);
+
 {gdjs.evtTools.sound.playSound(runtimeScene, "assets\\734249__okularperpendikular__simplepop1.ogg", false, 50, 1);
+}{for(var i = 0, len = gdjs.MainCode.GDtest_9595debrisObjects2.length ;i < len;++i) {
+    gdjs.MainCode.GDtest_9595debrisObjects2[i].deleteFromScene(runtimeScene);
+}
 }
 { //Subevents
 gdjs.MainCode.eventsList14(runtimeScene, asyncObjectsList);} //End of subevents
@@ -641,7 +646,8 @@ gdjs.MainCode.eventsList15 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.3), (runtimeScene) => (gdjs.MainCode.asyncCallback9124252(runtimeScene, asyncObjectsList)));
+for (const obj of gdjs.MainCode.GDtest_9595debrisObjects1) asyncObjectsList.addObject("test_debris", obj);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.6), (runtimeScene) => (gdjs.MainCode.asyncCallback9124252(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -661,7 +667,7 @@ gdjs.copyArray(gdjs.MainCode.GDtest_9595debrisObjects1, gdjs.MainCode.GDtest_959
     gdjs.MainCode.GDtest_9595debrisObjects2[i].setColor("255;0;0");
 }
 }{for(var i = 0, len = gdjs.MainCode.GDtest_9595debrisObjects2.length ;i < len;++i) {
-    gdjs.MainCode.GDtest_9595debrisObjects2[i].getBehavior("Tween").addObjectScaleTween3("dt", 0.5, "easeInOutQuad", 0.5, true, true);
+    gdjs.MainCode.GDtest_9595debrisObjects2[i].getBehavior("Tween").addObjectScaleTween3("dt", 0.5, "easeInOutQuad", 0.5, false, true);
 }
 }}
 
