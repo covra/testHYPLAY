@@ -1,26 +1,14 @@
 
-if (typeof gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody !== "undefined") {
-  gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__EdgeScrollCamera__onSceneLoaded !== "undefined") {
+  gdjs.evtsExt__EdgeScrollCamera__onSceneLoaded.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody = {};
+gdjs.evtsExt__EdgeScrollCamera__onSceneLoaded = {};
 
 
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.userFunc0xb922e0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
-"use strict";
-gdjs.Variable.copy(
-    eventsFunctionContext.getArgument("Body"),
-    runtimeScene.getGame().getVariables().get("__AdvancedHTTP")
-        .getChild("Requests")
-        .getChild(eventsFunctionContext.getArgument("Request"))
-        .getChild("FormData"),
-    /* mergeVariables = */true
-);
-
-};
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__EdgeScrollCamera__onSceneLoaded.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
@@ -32,14 +20,17 @@ gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.eventsList0 = function(runtim
 {
 
 
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.userFunc0xb922e0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+let isConditionTrue_0 = false;
+{
+{gdjs.evtsExt__EdgeScrollCamera__ConfigureEdgeScrollCamera.func(runtimeScene, 32, 300, "", 0, "Progressive speed", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}}
 
 }
 
 
 };
 
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.func = function(runtimeScene, Request, Body, parentEventsFunctionContext) {
+gdjs.evtsExt__EdgeScrollCamera__onSceneLoaded.func = function(runtimeScene, parentEventsFunctionContext) {
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -84,17 +75,19 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "Request") return Request;
-if (argName === "Body") return Body;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__EdgeScrollCamera__onSceneLoaded.eventsList0(runtimeScene, eventsFunctionContext);
 
 return;
 }
 
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.registeredGdjsCallbacks = [];
+gdjs.evtsExt__EdgeScrollCamera__onSceneLoaded.registeredGdjsCallbacks = [];
+gdjs.evtsExt__EdgeScrollCamera__onSceneLoaded.registeredGdjsCallbacks.push((runtimeScene) => {
+    gdjs.evtsExt__EdgeScrollCamera__onSceneLoaded.func(runtimeScene, runtimeScene);
+})
+gdjs.registerRuntimeSceneLoadedCallback(gdjs.evtsExt__EdgeScrollCamera__onSceneLoaded.registeredGdjsCallbacks[gdjs.evtsExt__EdgeScrollCamera__onSceneLoaded.registeredGdjsCallbacks.length - 1]);
