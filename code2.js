@@ -96,12 +96,6 @@ gdjs.LeaderboardCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.firebaseTools.auth.isAuthenticated();
-if (isConditionTrue_0) {
-{gdjs.evtTools.debuggerTools.log("user autenticado", "info", "");
-}}
 
 }
 
@@ -111,7 +105,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 {
-{gdjs.evtTools.firebaseTools.database.getField("https://hyplayjamgame-default-rtdb.europe-west1.firebasedatabase.app/testLista", "manoletes", runtimeScene.getScene().getVariables().getFromIndex(1), runtimeScene.getScene().getVariables().getFromIndex(2));
+{gdjs.evtTools.firebaseTools.database.getVariable("https://hyplayjam-default-rtdb.us-central1.firebaseio.com/lista0/p1/score", runtimeScene.getScene().getVariables().getFromIndex(1), runtimeScene.getScene().getVariables().getFromIndex(2));
 }}
 
 }
@@ -260,6 +254,16 @@ if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.LeaderboardCode.eventsList3(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
 }
 
 }
