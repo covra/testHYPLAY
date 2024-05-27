@@ -773,7 +773,7 @@ gdjs.MainCode.eventsList14(runtimeScene);
 }
 
 
-};gdjs.MainCode.userFunc0x8d1f38 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x9f06a8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var idInt = runtimeScene.getVariables().get("intervalID").getAsNumber();
 if (idInt >= 1) {
@@ -790,12 +790,12 @@ gdjs.copyArray(runtimeScene.getObjects("bad_Rock"), gdjs.MainCode.GDbad_9595Rock
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDbad_9595RockObjects3);
-gdjs.MainCode.userFunc0x8d1f38(runtimeScene, objects);
+gdjs.MainCode.userFunc0x9f06a8(runtimeScene, objects);
 
 }
 
 
-};gdjs.MainCode.userFunc0x8d2348 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x9f0ab8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 /*
 var bRock = runtimeScene.getVariables().get("bisAllowedRocks").getAsBoolean();
@@ -848,7 +848,7 @@ gdjs.copyArray(runtimeScene.getObjects("test_ship"), gdjs.MainCode.GDtest_9595sh
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDtest_9595shipObjects3);
-gdjs.MainCode.userFunc0x8d2348(runtimeScene, objects);
+gdjs.MainCode.userFunc0x9f0ab8(runtimeScene, objects);
 
 }
 
@@ -1041,7 +1041,7 @@ gdjs.MainCode.eventsList20(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.MainCode.userFunc0x9be9d8 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x97c6a0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var idInt = runtimeScene.getVariables().get("intervalIDDebris").getAsNumber();
 if (idInt >= 1) {
@@ -1058,12 +1058,12 @@ gdjs.copyArray(runtimeScene.getObjects("bad_Rock"), gdjs.MainCode.GDbad_9595Rock
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDbad_9595RockObjects3);
-gdjs.MainCode.userFunc0x9be9d8(runtimeScene, objects);
+gdjs.MainCode.userFunc0x97c6a0(runtimeScene, objects);
 
 }
 
 
-};gdjs.MainCode.userFunc0x80d258 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x97cac0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var bRunDebris = runtimeScene.getVariables().get("bIsAllowedDebris").getAsBoolean();
 var interval = setInterval(
@@ -1095,7 +1095,7 @@ gdjs.copyArray(runtimeScene.getObjects("test_ship"), gdjs.MainCode.GDtest_9595sh
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDtest_9595shipObjects3);
-gdjs.MainCode.userFunc0x80d258(runtimeScene, objects);
+gdjs.MainCode.userFunc0x97cac0(runtimeScene, objects);
 
 }
 

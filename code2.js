@@ -103,9 +103,16 @@ gdjs.LeaderboardCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
+
+}
+
+
+{
+
+
 let isConditionTrue_0 = false;
 {
-{gdjs.evtTools.firebaseTools.database.getVariable("https://hyplayjam-default-rtdb.us-central1.firebaseio.com/lista0/p1/score", runtimeScene.getScene().getVariables().getFromIndex(1), runtimeScene.getScene().getVariables().getFromIndex(2));
+{gdjs.evtTools.firebaseTools.database.getVariable("https://hyplayjamgame-default-rtdb.europe-west1.firebasedatabase.app ", runtimeScene.getScene().getVariables().getFromIndex(1), runtimeScene.getScene().getVariables().getFromIndex(2));
 }}
 
 }
