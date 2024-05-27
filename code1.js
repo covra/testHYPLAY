@@ -660,7 +660,10 @@ isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("eneryBar"), gdjs.MainCode.GDeneryBarObjects2);
 {for(var i = 0, len = gdjs.MainCode.GDeneryBarObjects2.length ;i < len;++i) {
-    gdjs.MainCode.GDeneryBarObjects2[i].SetMaxValue(100, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.MainCode.GDeneryBarObjects2[i].SetMaxValue(1000, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}{for(var i = 0, len = gdjs.MainCode.GDeneryBarObjects2.length ;i < len;++i) {
+    gdjs.MainCode.GDeneryBarObjects2[i].SetValue(800, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }}
 
@@ -706,7 +709,7 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getSc
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("eneryBar"), gdjs.MainCode.GDeneryBarObjects2);
 {for(var i = 0, len = gdjs.MainCode.GDeneryBarObjects2.length ;i < len;++i) {
-    gdjs.MainCode.GDeneryBarObjects2[i].SetValue((gdjs.MainCode.GDeneryBarObjects2[i].Value((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))) + 0.1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+    gdjs.MainCode.GDeneryBarObjects2[i].SetValue((gdjs.MainCode.GDeneryBarObjects2[i].Value((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))) + 0.5, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }}
 
@@ -773,7 +776,7 @@ gdjs.MainCode.eventsList14(runtimeScene);
 }
 
 
-};gdjs.MainCode.userFunc0x9f06a8 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0xc22148 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var idInt = runtimeScene.getVariables().get("intervalID").getAsNumber();
 if (idInt >= 1) {
@@ -790,12 +793,12 @@ gdjs.copyArray(runtimeScene.getObjects("bad_Rock"), gdjs.MainCode.GDbad_9595Rock
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDbad_9595RockObjects3);
-gdjs.MainCode.userFunc0x9f06a8(runtimeScene, objects);
+gdjs.MainCode.userFunc0xc22148(runtimeScene, objects);
 
 }
 
 
-};gdjs.MainCode.userFunc0x9f0ab8 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x9f0160 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 /*
 var bRock = runtimeScene.getVariables().get("bisAllowedRocks").getAsBoolean();
@@ -848,7 +851,7 @@ gdjs.copyArray(runtimeScene.getObjects("test_ship"), gdjs.MainCode.GDtest_9595sh
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDtest_9595shipObjects3);
-gdjs.MainCode.userFunc0x9f0ab8(runtimeScene, objects);
+gdjs.MainCode.userFunc0x9f0160(runtimeScene, objects);
 
 }
 
@@ -1041,7 +1044,7 @@ gdjs.MainCode.eventsList20(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.MainCode.userFunc0x97c6a0 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x88d5d8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var idInt = runtimeScene.getVariables().get("intervalIDDebris").getAsNumber();
 if (idInt >= 1) {
@@ -1058,12 +1061,12 @@ gdjs.copyArray(runtimeScene.getObjects("bad_Rock"), gdjs.MainCode.GDbad_9595Rock
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDbad_9595RockObjects3);
-gdjs.MainCode.userFunc0x97c6a0(runtimeScene, objects);
+gdjs.MainCode.userFunc0x88d5d8(runtimeScene, objects);
 
 }
 
 
-};gdjs.MainCode.userFunc0x97cac0 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x88d9f8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var bRunDebris = runtimeScene.getVariables().get("bIsAllowedDebris").getAsBoolean();
 var interval = setInterval(
@@ -1095,7 +1098,7 @@ gdjs.copyArray(runtimeScene.getObjects("test_ship"), gdjs.MainCode.GDtest_9595sh
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDtest_9595shipObjects3);
-gdjs.MainCode.userFunc0x97cac0(runtimeScene, objects);
+gdjs.MainCode.userFunc0x88d9f8(runtimeScene, objects);
 
 }
 

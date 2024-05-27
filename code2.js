@@ -96,6 +96,32 @@ gdjs.LeaderboardCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
+let isConditionTrue_0 = false;
+{
+{firebase.analytics();
+}{firebase.performance();
+}}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
 
 }
 
@@ -112,7 +138,7 @@ gdjs.LeaderboardCode.eventsList0(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 {
-{gdjs.evtTools.firebaseTools.database.getVariable("https://hyplayjamgame-default-rtdb.europe-west1.firebasedatabase.app ", runtimeScene.getScene().getVariables().getFromIndex(1), runtimeScene.getScene().getVariables().getFromIndex(2));
+{gdjs.evtTools.firebaseTools.database.getVariable("/lista0/p1", runtimeScene.getScene().getVariables().getFromIndex(1), runtimeScene.getScene().getVariables().getFromIndex(2));
 }}
 
 }
@@ -303,7 +329,43 @@ gdjs.LeaderboardCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.LeaderboardCode.eventsList7 = function(runtimeScene) {
+};gdjs.LeaderboardCode.asyncCallback10371084 = function (runtimeScene, asyncObjectsList) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Main", false);
+}}
+gdjs.LeaderboardCode.eventsList7 = function(runtimeScene) {
+
+{
+
+
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback10371084(runtimeScene, asyncObjectsList)));
+}
+}
+
+}
+
+
+};gdjs.LeaderboardCode.eventsList8 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10628396);
+}
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.LeaderboardCode.eventsList7(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.LeaderboardCode.eventsList9 = function(runtimeScene) {
 
 {
 
@@ -315,10 +377,51 @@ gdjs.LeaderboardCode.eventsList6(runtimeScene);
 {
 
 
+
+}
+
+
+{
+
+
 let isConditionTrue_0 = false;
 {
-{gdjs.evtTools.debuggerTools.log(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(2))), "info", "");
+gdjs.copyArray(runtimeScene.getObjects("txt_debujLeader"), gdjs.LeaderboardCode.GDtxt_9595debujLeaderObjects1);
+{for(var i = 0, len = gdjs.LeaderboardCode.GDtxt_9595debujLeaderObjects1.length ;i < len;++i) {
+    gdjs.LeaderboardCode.GDtxt_9595debujLeaderObjects1[i].getBehavior("Text").setText(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(2)));
+}
 }}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(2)) == "ok";
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("txt_debujLeader"), gdjs.LeaderboardCode.GDtxt_9595debujLeaderObjects1);
+gdjs.copyArray(runtimeScene.getObjects("txt_name"), gdjs.LeaderboardCode.GDtxt_9595nameObjects1);
+gdjs.copyArray(runtimeScene.getObjects("txt_pos"), gdjs.LeaderboardCode.GDtxt_9595posObjects1);
+gdjs.copyArray(runtimeScene.getObjects("txt_score"), gdjs.LeaderboardCode.GDtxt_9595scoreObjects1);
+{for(var i = 0, len = gdjs.LeaderboardCode.GDtxt_9595debujLeaderObjects1.length ;i < len;++i) {
+    gdjs.LeaderboardCode.GDtxt_9595debujLeaderObjects1[i].getBehavior("Text").setText("Leaderboard");
+}
+}{for(var i = 0, len = gdjs.LeaderboardCode.GDtxt_9595posObjects1.length ;i < len;++i) {
+    gdjs.LeaderboardCode.GDtxt_9595posObjects1[i].getBehavior("Text").setText("1");
+}
+}{for(var i = 0, len = gdjs.LeaderboardCode.GDtxt_9595nameObjects1.length ;i < len;++i) {
+    gdjs.LeaderboardCode.GDtxt_9595nameObjects1[i].getBehavior("Text").setText(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(1).getChild("nombre")));
+}
+}{for(var i = 0, len = gdjs.LeaderboardCode.GDtxt_9595scoreObjects1.length ;i < len;++i) {
+    gdjs.LeaderboardCode.GDtxt_9595scoreObjects1[i].getBehavior("Text").setText(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(1).getChild("score")));
+}
+}
+{ //Subevents
+gdjs.LeaderboardCode.eventsList8(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -373,7 +476,7 @@ gdjs.LeaderboardCode.GDtxt_9595debujLeaderObjects2.length = 0;
 gdjs.LeaderboardCode.GDtxt_9595debujLeaderObjects3.length = 0;
 gdjs.LeaderboardCode.GDtxt_9595debujLeaderObjects4.length = 0;
 
-gdjs.LeaderboardCode.eventsList7(runtimeScene);
+gdjs.LeaderboardCode.eventsList9(runtimeScene);
 
 return;
 
