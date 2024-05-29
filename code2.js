@@ -57,7 +57,7 @@ gdjs.LeaderboardCode.GDmainObjects3= [];
 gdjs.LeaderboardCode.GDmainObjects4= [];
 
 
-gdjs.LeaderboardCode.asyncCallback11261468 = function (runtimeScene, asyncObjectsList) {
+gdjs.LeaderboardCode.asyncCallback11634380 = function (runtimeScene, asyncObjectsList) {
 gdjs.copyArray(asyncObjectsList.getObjects("BlueButton"), gdjs.LeaderboardCode.GDBlueButtonObjects4);
 
 {gdjs.evtTools.camera.hideLayer(runtimeScene, "InputDataLayer");
@@ -76,7 +76,7 @@ gdjs.LeaderboardCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.LeaderboardCode.GDBlueButtonObjects2) asyncObjectsList.addObject("BlueButton", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback11261468(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback11634380(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -259,7 +259,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.LeaderboardCode.asyncCallback11277692 = function (runtimeScene, asyncObjectsList) {
+};gdjs.LeaderboardCode.asyncCallback11650604 = function (runtimeScene, asyncObjectsList) {
 gdjs.copyArray(asyncObjectsList.getObjects("BlueButton"), gdjs.LeaderboardCode.GDBlueButtonObjects2);
 
 {gdjs.evtTools.camera.hideLayer(runtimeScene, "Leaderboard");
@@ -278,7 +278,7 @@ gdjs.LeaderboardCode.eventsList7 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.LeaderboardCode.GDBlueButtonObjects1) asyncObjectsList.addObject("BlueButton", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback11277692(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback11650604(runtimeScene, asyncObjectsList)));
 }
 }
 
