@@ -95,17 +95,24 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.LeaderboardCode.userFunc0xc0b600 = function GDJSInlineCode(runtimeScene) {
+};gdjs.LeaderboardCode.userFunc0x9f0558 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 let db = firebase.database().ref("/scoresHyplay");
-const cityRef = doc(db, 'cities', 'LA');
-async function addDocumentToFirebase (){
-    await setDoc(cityRef, { name: 'Los Angeles', state: 'CA', country: 'USA' });
-}
 
+// Add a new document in collection "cities"
 
+db.collection("scoresHyplay").doc("LA").set({
+    name: "Los Angeles",
+    state: "CA",
+    country: "USA"
+})
+.then(() => {
+    console.log("Document successfully written!");
+})
+.catch((error) => {
+    console.error("Error writing document: ", error);
+});
 
-addDocumentToFirebase();
 };
 gdjs.LeaderboardCode.eventsList2 = function(runtimeScene) {
 
@@ -136,6 +143,7 @@ let isConditionTrue_0 = false;
 {
 
 
+gdjs.LeaderboardCode.userFunc0x9f0558(runtimeScene);
 
 }
 
@@ -143,7 +151,6 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.LeaderboardCode.userFunc0xc0b600(runtimeScene);
 
 }
 
