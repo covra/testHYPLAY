@@ -133,7 +133,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), 
 }
 
 
-};gdjs.LeaderboardCode.userFunc0xc10ea0 = function GDJSInlineCode(runtimeScene) {
+};gdjs.LeaderboardCode.userFunc0xa96d18 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 let db = firebase.database().ref("/scoresHyplay");
 console.log(db);
@@ -144,7 +144,7 @@ async function addDocumentToFirebase (){
     await setDoc(playerRef, { name: 'Los Angeles', state: 'CA', country: 'USA' });
 }
 
-
+addDocumentToFirebase();
 
 //addDocumentToFirebase();
 };
@@ -224,7 +224,7 @@ gdjs.LeaderboardCode.eventsList3(runtimeScene);} //End of subevents
 {
 
 
-gdjs.LeaderboardCode.userFunc0xc10ea0(runtimeScene);
+gdjs.LeaderboardCode.userFunc0xa96d18(runtimeScene);
 
 }
 
