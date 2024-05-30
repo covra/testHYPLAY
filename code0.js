@@ -31,9 +31,14 @@ gdjs.SplashSceneCode.GDskipObjects2= [];
 gdjs.SplashSceneCode.GDskipObjects3= [];
 gdjs.SplashSceneCode.GDskipObjects4= [];
 gdjs.SplashSceneCode.GDskipObjects5= [];
+gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects1= [];
+gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects2= [];
+gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects3= [];
+gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects4= [];
+gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects5= [];
 
 
-gdjs.SplashSceneCode.userFunc0x84f738 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0x96a150 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -96,7 +101,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
-gdjs.SplashSceneCode.userFunc0x84f738(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0x96a150(runtimeScene, objects);
 
 }
 
@@ -521,6 +526,11 @@ gdjs.SplashSceneCode.GDskipObjects2.length = 0;
 gdjs.SplashSceneCode.GDskipObjects3.length = 0;
 gdjs.SplashSceneCode.GDskipObjects4.length = 0;
 gdjs.SplashSceneCode.GDskipObjects5.length = 0;
+gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects1.length = 0;
+gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects2.length = 0;
+gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects3.length = 0;
+gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects4.length = 0;
+gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects5.length = 0;
 
 gdjs.SplashSceneCode.eventsList13(runtimeScene);
 

@@ -55,6 +55,10 @@ gdjs.LeaderboardCode.GDmainObjects1= [];
 gdjs.LeaderboardCode.GDmainObjects2= [];
 gdjs.LeaderboardCode.GDmainObjects3= [];
 gdjs.LeaderboardCode.GDmainObjects4= [];
+gdjs.LeaderboardCode.GDtxt_9595gameVersionObjects1= [];
+gdjs.LeaderboardCode.GDtxt_9595gameVersionObjects2= [];
+gdjs.LeaderboardCode.GDtxt_9595gameVersionObjects3= [];
+gdjs.LeaderboardCode.GDtxt_9595gameVersionObjects4= [];
 
 
 gdjs.LeaderboardCode.eventsList0 = function(runtimeScene) {
@@ -129,7 +133,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), 
 }
 
 
-};gdjs.LeaderboardCode.userFunc0xaaeea8 = function GDJSInlineCode(runtimeScene) {
+};gdjs.LeaderboardCode.userFunc0xc10ea0 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 let db = firebase.database().ref("/scoresHyplay");
 console.log(db);
@@ -220,7 +224,7 @@ gdjs.LeaderboardCode.eventsList3(runtimeScene);} //End of subevents
 {
 
 
-gdjs.LeaderboardCode.userFunc0xaaeea8(runtimeScene);
+gdjs.LeaderboardCode.userFunc0xc10ea0(runtimeScene);
 
 }
 
@@ -661,6 +665,10 @@ gdjs.LeaderboardCode.GDmainObjects1.length = 0;
 gdjs.LeaderboardCode.GDmainObjects2.length = 0;
 gdjs.LeaderboardCode.GDmainObjects3.length = 0;
 gdjs.LeaderboardCode.GDmainObjects4.length = 0;
+gdjs.LeaderboardCode.GDtxt_9595gameVersionObjects1.length = 0;
+gdjs.LeaderboardCode.GDtxt_9595gameVersionObjects2.length = 0;
+gdjs.LeaderboardCode.GDtxt_9595gameVersionObjects3.length = 0;
+gdjs.LeaderboardCode.GDtxt_9595gameVersionObjects4.length = 0;
 
 gdjs.LeaderboardCode.eventsList14(runtimeScene);
 

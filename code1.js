@@ -86,6 +86,11 @@ gdjs.MainCode.GDbtn_9595red_9595changeGameObjects2= [];
 gdjs.MainCode.GDbtn_9595red_9595changeGameObjects3= [];
 gdjs.MainCode.GDbtn_9595red_9595changeGameObjects4= [];
 gdjs.MainCode.GDbtn_9595red_9595changeGameObjects5= [];
+gdjs.MainCode.GDtxt_9595gameVersionObjects1= [];
+gdjs.MainCode.GDtxt_9595gameVersionObjects2= [];
+gdjs.MainCode.GDtxt_9595gameVersionObjects3= [];
+gdjs.MainCode.GDtxt_9595gameVersionObjects4= [];
+gdjs.MainCode.GDtxt_9595gameVersionObjects5= [];
 
 
 gdjs.MainCode.mapOfGDgdjs_9546MainCode_9546GDDrawBorderObjects3Objects = Hashtable.newFrom({"DrawBorder": gdjs.MainCode.GDDrawBorderObjects3});
@@ -211,7 +216,7 @@ gdjs.MainCode.eventsList1(runtimeScene);
 }
 
 
-};gdjs.MainCode.userFunc0x8ed000 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x81be60 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
  //window.resizeTo(window.screen.availWidth , window.screen.availHeight );
  //console.log(window.screen.availWidth , window.screen.availHeight );
@@ -260,7 +265,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug"), gdjs.MainCode.GDtxt_9595deb
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDtxt_9595debugObjects2);
-gdjs.MainCode.userFunc0x8ed000(runtimeScene, objects);
+gdjs.MainCode.userFunc0x81be60(runtimeScene, objects);
 
 }
 
@@ -910,7 +915,7 @@ gdjs.MainCode.eventsList16(runtimeScene);
 }
 
 
-};gdjs.MainCode.userFunc0xa99910 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x8106c0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var idInt = runtimeScene.getVariables().get("intervalID").getAsNumber();
 if (idInt >= 1) {
@@ -927,12 +932,12 @@ gdjs.copyArray(runtimeScene.getObjects("bad_Rock"), gdjs.MainCode.GDbad_9595Rock
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDbad_9595RockObjects3);
-gdjs.MainCode.userFunc0xa99910(runtimeScene, objects);
+gdjs.MainCode.userFunc0x8106c0(runtimeScene, objects);
 
 }
 
 
-};gdjs.MainCode.userFunc0xb29210 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x8e86d0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 /*
 var bRock = runtimeScene.getVariables().get("bisAllowedRocks").getAsBoolean();
@@ -985,7 +990,7 @@ gdjs.copyArray(runtimeScene.getObjects("test_ship"), gdjs.MainCode.GDtest_9595sh
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDtest_9595shipObjects3);
-gdjs.MainCode.userFunc0xb29210(runtimeScene, objects);
+gdjs.MainCode.userFunc0x8e86d0(runtimeScene, objects);
 
 }
 
@@ -1178,7 +1183,7 @@ gdjs.MainCode.eventsList22(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.MainCode.userFunc0x9eeae8 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x8e9aa0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var idInt = runtimeScene.getVariables().get("intervalIDDebris").getAsNumber();
 if (idInt >= 1) {
@@ -1195,12 +1200,12 @@ gdjs.copyArray(runtimeScene.getObjects("bad_Rock"), gdjs.MainCode.GDbad_9595Rock
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDbad_9595RockObjects3);
-gdjs.MainCode.userFunc0x9eeae8(runtimeScene, objects);
+gdjs.MainCode.userFunc0x8e9aa0(runtimeScene, objects);
 
 }
 
 
-};gdjs.MainCode.userFunc0xa417f8 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x8e9b30 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var bRunDebris = runtimeScene.getVariables().get("bIsAllowedDebris").getAsBoolean();
 var interval = setInterval(
@@ -1232,7 +1237,7 @@ gdjs.copyArray(runtimeScene.getObjects("test_ship"), gdjs.MainCode.GDtest_9595sh
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDtest_9595shipObjects3);
-gdjs.MainCode.userFunc0xa417f8(runtimeScene, objects);
+gdjs.MainCode.userFunc0x8e9b30(runtimeScene, objects);
 
 }
 
@@ -1560,6 +1565,11 @@ gdjs.MainCode.GDbtn_9595red_9595changeGameObjects2.length = 0;
 gdjs.MainCode.GDbtn_9595red_9595changeGameObjects3.length = 0;
 gdjs.MainCode.GDbtn_9595red_9595changeGameObjects4.length = 0;
 gdjs.MainCode.GDbtn_9595red_9595changeGameObjects5.length = 0;
+gdjs.MainCode.GDtxt_9595gameVersionObjects1.length = 0;
+gdjs.MainCode.GDtxt_9595gameVersionObjects2.length = 0;
+gdjs.MainCode.GDtxt_9595gameVersionObjects3.length = 0;
+gdjs.MainCode.GDtxt_9595gameVersionObjects4.length = 0;
+gdjs.MainCode.GDtxt_9595gameVersionObjects5.length = 0;
 
 gdjs.MainCode.eventsList32(runtimeScene);
 

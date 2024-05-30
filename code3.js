@@ -39,6 +39,10 @@ gdjs.testParallaxCode.GDcamLeftObjects1= [];
 gdjs.testParallaxCode.GDcamLeftObjects2= [];
 gdjs.testParallaxCode.GDcamLeftObjects3= [];
 gdjs.testParallaxCode.GDcamLeftObjects4= [];
+gdjs.testParallaxCode.GDtxt_9595gameVersionObjects1= [];
+gdjs.testParallaxCode.GDtxt_9595gameVersionObjects2= [];
+gdjs.testParallaxCode.GDtxt_9595gameVersionObjects3= [];
+gdjs.testParallaxCode.GDtxt_9595gameVersionObjects4= [];
 
 
 gdjs.testParallaxCode.mapOfGDgdjs_9546testParallaxCode_9546GDCollisionDetectObjects2Objects = Hashtable.newFrom({"CollisionDetect": gdjs.testParallaxCode.GDCollisionDetectObjects2});
@@ -74,7 +78,7 @@ gdjs.copyArray(runtimeScene.getObjects("CollisionDetect"), gdjs.testParallaxCode
 }
 
 
-};gdjs.testParallaxCode.userFunc0xa99d98 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.testParallaxCode.userFunc0xa34df0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definiciones
 const player = objects[0];
@@ -120,7 +124,7 @@ gdjs.copyArray(runtimeScene.getObjects("test_player"), gdjs.testParallaxCode.GDt
 
 var objects = [];
 objects.push.apply(objects,gdjs.testParallaxCode.GDtest_9595playerObjects2);
-gdjs.testParallaxCode.userFunc0xa99d98(runtimeScene, objects);
+gdjs.testParallaxCode.userFunc0xa34df0(runtimeScene, objects);
 
 }
 
@@ -234,7 +238,7 @@ gdjs.testParallaxCode.eventsList1(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.testParallaxCode.userFunc0xaaed50 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.testParallaxCode.userFunc0xa354e0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const td = runtimeScene.getObjects("txt_debug2")[0];
 
@@ -281,7 +285,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_backGround"), gdjs.testParallaxCode.
 
 var objects = [];
 objects.push.apply(objects,gdjs.testParallaxCode.GDimg_9595backGroundObjects2);
-gdjs.testParallaxCode.userFunc0xaaed50(runtimeScene, objects);
+gdjs.testParallaxCode.userFunc0xa354e0(runtimeScene, objects);
 
 }
 
@@ -349,7 +353,7 @@ gdjs.testParallaxCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.testParallaxCode.userFunc0x9f7578 = function GDJSInlineCode(runtimeScene) {
+};gdjs.testParallaxCode.userFunc0xa35c98 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 //Definitions
 var timeTransition = 50;
@@ -405,7 +409,7 @@ gdjs.testParallaxCode.eventsList7 = function(runtimeScene) {
 {
 
 
-gdjs.testParallaxCode.userFunc0x9f7578(runtimeScene);
+gdjs.testParallaxCode.userFunc0xa35c98(runtimeScene);
 
 }
 
@@ -950,6 +954,10 @@ gdjs.testParallaxCode.GDcamLeftObjects1.length = 0;
 gdjs.testParallaxCode.GDcamLeftObjects2.length = 0;
 gdjs.testParallaxCode.GDcamLeftObjects3.length = 0;
 gdjs.testParallaxCode.GDcamLeftObjects4.length = 0;
+gdjs.testParallaxCode.GDtxt_9595gameVersionObjects1.length = 0;
+gdjs.testParallaxCode.GDtxt_9595gameVersionObjects2.length = 0;
+gdjs.testParallaxCode.GDtxt_9595gameVersionObjects3.length = 0;
+gdjs.testParallaxCode.GDtxt_9595gameVersionObjects4.length = 0;
 
 gdjs.testParallaxCode.eventsList18(runtimeScene);
 
