@@ -99,145 +99,52 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.LeaderboardCode.asyncCallback11349876 = function (runtimeScene, asyncObjectsList) {
-}
+};gdjs.LeaderboardCode.userFunc0xa8c370 = function GDJSInlineCode(runtimeScene) {
+"use strict";
+// Importa la biblioteca de Firebase
+const firebase = require('firebase/app');
+require('firebase/firestore');
+
+// Configura tu proyecto de Firebase (reemplaza con tus propias credenciales)
+const firebaseConfig = {
+    "apiKey": "AIzaSyDh_Pm_9YV31Flm1BdjFyHNzzvVGGH0Kx0",
+    "authDomain": "hyplayjam.firebaseapp.com",
+    "projectId": "hyplayjam",
+    "storageBucket": "hyplayjam.appspot.com",
+    "messagingSenderId": "586429785828",
+    "appId": "1:586429785828:web:e7e062fef514be208ceef1",
+    "measurementId": "G-889N53BGHX"
+  };
+
+// Inicializa Firebase
+firebase.initializeApp(firebaseConfig);
+
+// Obtiene una referencia a la colección "usuarios"
+const db = firebase.firestore();
+const usuariosCollection = db.collection('usuarios');
+
+// Datos del nuevo usuario
+const nuevoUsuario = {
+  nombre: 'Juan Pérez',
+  correo: 'juan@example.com'
+};
+
+// Agrega el nuevo usuario como un documento con un ID automático
+usuariosCollection.add(nuevoUsuario)
+  .then((docRef) => {
+    console.log('Documento creado con ID:', docRef.id);
+  })
+  .catch((error) => {
+    console.error('Error al crear el documento:', error);
+  });
+
+
+};
 gdjs.LeaderboardCode.eventsList2 = function(runtimeScene) {
 
 {
 
 
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback11349876(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.LeaderboardCode.asyncCallback10465468 = function (runtimeScene, asyncObjectsList) {
-}
-gdjs.LeaderboardCode.eventsList3 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback10465468(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.LeaderboardCode.userFunc0xa96d18 = function GDJSInlineCode(runtimeScene) {
-"use strict";
-let db = firebase.database().ref("/scoresHyplay");
-console.log(db);
-
-//const cityRef = doc(db, 'cities', 'LA');
-const playerRef = runtimeScene.getVariables().get("testFirebaseCloud");
-async function addDocumentToFirebase (){
-    await setDoc(playerRef, { name: 'Los Angeles', state: 'CA', country: 'USA' });
-}
-
-addDocumentToFirebase();
-
-//addDocumentToFirebase();
-};
-gdjs.LeaderboardCode.asyncCallback8105956 = function (runtimeScene, asyncObjectsList) {
-}
-gdjs.LeaderboardCode.eventsList4 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback8105956(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.LeaderboardCode.eventsList5 = function(runtimeScene) {
-
-{
-
-
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-
-{ //Subevents
-gdjs.LeaderboardCode.eventsList2(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-
-{ //Subevents
-gdjs.LeaderboardCode.eventsList3(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-gdjs.LeaderboardCode.userFunc0xa96d18(runtimeScene);
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-
-{ //Subevents
-gdjs.LeaderboardCode.eventsList4(runtimeScene);} //End of subevents
-}
 
 }
 
@@ -266,7 +173,20 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.LeaderboardCode.eventsList6 = function(runtimeScene) {
+{
+
+
+gdjs.LeaderboardCode.userFunc0xa8c370(runtimeScene);
+
+}
+
+
+{
+
+
+
+}
+
 
 {
 
@@ -285,11 +205,65 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.LeaderboardCode.eventsList5(runtimeScene);
+
 }
 
 
-};gdjs.LeaderboardCode.eventsList7 = function(runtimeScene) {
+{
+
+
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+};gdjs.LeaderboardCode.eventsList3 = function(runtimeScene) {
+
+{
+
+
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+gdjs.LeaderboardCode.eventsList2(runtimeScene);
+}
+
+
+};gdjs.LeaderboardCode.eventsList4 = function(runtimeScene) {
 
 {
 
@@ -328,11 +302,11 @@ gdjs.LeaderboardCode.eventsList1(runtimeScene);} //End of subevents
 {
 
 
-gdjs.LeaderboardCode.eventsList6(runtimeScene);
+gdjs.LeaderboardCode.eventsList3(runtimeScene);
 }
 
 
-};gdjs.LeaderboardCode.eventsList8 = function(runtimeScene) {
+};gdjs.LeaderboardCode.eventsList5 = function(runtimeScene) {
 
 {
 
@@ -353,13 +327,13 @@ gdjs.copyArray(runtimeScene.getObjects("txt_title3"), gdjs.LeaderboardCode.GDtxt
 }
 }
 { //Subevents
-gdjs.LeaderboardCode.eventsList7(runtimeScene);} //End of subevents
+gdjs.LeaderboardCode.eventsList4(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.LeaderboardCode.eventsList9 = function(runtimeScene) {
+};gdjs.LeaderboardCode.eventsList6 = function(runtimeScene) {
 
 {
 
@@ -374,7 +348,7 @@ gdjs.copyArray(runtimeScene.getObjects("scoreInputFake"), gdjs.LeaderboardCode.G
 }{runtimeScene.getScene().getVariables().getFromIndex(0).getChild(1).getChild("score").setString((( gdjs.LeaderboardCode.GDscoreInputFakeObjects2.length === 0 ) ? "" :gdjs.LeaderboardCode.GDscoreInputFakeObjects2[0].getText()));
 }
 { //Subevents
-gdjs.LeaderboardCode.eventsList8(runtimeScene);} //End of subevents
+gdjs.LeaderboardCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 }
@@ -390,7 +364,7 @@ gdjs.copyArray(asyncObjectsList.getObjects("BlueButton"), gdjs.LeaderboardCode.G
     gdjs.LeaderboardCode.GDBlueButtonObjects2[i].SetLabelText("AddFakeScore", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }}
-gdjs.LeaderboardCode.eventsList10 = function(runtimeScene) {
+gdjs.LeaderboardCode.eventsList7 = function(runtimeScene) {
 
 {
 
@@ -406,7 +380,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), 
 }
 
 
-};gdjs.LeaderboardCode.eventsList11 = function(runtimeScene) {
+};gdjs.LeaderboardCode.eventsList8 = function(runtimeScene) {
 
 {
 
@@ -415,13 +389,13 @@ let isConditionTrue_0 = false;
 {
 
 { //Subevents
-gdjs.LeaderboardCode.eventsList10(runtimeScene);} //End of subevents
+gdjs.LeaderboardCode.eventsList7(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.LeaderboardCode.eventsList12 = function(runtimeScene) {
+};gdjs.LeaderboardCode.eventsList9 = function(runtimeScene) {
 
 {
 
@@ -473,7 +447,7 @@ isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "InputData
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LeaderboardCode.eventsList9(runtimeScene);} //End of subevents
+gdjs.LeaderboardCode.eventsList6(runtimeScene);} //End of subevents
 }
 
 }
@@ -521,13 +495,13 @@ isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "Leaderboa
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LeaderboardCode.eventsList11(runtimeScene);} //End of subevents
+gdjs.LeaderboardCode.eventsList8(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.LeaderboardCode.eventsList13 = function(runtimeScene) {
+};gdjs.LeaderboardCode.eventsList10 = function(runtimeScene) {
 
 {
 
@@ -550,12 +524,12 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.LeaderboardCode.eventsList14 = function(runtimeScene) {
+};gdjs.LeaderboardCode.eventsList11 = function(runtimeScene) {
 
 {
 
 
-gdjs.LeaderboardCode.eventsList12(runtimeScene);
+gdjs.LeaderboardCode.eventsList9(runtimeScene);
 }
 
 
@@ -600,7 +574,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debujLeader"), gdjs.LeaderboardCode.
 {
 
 
-gdjs.LeaderboardCode.eventsList13(runtimeScene);
+gdjs.LeaderboardCode.eventsList10(runtimeScene);
 }
 
 
@@ -670,7 +644,7 @@ gdjs.LeaderboardCode.GDtxt_9595gameVersionObjects2.length = 0;
 gdjs.LeaderboardCode.GDtxt_9595gameVersionObjects3.length = 0;
 gdjs.LeaderboardCode.GDtxt_9595gameVersionObjects4.length = 0;
 
-gdjs.LeaderboardCode.eventsList14(runtimeScene);
+gdjs.LeaderboardCode.eventsList11(runtimeScene);
 
 return;
 
