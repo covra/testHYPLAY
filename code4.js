@@ -86,7 +86,7 @@ gdjs.copyArray(runtimeScene.getObjects("CollisionDetect"), gdjs.mainSceneCode.GD
 }
 
 
-};gdjs.mainSceneCode.userFunc0x901598 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.mainSceneCode.userFunc0xb23528 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definiciones
 const player = objects[0];
@@ -132,7 +132,7 @@ gdjs.copyArray(runtimeScene.getObjects("test_player"), gdjs.mainSceneCode.GDtest
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDtest_9595playerObjects2);
-gdjs.mainSceneCode.userFunc0x901598(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0xb23528(runtimeScene, objects);
 
 }
 
@@ -246,7 +246,7 @@ gdjs.mainSceneCode.eventsList1(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.mainSceneCode.userFunc0x901888 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.mainSceneCode.userFunc0xb237d0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const td = runtimeScene.getObjects("txt_debug2")[0];
 
@@ -293,7 +293,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_backGround"), gdjs.mainSceneCode.GDi
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDimg_9595backGroundObjects2);
-gdjs.mainSceneCode.userFunc0x901888(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0xb237d0(runtimeScene, objects);
 
 }
 
@@ -361,7 +361,7 @@ gdjs.mainSceneCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.mainSceneCode.userFunc0x8df648 = function GDJSInlineCode(runtimeScene) {
+};gdjs.mainSceneCode.userFunc0x8a8780 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 //Definitions
 var timeTransition = 50;
@@ -417,7 +417,7 @@ gdjs.mainSceneCode.eventsList7 = function(runtimeScene) {
 {
 
 
-gdjs.mainSceneCode.userFunc0x8df648(runtimeScene);
+gdjs.mainSceneCode.userFunc0x8a8780(runtimeScene);
 
 }
 
@@ -448,7 +448,7 @@ gdjs.mainSceneCode.eventsList7(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12315956);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12389732);
 }
 if (isConditionTrue_0) {
 
@@ -602,7 +602,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12329916);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12403692);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("test_player"), gdjs.mainSceneCode.GDtest_9595playerObjects2);
