@@ -1,45 +1,30 @@
 
-if (typeof gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody !== "undefined") {
-  gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonReleased !== "undefined") {
+  gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonReleased.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonReleased = {};
 
 
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.userFunc0x962e20 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
-"use strict";
-gdjs.Variable.copy(
-    eventsFunctionContext.getArgument("Body"),
-    runtimeScene.getGame().getVariables().get("__AdvancedHTTP")
-        .getChild("Requests")
-        .getChild(eventsFunctionContext.getArgument("Request"))
-        .getChild("FormData"),
-    /* mergeVariables = */true
-);
-
-};
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonReleased.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-
-}
-
-
-{
-
-
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.userFunc0x962e20(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("__MultitouchJoystick").getChild("Controllers").getChild((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("ControllerIdentifier")) || 0 : 0)).getChild("Buttons").getChild((typeof eventsFunctionContext !== 'undefined' ? "" + eventsFunctionContext.getArgument("Button") : "")).getChild("State")) == "Released";
+if (isConditionTrue_0) {
+{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
 
 
 };
 
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.func = function(runtimeScene, Request, Body, parentEventsFunctionContext) {
+gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonReleased.func = function(runtimeScene, ControllerIdentifier, Button, parentEventsFunctionContext) {
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -84,17 +69,17 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "Request") return Request;
-if (argName === "Body") return Body;
+if (argName === "ControllerIdentifier") return ControllerIdentifier;
+if (argName === "Button") return Button;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonReleased.eventsList0(runtimeScene, eventsFunctionContext);
 
-return;
+return !!eventsFunctionContext.returnValue;
 }
 
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.registeredGdjsCallbacks = [];
+gdjs.evtsExt__SpriteMultitouchJoystick__IsButtonReleased.registeredGdjsCallbacks = [];

@@ -13,7 +13,7 @@ gdjs.splashScreenCode.GDtxt_9595gameVersionObjects2= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects3= [];
 
 
-gdjs.splashScreenCode.userFunc0x97afc0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.splashScreenCode.userFunc0x754a70 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definitions
 const bk = objects[0];
@@ -26,7 +26,7 @@ const maxScale = 1.3;
 const deltaProgress = 5;
 const paramNoise = "noiseSize";
 const paramLineW = "lineWidth";
-const nextScene = "SplashScene";
+const nextScene = "mainScene";
 
 //Starting point
 var sc = 0.8;
@@ -165,7 +165,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.G
 
 var objects = [];
 objects.push.apply(objects,gdjs.splashScreenCode.GDimg_9595backTitleObjects1);
-gdjs.splashScreenCode.userFunc0x97afc0(runtimeScene, objects);
+gdjs.splashScreenCode.userFunc0x754a70(runtimeScene, objects);
 
 }
 
@@ -177,7 +177,7 @@ gdjs.splashScreenCode.userFunc0x97afc0(runtimeScene, objects);
 
 let isConditionTrue_0 = false;
 {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "SplashScene", true);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "mainScene", true);
 }}
 
 }
@@ -212,7 +212,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11913396);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13683132);
 }
 }
 if (isConditionTrue_0) {

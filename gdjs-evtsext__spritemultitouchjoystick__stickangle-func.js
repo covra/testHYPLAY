@@ -1,45 +1,28 @@
 
-if (typeof gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody !== "undefined") {
-  gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__SpriteMultitouchJoystick__StickAngle !== "undefined") {
+  gdjs.evtsExt__SpriteMultitouchJoystick__StickAngle.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody = {};
+gdjs.evtsExt__SpriteMultitouchJoystick__StickAngle = {};
 
 
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.userFunc0x962e20 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
-"use strict";
-gdjs.Variable.copy(
-    eventsFunctionContext.getArgument("Body"),
-    runtimeScene.getGame().getVariables().get("__AdvancedHTTP")
-        .getChild("Requests")
-        .getChild(eventsFunctionContext.getArgument("Request"))
-        .getChild("FormData"),
-    /* mergeVariables = */true
-);
-
-};
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__SpriteMultitouchJoystick__StickAngle.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-
-}
-
-
+let isConditionTrue_0 = false;
 {
-
-
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.userFunc0x962e20(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("__MultitouchJoystick").getChild("Controllers").getChild((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("ControllerIdentifier")) || 0 : 0)).getChild("Joystick").getChild((typeof eventsFunctionContext !== 'undefined' ? "" + eventsFunctionContext.getArgument("JoystickIdentifier") : "")).getChild("Angle")); }}}
 
 }
 
 
 };
 
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.func = function(runtimeScene, Request, Body, parentEventsFunctionContext) {
+gdjs.evtsExt__SpriteMultitouchJoystick__StickAngle.func = function(runtimeScene, ControllerIdentifier, JoystickIdentifier, parentEventsFunctionContext) {
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -84,17 +67,17 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
     return runtimeScene.getLayer(layerName);
   },
   getArgument: function(argName) {
-if (argName === "Request") return Request;
-if (argName === "Body") return Body;
+if (argName === "ControllerIdentifier") return ControllerIdentifier;
+if (argName === "JoystickIdentifier") return JoystickIdentifier;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
 
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__SpriteMultitouchJoystick__StickAngle.eventsList0(runtimeScene, eventsFunctionContext);
 
-return;
+return Number(eventsFunctionContext.returnValue) || 0;
 }
 
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.registeredGdjsCallbacks = [];
+gdjs.evtsExt__SpriteMultitouchJoystick__StickAngle.registeredGdjsCallbacks = [];

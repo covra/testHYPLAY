@@ -88,7 +88,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.LeaderboardCode.asyncCallback12225636 = function (runtimeScene, asyncObjectsList) {
+};gdjs.LeaderboardCode.asyncCallback13396092 = function (runtimeScene, asyncObjectsList) {
 gdjs.copyArray(asyncObjectsList.getObjects("BlueButton"), gdjs.LeaderboardCode.GDBlueButtonObjects4);
 
 {gdjs.evtTools.camera.hideLayer(runtimeScene, "InputDataLayer");
@@ -107,14 +107,14 @@ gdjs.LeaderboardCode.eventsList1 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.LeaderboardCode.GDBlueButtonObjects2) asyncObjectsList.addObject("BlueButton", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback12225636(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback13396092(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.LeaderboardCode.userFunc0x9654d8 = function GDJSInlineCode(runtimeScene) {
+};gdjs.LeaderboardCode.userFunc0xa23d10 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 // Ref to score firebase collection ("scoresHyplay")
 let timestamp = gdjs.evtTools.runtimeScene.getTime("timestamp");
@@ -208,7 +208,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.LeaderboardCode.userFunc0x9654d8(runtimeScene);
+gdjs.LeaderboardCode.userFunc0xa23d10(runtimeScene);
 
 }
 
@@ -348,7 +348,7 @@ gdjs.LeaderboardCode.eventsList6(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.LeaderboardCode.asyncCallback12246836 = function (runtimeScene, asyncObjectsList) {
+};gdjs.LeaderboardCode.asyncCallback13417292 = function (runtimeScene, asyncObjectsList) {
 gdjs.copyArray(asyncObjectsList.getObjects("BlueButton"), gdjs.LeaderboardCode.GDBlueButtonObjects2);
 
 {gdjs.evtTools.camera.hideLayer(runtimeScene, "Leaderboard");
@@ -367,7 +367,7 @@ gdjs.LeaderboardCode.eventsList8 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.LeaderboardCode.GDBlueButtonObjects1) asyncObjectsList.addObject("BlueButton", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback12246836(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback13417292(runtimeScene, asyncObjectsList)));
 }
 }
 
