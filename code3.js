@@ -78,7 +78,7 @@ gdjs.copyArray(runtimeScene.getObjects("CollisionDetect"), gdjs.testParallaxCode
 }
 
 
-};gdjs.testParallaxCode.userFunc0x8e7ff8 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.testParallaxCode.userFunc0xe35d28 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definiciones
 const player = objects[0];
@@ -124,7 +124,7 @@ gdjs.copyArray(runtimeScene.getObjects("test_player"), gdjs.testParallaxCode.GDt
 
 var objects = [];
 objects.push.apply(objects,gdjs.testParallaxCode.GDtest_9595playerObjects2);
-gdjs.testParallaxCode.userFunc0x8e7ff8(runtimeScene, objects);
+gdjs.testParallaxCode.userFunc0xe35d28(runtimeScene, objects);
 
 }
 
@@ -238,7 +238,7 @@ gdjs.testParallaxCode.eventsList1(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.testParallaxCode.userFunc0x8e82d8 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.testParallaxCode.userFunc0xe36028 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const td = runtimeScene.getObjects("txt_debug2")[0];
 
@@ -285,7 +285,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_backGround"), gdjs.testParallaxCode.
 
 var objects = [];
 objects.push.apply(objects,gdjs.testParallaxCode.GDimg_9595backGroundObjects2);
-gdjs.testParallaxCode.userFunc0x8e82d8(runtimeScene, objects);
+gdjs.testParallaxCode.userFunc0xe36028(runtimeScene, objects);
 
 }
 
@@ -353,7 +353,7 @@ gdjs.testParallaxCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.testParallaxCode.userFunc0x7a2e78 = function GDJSInlineCode(runtimeScene) {
+};gdjs.testParallaxCode.userFunc0xe36dc0 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 //Definitions
 var timeTransition = 50;
@@ -409,7 +409,7 @@ gdjs.testParallaxCode.eventsList7 = function(runtimeScene) {
 {
 
 
-gdjs.testParallaxCode.userFunc0x7a2e78(runtimeScene);
+gdjs.testParallaxCode.userFunc0xe36dc0(runtimeScene);
 
 }
 
@@ -440,7 +440,7 @@ gdjs.testParallaxCode.eventsList7(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13470156);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13447212);
 }
 if (isConditionTrue_0) {
 
@@ -578,7 +578,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13498148);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13475204);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("test_player"), gdjs.testParallaxCode.GDtest_9595playerObjects2);
