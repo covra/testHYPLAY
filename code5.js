@@ -8,12 +8,15 @@ gdjs.splashScreenCode.GDimg_9595backTitleObjects3= [];
 gdjs.splashScreenCode.GDtxt_9595debugObjects1= [];
 gdjs.splashScreenCode.GDtxt_9595debugObjects2= [];
 gdjs.splashScreenCode.GDtxt_9595debugObjects3= [];
+gdjs.splashScreenCode.GDimg_9595titleNeonObjects1= [];
+gdjs.splashScreenCode.GDimg_9595titleNeonObjects2= [];
+gdjs.splashScreenCode.GDimg_9595titleNeonObjects3= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects1= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects2= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects3= [];
 
 
-gdjs.splashScreenCode.userFunc0xe51bd0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.splashScreenCode.userFunc0x8fb810 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definitions
 const bk = objects[0];
@@ -165,7 +168,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.G
 
 var objects = [];
 objects.push.apply(objects,gdjs.splashScreenCode.GDimg_9595backTitleObjects1);
-gdjs.splashScreenCode.userFunc0xe51bd0(runtimeScene, objects);
+gdjs.splashScreenCode.userFunc0x8fb810(runtimeScene, objects);
 
 }
 
@@ -212,7 +215,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Right");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13686884);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14246940);
 }
 }
 if (isConditionTrue_0) {
@@ -238,6 +241,9 @@ gdjs.splashScreenCode.GDimg_9595backTitleObjects3.length = 0;
 gdjs.splashScreenCode.GDtxt_9595debugObjects1.length = 0;
 gdjs.splashScreenCode.GDtxt_9595debugObjects2.length = 0;
 gdjs.splashScreenCode.GDtxt_9595debugObjects3.length = 0;
+gdjs.splashScreenCode.GDimg_9595titleNeonObjects1.length = 0;
+gdjs.splashScreenCode.GDimg_9595titleNeonObjects2.length = 0;
+gdjs.splashScreenCode.GDimg_9595titleNeonObjects3.length = 0;
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects1.length = 0;
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects2.length = 0;
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects3.length = 0;
