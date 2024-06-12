@@ -16,7 +16,7 @@ gdjs.splashScreenCode.GDtxt_9595gameVersionObjects2= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects3= [];
 
 
-gdjs.splashScreenCode.userFunc0x8fb810 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.splashScreenCode.userFunc0xf5dae8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definitions
 const bk = objects[0];
@@ -168,7 +168,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.G
 
 var objects = [];
 objects.push.apply(objects,gdjs.splashScreenCode.GDimg_9595backTitleObjects1);
-gdjs.splashScreenCode.userFunc0x8fb810(runtimeScene, objects);
+gdjs.splashScreenCode.userFunc0xf5dae8(runtimeScene, objects);
 
 }
 
@@ -215,7 +215,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Right");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14246940);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14543700);
 }
 }
 if (isConditionTrue_0) {
