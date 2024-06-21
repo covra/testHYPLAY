@@ -11,7 +11,7 @@ gdjs.evtsExt__ScrapGameFunctions__ShowMenuInventario.GDpointFromReferenceObjects
 gdjs.evtsExt__ScrapGameFunctions__ShowMenuInventario.GDpointFromReferenceObjects3= [];
 
 
-gdjs.evtsExt__ScrapGameFunctions__ShowMenuInventario.userFunc0xcd0510 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ScrapGameFunctions__ShowMenuInventario.userFunc0xce2670 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 //Defs
 const panel = runtimeScene.getObjects("img_panel_bg_inventario")[0];
@@ -45,12 +45,12 @@ gdjs.evtsExt__ScrapGameFunctions__ShowMenuInventario.eventsList0 = function(runt
 {
 
 
-gdjs.evtsExt__ScrapGameFunctions__ShowMenuInventario.userFunc0xcd0510(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ScrapGameFunctions__ShowMenuInventario.userFunc0xce2670(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
 
-};gdjs.evtsExt__ScrapGameFunctions__ShowMenuInventario.userFunc0xb4b2f0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+};gdjs.evtsExt__ScrapGameFunctions__ShowMenuInventario.userFunc0xa97150 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 //Defs
 const panel = runtimeScene.getObjects("img_inventarioTienda")[0];
@@ -84,7 +84,7 @@ gdjs.evtsExt__ScrapGameFunctions__ShowMenuInventario.eventsList1 = function(runt
 {
 
 
-gdjs.evtsExt__ScrapGameFunctions__ShowMenuInventario.userFunc0xb4b2f0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ScrapGameFunctions__ShowMenuInventario.userFunc0xa97150(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -123,7 +123,7 @@ gdjs.evtsExt__ScrapGameFunctions__ShowMenuInventario.eventsList1(runtimeScene, e
 }
 
 
-};gdjs.evtsExt__ScrapGameFunctions__ShowMenuInventario.userFunc0xce9f50 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+};gdjs.evtsExt__ScrapGameFunctions__ShowMenuInventario.userFunc0xa96af0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const panelInv = runtimeScene.getObjects("img_panel_bg_inventario")[0];
 const panelStore = runtimeScene.getObjects("img_inventarioTienda")[0];
@@ -149,7 +149,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__ScrapGameFunctions__ShowMenuInventario.userFunc0xce9f50(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ScrapGameFunctions__ShowMenuInventario.userFunc0xa96af0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
