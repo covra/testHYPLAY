@@ -6,11 +6,11 @@ if (typeof gdjs.evtsExt__ScrapGameFunctions__ShowMenu !== "undefined") {
 }
 
 gdjs.evtsExt__ScrapGameFunctions__ShowMenu = {};
+gdjs.evtsExt__ScrapGameFunctions__ShowMenu.GDpointFromReferenceObjects1= [];
 
 
-gdjs.evtsExt__ScrapGameFunctions__ShowMenu.userFunc0xaf4a08 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ScrapGameFunctions__ShowMenu.userFunc0xcd0510 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
-
 //Defs
 const tbd = runtimeScene.getObjects("txt_debug3")[0]; 
 const bool = eventsFunctionContext.getArgument("bShowAll_");
@@ -26,7 +26,7 @@ async function getData() {
         setTimeout(()=>{
             btnsGroup = runtimeScene.getObjects("btn_menuGame");
             btnHeight =  btnsGroup[0].getHeight();
-            hudSprite =  runtimeScene.getObjects("HUD_pantalla")[0]; 
+            hudSprite =  eventsFunctionContext.getObjects("pointFromReference") [0]; 
             anchor = {x : hudSprite.getPointX(anchorPointName), y : hudSprite.getPointY(anchorPointName)};
             resolve(true);
         },250);
@@ -87,28 +87,26 @@ gdjs.evtsExt__ScrapGameFunctions__ShowMenu.eventsList0 = function(runtimeScene, 
 {
 
 
-
-}
-
-
-{
-
-
-gdjs.evtsExt__ScrapGameFunctions__ShowMenu.userFunc0xaf4a08(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ScrapGameFunctions__ShowMenu.userFunc0xcd0510(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
 
 };
 
-gdjs.evtsExt__ScrapGameFunctions__ShowMenu.func = function(runtimeScene, bShowAll_, parentEventsFunctionContext) {
+gdjs.evtsExt__ScrapGameFunctions__ShowMenu.func = function(runtimeScene, bShowAll_, pointFromReference, parentEventsFunctionContext) {
 var eventsFunctionContext = {
   _objectsMap: {
+"pointFromReference": pointFromReference
 },
   _objectArraysMap: {
+"pointFromReference": gdjs.objectsListsToArray(pointFromReference)
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ScrapGameFunctions"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ScrapGameFunctions"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -152,6 +150,7 @@ if (argName === "bShowAll_") return bShowAll_;
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
+gdjs.evtsExt__ScrapGameFunctions__ShowMenu.GDpointFromReferenceObjects1.length = 0;
 
 gdjs.evtsExt__ScrapGameFunctions__ShowMenu.eventsList0(runtimeScene, eventsFunctionContext);
 

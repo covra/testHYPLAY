@@ -76,6 +76,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("CopyCameraSettings"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("CopyCameraSettings"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

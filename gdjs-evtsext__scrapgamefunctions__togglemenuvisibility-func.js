@@ -7,12 +7,11 @@ if (typeof gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility !== "undefined
 
 gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility = {};
 gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.GDdebugTextObjects1= [];
+gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.GDdebugTextObjects2= [];
+gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.GDmenuButtonObjects1= [];
+gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.GDmenuButtonObjects2= [];
 
 
-gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.userFunc0xccfc80 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
-"use strict";
-
-};
 gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
@@ -25,23 +24,66 @@ gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.eventsList0 = function(ru
 {
 
 
-gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.userFunc0xccfc80(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+let isConditionTrue_0 = false;
+{
+{gdjs.evtTools.variable.toggleVariableBoolean(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0));
+}{if (typeof eventsFunctionContext !== 'undefined') {
+gdjs.Variable.copy(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0), eventsFunctionContext.getArgument("variableVisibilityControl"), false);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0), true, false);
+if (isConditionTrue_0) {
+gdjs.copyArray(eventsFunctionContext.getObjects("menuButton"), gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.GDmenuButtonObjects1);
+{for(var i = 0, len = gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.GDmenuButtonObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.GDmenuButtonObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Effect")).enableEffect("outlineEnable", false);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0), false, false);
+if (isConditionTrue_0) {
+gdjs.copyArray(eventsFunctionContext.getObjects("menuButton"), gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.GDmenuButtonObjects1);
+{for(var i = 0, len = gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.GDmenuButtonObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.GDmenuButtonObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Effect")).enableEffect("outlineEnable", true);
+}
+}}
 
 }
 
 
 };
 
-gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.func = function(runtimeScene, debugText, variableVisibilityControl, parentEventsFunctionContext) {
+gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.func = function(runtimeScene, debugText, variableVisibilityControl, menuButton, parentEventsFunctionContext) {
 var eventsFunctionContext = {
   _objectsMap: {
 "debugText": debugText
+, "menuButton": menuButton
 },
   _objectArraysMap: {
 "debugText": gdjs.objectsListsToArray(debugText)
+, "menuButton": gdjs.objectsListsToArray(menuButton)
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ScrapGameFunctions"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ScrapGameFunctions"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -86,6 +128,9 @@ if (argName === "variableVisibilityControl") return variableVisibilityControl;
 };
 
 gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.GDdebugTextObjects1.length = 0;
+gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.GDdebugTextObjects2.length = 0;
+gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.GDmenuButtonObjects1.length = 0;
+gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.GDmenuButtonObjects2.length = 0;
 
 gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.eventsList0(runtimeScene, eventsFunctionContext);
 

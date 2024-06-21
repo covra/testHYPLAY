@@ -34,6 +34,28 @@ gdjs.evtsExt__MagneticEffect__MagneticEffect.MagneticEffect = class MagneticEffe
     return true;
   }
 
+  // Network sync:
+  getNetworkSyncData() {
+    return {
+      ...super.getNetworkSyncData(),
+      props: {
+        
+    Speed: this._behaviorData.Speed,
+    Distance: this._behaviorData.Distance,
+    IsAttracted: this._behaviorData.IsAttracted,
+      }
+    };
+  }
+  updateFromNetworkSyncData(networkSyncData) {
+    
+    if (networkSyncData.props.Speed !== undefined)
+      this._behaviorData.Speed = networkSyncData.props.Speed;
+    if (networkSyncData.props.Distance !== undefined)
+      this._behaviorData.Distance = networkSyncData.props.Distance;
+    if (networkSyncData.props.IsAttracted !== undefined)
+      this._behaviorData.IsAttracted = networkSyncData.props.IsAttracted;
+  }
+
   // Properties:
   
   _getSpeed() {
@@ -290,6 +312,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("MagneticEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("MagneticEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -407,6 +432,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("MagneticEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("MagneticEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -513,6 +541,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("MagneticEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("MagneticEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -609,6 +640,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("MagneticEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("MagneticEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -705,6 +739,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("MagneticEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("MagneticEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

@@ -1,4 +1,5 @@
 gdjs.marketCode = {};
+gdjs.marketCode.localVariables = [];
 
 
 gdjs.marketCode.eventsList0 = function(runtimeScene) {

@@ -1,29 +1,36 @@
 gdjs.splashScreenCode = {};
+gdjs.splashScreenCode.localVariables = [];
 gdjs.splashScreenCode.GDtxt_9595gameTitleObjects1= [];
 gdjs.splashScreenCode.GDtxt_9595gameTitleObjects2= [];
 gdjs.splashScreenCode.GDtxt_9595gameTitleObjects3= [];
+gdjs.splashScreenCode.GDtxt_9595gameTitleObjects4= [];
 gdjs.splashScreenCode.GDimg_9595backTitleObjects1= [];
 gdjs.splashScreenCode.GDimg_9595backTitleObjects2= [];
 gdjs.splashScreenCode.GDimg_9595backTitleObjects3= [];
+gdjs.splashScreenCode.GDimg_9595backTitleObjects4= [];
 gdjs.splashScreenCode.GDtxt_9595debugObjects1= [];
 gdjs.splashScreenCode.GDtxt_9595debugObjects2= [];
 gdjs.splashScreenCode.GDtxt_9595debugObjects3= [];
+gdjs.splashScreenCode.GDtxt_9595debugObjects4= [];
 gdjs.splashScreenCode.GDimg_9595titleNeonObjects1= [];
 gdjs.splashScreenCode.GDimg_9595titleNeonObjects2= [];
 gdjs.splashScreenCode.GDimg_9595titleNeonObjects3= [];
+gdjs.splashScreenCode.GDimg_9595titleNeonObjects4= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects1= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects2= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects3= [];
+gdjs.splashScreenCode.GDtxt_9595gameVersionObjects4= [];
 
 
-gdjs.splashScreenCode.userFunc0x125d1a8 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.splashScreenCode.userFunc0xa8b6e0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definitions
 const bk = objects[0];
 const layerName = "Base layer";
 const effect = "crtEffect";
 const layer = runtimeScene.getLayer(layerName);
-const tit = runtimeScene.getObjects("txt_gameTitle")[0];
+//const tit = runtimeScene.getObjects("txt_gameTitle")[0];
+const tit = runtimeScene.getObjects("img_titleNeon")[0];
 const tdb = runtimeScene.getObjects("txt_debug")[0];
 const maxScale = 1.3;
 const deltaProgress = 5;
@@ -122,29 +129,59 @@ setTimeout(
             var scT = 0.01;
             var showTitulo = setInterval(
                 ()=> {
-                    if (scT >= 2) {
-                        scT = (scT + 0.001);
+                    if (scT >= 1.5) {
+                        scT = (scT + 0.005);
                     } else if (scT <= 1) {
-                       scT = (scT + 0.001)*1.1; 
+                       scT = (scT + 0.001)*1.2; 
                     } else {
                         scT = (scT + 0.001)*1.001;
                     }
                     tit.setScale(scT, scT);
-                    tdb.setString(tit.getScale())
-                    if (scT >= 2.2) {
-                        setTimeout(()=>{
-                            runtimeScene.getRequestedScene()
-                            runtimeScene.getGame().getSceneStack().replace(nextScene, true)
+                                                                                    //tdb.setString(tit.getScale())
+                    if (scT >= 2) {
+                        setTimeout(()=>{                            
                             clearInterval(showTitulo);
-                        },500)
+                            superfinal();
+                        },100)
                     }
                 }
             ,deltaProgress)
             
     }
-,1500);
+,300);
  
+//Super final pause 
+function superfinal (){
+    let op = 255;
+    let opi = 255;
+    let fr = 0.1;
+    let inte = 0;
+    let inti = 0;
+    //fade out
+    
 
+    setTimeout(()=>{
+        inte = setInterval(()=>{
+            op = op - 5;
+            tit.setOpacity(op);
+            console.log(op);
+            if (op <= 0) {
+                clearInterval(inte);
+                clearInterval(inti);
+                runtimeScene.getRequestedScene()
+                runtimeScene.getGame().getSceneStack().replace(nextScene, true)
+            }
+        },50);
+    },1000);
+    
+    setTimeout(()=>{
+        inti = setInterval(()=>{
+            opi = opi - 3;
+            bk.setOpacity(opi);
+        },20);
+    },1500);
+    
+}
 };
 gdjs.splashScreenCode.eventsList0 = function(runtimeScene) {
 
@@ -153,9 +190,9 @@ gdjs.splashScreenCode.eventsList0 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.GDimg_9595backTitleObjects2);
-{for(var i = 0, len = gdjs.splashScreenCode.GDimg_9595backTitleObjects2.length ;i < len;++i) {
-    gdjs.splashScreenCode.GDimg_9595backTitleObjects2[i].getBehavior("Opacity").setOpacity(0);
+gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.GDimg_9595backTitleObjects3);
+{for(var i = 0, len = gdjs.splashScreenCode.GDimg_9595backTitleObjects3.length ;i < len;++i) {
+    gdjs.splashScreenCode.GDimg_9595backTitleObjects3[i].getBehavior("Opacity").setOpacity(0);
 }
 }}
 
@@ -164,16 +201,36 @@ gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.G
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.GDimg_9595backTitleObjects1);
+gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.GDimg_9595backTitleObjects2);
 
 var objects = [];
-objects.push.apply(objects,gdjs.splashScreenCode.GDimg_9595backTitleObjects1);
-gdjs.splashScreenCode.userFunc0x125d1a8(runtimeScene, objects);
+objects.push.apply(objects,gdjs.splashScreenCode.GDimg_9595backTitleObjects2);
+gdjs.splashScreenCode.userFunc0xa8b6e0(runtimeScene, objects);
 
 }
 
 
 };gdjs.splashScreenCode.eventsList1 = function(runtimeScene) {
+
+{
+
+
+gdjs.splashScreenCode.eventsList0(runtimeScene);
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{gdjs.evtTools.window.setFullScreen(runtimeScene, true, false);
+}}
+
+}
+
+
+};gdjs.splashScreenCode.eventsList2 = function(runtimeScene) {
 
 {
 
@@ -186,7 +243,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.splashScreenCode.eventsList2 = function(runtimeScene) {
+};gdjs.splashScreenCode.eventsList3 = function(runtimeScene) {
 
 {
 
@@ -197,11 +254,12 @@ isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("txt_gameTitle"), gdjs.splashScreenCode.GDtxt_9595gameTitleObjects1);
 {for(var i = 0, len = gdjs.splashScreenCode.GDtxt_9595gameTitleObjects1.length ;i < len;++i) {
-    gdjs.splashScreenCode.GDtxt_9595gameTitleObjects1[i].getBehavior("Opacity").setOpacity(0);
+    gdjs.splashScreenCode.GDtxt_9595gameTitleObjects1[i].getBehavior("Opacity").setOpacity(100);
 }
+}{gdjs.evtTools.window.setFullScreen(runtimeScene, true, false);
 }
 { //Subevents
-gdjs.splashScreenCode.eventsList0(runtimeScene);} //End of subevents
+gdjs.splashScreenCode.eventsList1(runtimeScene);} //End of subevents
 }
 
 }
@@ -215,13 +273,13 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Right");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14824836);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16104660);
 }
 }
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.splashScreenCode.eventsList1(runtimeScene);} //End of subevents
+gdjs.splashScreenCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 }
@@ -235,20 +293,25 @@ runtimeScene.getOnceTriggers().startNewFrame();
 gdjs.splashScreenCode.GDtxt_9595gameTitleObjects1.length = 0;
 gdjs.splashScreenCode.GDtxt_9595gameTitleObjects2.length = 0;
 gdjs.splashScreenCode.GDtxt_9595gameTitleObjects3.length = 0;
+gdjs.splashScreenCode.GDtxt_9595gameTitleObjects4.length = 0;
 gdjs.splashScreenCode.GDimg_9595backTitleObjects1.length = 0;
 gdjs.splashScreenCode.GDimg_9595backTitleObjects2.length = 0;
 gdjs.splashScreenCode.GDimg_9595backTitleObjects3.length = 0;
+gdjs.splashScreenCode.GDimg_9595backTitleObjects4.length = 0;
 gdjs.splashScreenCode.GDtxt_9595debugObjects1.length = 0;
 gdjs.splashScreenCode.GDtxt_9595debugObjects2.length = 0;
 gdjs.splashScreenCode.GDtxt_9595debugObjects3.length = 0;
+gdjs.splashScreenCode.GDtxt_9595debugObjects4.length = 0;
 gdjs.splashScreenCode.GDimg_9595titleNeonObjects1.length = 0;
 gdjs.splashScreenCode.GDimg_9595titleNeonObjects2.length = 0;
 gdjs.splashScreenCode.GDimg_9595titleNeonObjects3.length = 0;
+gdjs.splashScreenCode.GDimg_9595titleNeonObjects4.length = 0;
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects1.length = 0;
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects2.length = 0;
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects3.length = 0;
+gdjs.splashScreenCode.GDtxt_9595gameVersionObjects4.length = 0;
 
-gdjs.splashScreenCode.eventsList2(runtimeScene);
+gdjs.splashScreenCode.eventsList3(runtimeScene);
 
 return;
 

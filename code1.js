@@ -1,4 +1,5 @@
 gdjs.SplashSceneCode = {};
+gdjs.SplashSceneCode.localVariables = [];
 gdjs.SplashSceneCode.GDskipObjects2_1final = [];
 
 gdjs.SplashSceneCode.GDbackgroundDottedObjects1= [];
@@ -38,7 +39,7 @@ gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects4= [];
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects5= [];
 
 
-gdjs.SplashSceneCode.userFunc0x12128d0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0xc63f38 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -101,7 +102,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
-gdjs.SplashSceneCode.userFunc0x12128d0(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0xc63f38(runtimeScene, objects);
 
 }
 
@@ -142,7 +143,8 @@ gdjs.SplashSceneCode.eventsList0(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.asyncCallback14516300 = function (runtimeScene, asyncObjectsList) {
+};gdjs.SplashSceneCode.asyncCallback15787148 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.SplashSceneCode.localVariables);
 }
 gdjs.SplashSceneCode.eventsList2 = function(runtimeScene) {
 
@@ -152,7 +154,8 @@ gdjs.SplashSceneCode.eventsList2 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "HYPLAYGetUser", runtimeScene.getScene().getVariables().getFromIndex(1), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.SplashSceneCode.asyncCallback14516300(runtimeScene, asyncObjectsList)));
+asyncObjectsList.backupLocalVariablesContainers(gdjs.SplashSceneCode.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "HYPLAYGetUser", runtimeScene.getScene().getVariables().getFromIndex(1), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.SplashSceneCode.asyncCallback15787148(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -230,7 +233,8 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.SplashSceneCode.asyncCallback14521404 = function (runtimeScene, asyncObjectsList) {
+};gdjs.SplashSceneCode.asyncCallback15794596 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.SplashSceneCode.localVariables);
 {gdjs.evtTools.debuggerTools.log("Response from hyplay: " + runtimeScene.getScene().getVariables().getFromIndex(1).getAsString(), "info", "");
 }
 { //Subevents
@@ -244,7 +248,8 @@ gdjs.SplashSceneCode.eventsList5 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ReadResponseJSON.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1), runtimeScene.getScene().getVariables().getFromIndex(2), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.SplashSceneCode.asyncCallback14521404(runtimeScene, asyncObjectsList)));
+asyncObjectsList.backupLocalVariablesContainers(gdjs.SplashSceneCode.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ReadResponseJSON.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1), runtimeScene.getScene().getVariables().getFromIndex(2), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.SplashSceneCode.asyncCallback15794596(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -281,7 +286,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__AdvancedHTTP__ResponseSuccess.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14521116);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15793596);
 }
 }
 if (isConditionTrue_0) {
@@ -306,7 +311,8 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.SplashSceneCode.asyncCallback14525596 = function (runtimeScene, asyncObjectsList) {
+};gdjs.SplashSceneCode.asyncCallback15798948 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.SplashSceneCode.localVariables);
 gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
 {for(var i = 0, len = gdjs.SplashSceneCode.GDtxt_9595debug2Objects2.length ;i < len;++i) {
     gdjs.SplashSceneCode.GDtxt_9595debug2Objects2[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("username").getAsString() + " you are joining the game...");
@@ -323,7 +329,8 @@ gdjs.SplashSceneCode.eventsList8 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.SplashSceneCode.asyncCallback14525596(runtimeScene, asyncObjectsList)));
+asyncObjectsList.backupLocalVariablesContainers(gdjs.SplashSceneCode.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.SplashSceneCode.asyncCallback15798948(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -388,7 +395,7 @@ for (var i = 0, k = 0, l = gdjs.SplashSceneCode.GDloginObjects2.length;i<l;++i) 
 gdjs.SplashSceneCode.GDloginObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14511596);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15784540);
 }
 }
 if (isConditionTrue_0) {
