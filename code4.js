@@ -79,7 +79,7 @@ gdjs.copyArray(runtimeScene.getObjects("CollisionDetect"), gdjs.testParallaxCode
 }
 
 
-};gdjs.testParallaxCode.userFunc0xc8e238 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.testParallaxCode.userFunc0x11b5aa0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definiciones
 const player = objects[0];
@@ -125,7 +125,7 @@ gdjs.copyArray(runtimeScene.getObjects("test_player"), gdjs.testParallaxCode.GDt
 
 var objects = [];
 objects.push.apply(objects,gdjs.testParallaxCode.GDtest_9595playerObjects2);
-gdjs.testParallaxCode.userFunc0xc8e238(runtimeScene, objects);
+gdjs.testParallaxCode.userFunc0x11b5aa0(runtimeScene, objects);
 
 }
 
@@ -239,7 +239,7 @@ gdjs.testParallaxCode.eventsList1(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.testParallaxCode.userFunc0xc8d7b0 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.testParallaxCode.userFunc0x11b5d00 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const td = runtimeScene.getObjects("txt_debug2")[0];
 
@@ -286,7 +286,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_backGround"), gdjs.testParallaxCode.
 
 var objects = [];
 objects.push.apply(objects,gdjs.testParallaxCode.GDimg_9595backGroundObjects2);
-gdjs.testParallaxCode.userFunc0xc8d7b0(runtimeScene, objects);
+gdjs.testParallaxCode.userFunc0x11b5d00(runtimeScene, objects);
 
 }
 
@@ -354,7 +354,7 @@ gdjs.testParallaxCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.testParallaxCode.userFunc0xc75978 = function GDJSInlineCode(runtimeScene) {
+};gdjs.testParallaxCode.userFunc0x11b6928 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 //Definitions
 var timeTransition = 50;
@@ -410,7 +410,7 @@ gdjs.testParallaxCode.eventsList7 = function(runtimeScene) {
 {
 
 
-gdjs.testParallaxCode.userFunc0xc75978(runtimeScene);
+gdjs.testParallaxCode.userFunc0x11b6928(runtimeScene);
 
 }
 
@@ -441,7 +441,7 @@ gdjs.testParallaxCode.eventsList7(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16141348);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16195660);
 }
 if (isConditionTrue_0) {
 
@@ -579,7 +579,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16150724);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16205036);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("test_player"), gdjs.testParallaxCode.GDtest_9595playerObjects2);

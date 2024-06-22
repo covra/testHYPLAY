@@ -8,7 +8,55 @@ if (typeof gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene !== "undefined") {
 gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene = {};
 
 
+gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene.asyncCallback15536940 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(eventsFunctionContext.localVariables);
+}
 gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+asyncObjectsList.backupLocalVariablesContainers(eventsFunctionContext.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene.asyncCallback15536940(runtimeScene, eventsFunctionContext, asyncObjectsList)));
+}
+}
+
+}
+
+
+};gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene.eventsList1 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+
+{ //Subevents
+gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
+}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+
+}
+
+
+};gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene.eventsList2 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
@@ -19,7 +67,10 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "nodrizaArea");
-}}
+}
+{ //Subevents
+gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene.eventsList1(runtimeScene, eventsFunctionContext);} //End of subevents
+}
 
 }
 
@@ -97,7 +148,7 @@ if (argName === "variableIsLoaded") return variableIsLoaded;
 };
 
 
-gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene.eventsList2(runtimeScene, eventsFunctionContext);
 
 return;
 }
