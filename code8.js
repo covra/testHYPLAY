@@ -66,11 +66,11 @@ gdjs.copyArray(gdjs.videoCode.GDNewVideoObjects1_1final, gdjs.videoCode.GDNewVid
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13648788);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16402932);
 }
 }
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "mainScene", false);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "nodrizaArea", false);
 }}
 
 }
