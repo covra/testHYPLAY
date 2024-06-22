@@ -79,7 +79,7 @@ gdjs.copyArray(runtimeScene.getObjects("CollisionDetect"), gdjs.testParallaxCode
 }
 
 
-};gdjs.testParallaxCode.userFunc0x15032f8 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.testParallaxCode.userFunc0x117e660 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definiciones
 const player = objects[0];
@@ -125,7 +125,7 @@ gdjs.copyArray(runtimeScene.getObjects("test_player"), gdjs.testParallaxCode.GDt
 
 var objects = [];
 objects.push.apply(objects,gdjs.testParallaxCode.GDtest_9595playerObjects2);
-gdjs.testParallaxCode.userFunc0x15032f8(runtimeScene, objects);
+gdjs.testParallaxCode.userFunc0x117e660(runtimeScene, objects);
 
 }
 
@@ -239,7 +239,7 @@ gdjs.testParallaxCode.eventsList1(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.testParallaxCode.userFunc0x1503550 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.testParallaxCode.userFunc0x117e8d8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const td = runtimeScene.getObjects("txt_debug2")[0];
 
@@ -286,7 +286,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_backGround"), gdjs.testParallaxCode.
 
 var objects = [];
 objects.push.apply(objects,gdjs.testParallaxCode.GDimg_9595backGroundObjects2);
-gdjs.testParallaxCode.userFunc0x1503550(runtimeScene, objects);
+gdjs.testParallaxCode.userFunc0x117e8d8(runtimeScene, objects);
 
 }
 
@@ -354,7 +354,7 @@ gdjs.testParallaxCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.testParallaxCode.userFunc0x15040f8 = function GDJSInlineCode(runtimeScene) {
+};gdjs.testParallaxCode.userFunc0x117f4f0 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 //Definitions
 var timeTransition = 50;
@@ -410,7 +410,7 @@ gdjs.testParallaxCode.eventsList7 = function(runtimeScene) {
 {
 
 
-gdjs.testParallaxCode.userFunc0x15040f8(runtimeScene);
+gdjs.testParallaxCode.userFunc0x117f4f0(runtimeScene);
 
 }
 
@@ -441,7 +441,7 @@ gdjs.testParallaxCode.eventsList7(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16198348);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16400540);
 }
 if (isConditionTrue_0) {
 
@@ -579,7 +579,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16207724);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16409916);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("test_player"), gdjs.testParallaxCode.GDtest_9595playerObjects2);
@@ -894,7 +894,8 @@ gdjs.testParallaxCode.eventsList16(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.testParallaxCode.eventsList18 = function(runtimeScene) {
+};gdjs.testParallaxCode.mapOfGDgdjs_9546testParallaxCode_9546GDtxt_95959595debug2Objects1Objects = Hashtable.newFrom({"txt_debug2": gdjs.testParallaxCode.GDtxt_9595debug2Objects1});
+gdjs.testParallaxCode.eventsList18 = function(runtimeScene) {
 
 {
 
@@ -907,6 +908,28 @@ gdjs.testParallaxCode.eventsList10(runtimeScene);
 
 
 gdjs.testParallaxCode.eventsList17(runtimeScene);
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.testParallaxCode.GDtxt_9595debug2Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.testParallaxCode.mapOfGDgdjs_9546testParallaxCode_9546GDtxt_95959595debug2Objects1Objects, runtimeScene, true, false);
+}
+if (isConditionTrue_0) {
+/* Reuse gdjs.testParallaxCode.GDtxt_9595debug2Objects1 */
+{for(var i = 0, len = gdjs.testParallaxCode.GDtxt_9595debug2Objects1.length ;i < len;++i) {
+    gdjs.testParallaxCode.GDtxt_9595debug2Objects1[i].getBehavior("Text").setText("clickme");
+}
+}{gdjs.evtTools.window.openURL("https://covra.github.io/testHYPLAY/", runtimeScene);
+}}
+
 }
 
 
