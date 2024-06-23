@@ -17,7 +17,7 @@ gdjs.splashScreenCode.GDtxt_9595gameVersionObjects2= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects3= [];
 
 
-gdjs.splashScreenCode.userFunc0xd4b710 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.splashScreenCode.userFunc0xd4b6d0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definitions
 const bk = objects[0];
@@ -145,7 +145,7 @@ setTimeout(
             ,deltaProgress)
 
             let scene = tit.getRuntimeScene();
-            gdjs.evtTools.window.setFullScreen(scene,true);
+            //gdjs.evtTools.window.setFullScreen(scene,true);
             
     }
 ,0);
@@ -205,7 +205,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.G
 
 var objects = [];
 objects.push.apply(objects,gdjs.splashScreenCode.GDimg_9595backTitleObjects1);
-gdjs.splashScreenCode.userFunc0xd4b710(runtimeScene, objects);
+gdjs.splashScreenCode.userFunc0xd4b6d0(runtimeScene, objects);
 
 }
 
@@ -258,7 +258,7 @@ gdjs.splashScreenCode.eventsList1(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Right");
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 {isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16588740);
@@ -269,6 +269,13 @@ if (isConditionTrue_0) {
 { //Subevents
 gdjs.splashScreenCode.eventsList2(runtimeScene);} //End of subevents
 }
+
+}
+
+
+{
+
+
 
 }
 
