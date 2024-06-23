@@ -66,7 +66,7 @@ gdjs.copyArray(gdjs.videoCode.GDNewVideoObjects1_1final, gdjs.videoCode.GDNewVid
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16630852);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16829156);
 }
 }
 if (isConditionTrue_0) {
