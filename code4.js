@@ -3,26 +3,21 @@ gdjs.splashScreenCode.localVariables = [];
 gdjs.splashScreenCode.GDtxt_9595gameTitleObjects1= [];
 gdjs.splashScreenCode.GDtxt_9595gameTitleObjects2= [];
 gdjs.splashScreenCode.GDtxt_9595gameTitleObjects3= [];
-gdjs.splashScreenCode.GDtxt_9595gameTitleObjects4= [];
 gdjs.splashScreenCode.GDimg_9595backTitleObjects1= [];
 gdjs.splashScreenCode.GDimg_9595backTitleObjects2= [];
 gdjs.splashScreenCode.GDimg_9595backTitleObjects3= [];
-gdjs.splashScreenCode.GDimg_9595backTitleObjects4= [];
 gdjs.splashScreenCode.GDtxt_9595debugObjects1= [];
 gdjs.splashScreenCode.GDtxt_9595debugObjects2= [];
 gdjs.splashScreenCode.GDtxt_9595debugObjects3= [];
-gdjs.splashScreenCode.GDtxt_9595debugObjects4= [];
 gdjs.splashScreenCode.GDimg_9595titleNeonObjects1= [];
 gdjs.splashScreenCode.GDimg_9595titleNeonObjects2= [];
 gdjs.splashScreenCode.GDimg_9595titleNeonObjects3= [];
-gdjs.splashScreenCode.GDimg_9595titleNeonObjects4= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects1= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects2= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects3= [];
-gdjs.splashScreenCode.GDtxt_9595gameVersionObjects4= [];
 
 
-gdjs.splashScreenCode.userFunc0xbe3ab8 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.splashScreenCode.userFunc0xd4b710 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definitions
 const bk = objects[0];
@@ -148,9 +143,12 @@ setTimeout(
                     }
                 }
             ,deltaProgress)
+
+            let scene = tit.getRuntimeScene();
+            gdjs.evtTools.window.setFullScreen(scene,true);
             
     }
-,300);
+,0);
  
 //Super final pause 
 function superfinal (){
@@ -192,9 +190,9 @@ gdjs.splashScreenCode.eventsList0 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.GDimg_9595backTitleObjects3);
-{for(var i = 0, len = gdjs.splashScreenCode.GDimg_9595backTitleObjects3.length ;i < len;++i) {
-    gdjs.splashScreenCode.GDimg_9595backTitleObjects3[i].getBehavior("Opacity").setOpacity(0);
+gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.GDimg_9595backTitleObjects2);
+{for(var i = 0, len = gdjs.splashScreenCode.GDimg_9595backTitleObjects2.length ;i < len;++i) {
+    gdjs.splashScreenCode.GDimg_9595backTitleObjects2[i].getBehavior("Opacity").setOpacity(0);
 }
 }}
 
@@ -203,11 +201,11 @@ gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.G
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.GDimg_9595backTitleObjects2);
+gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.GDimg_9595backTitleObjects1);
 
 var objects = [];
-objects.push.apply(objects,gdjs.splashScreenCode.GDimg_9595backTitleObjects2);
-gdjs.splashScreenCode.userFunc0xbe3ab8(runtimeScene, objects);
+objects.push.apply(objects,gdjs.splashScreenCode.GDimg_9595backTitleObjects1);
+gdjs.splashScreenCode.userFunc0xd4b710(runtimeScene, objects);
 
 }
 
@@ -218,17 +216,6 @@ gdjs.splashScreenCode.userFunc0xbe3ab8(runtimeScene, objects);
 
 
 gdjs.splashScreenCode.eventsList0(runtimeScene);
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-{gdjs.evtTools.window.setFullScreen(runtimeScene, true, false);
-}}
-
 }
 
 
@@ -258,7 +245,6 @@ gdjs.copyArray(runtimeScene.getObjects("txt_gameTitle"), gdjs.splashScreenCode.G
 {for(var i = 0, len = gdjs.splashScreenCode.GDtxt_9595gameTitleObjects1.length ;i < len;++i) {
     gdjs.splashScreenCode.GDtxt_9595gameTitleObjects1[i].getBehavior("Opacity").setOpacity(100);
 }
-}{gdjs.evtTools.window.setFullScreen(runtimeScene, true, false);
 }
 { //Subevents
 gdjs.splashScreenCode.eventsList1(runtimeScene);} //End of subevents
@@ -295,23 +281,18 @@ runtimeScene.getOnceTriggers().startNewFrame();
 gdjs.splashScreenCode.GDtxt_9595gameTitleObjects1.length = 0;
 gdjs.splashScreenCode.GDtxt_9595gameTitleObjects2.length = 0;
 gdjs.splashScreenCode.GDtxt_9595gameTitleObjects3.length = 0;
-gdjs.splashScreenCode.GDtxt_9595gameTitleObjects4.length = 0;
 gdjs.splashScreenCode.GDimg_9595backTitleObjects1.length = 0;
 gdjs.splashScreenCode.GDimg_9595backTitleObjects2.length = 0;
 gdjs.splashScreenCode.GDimg_9595backTitleObjects3.length = 0;
-gdjs.splashScreenCode.GDimg_9595backTitleObjects4.length = 0;
 gdjs.splashScreenCode.GDtxt_9595debugObjects1.length = 0;
 gdjs.splashScreenCode.GDtxt_9595debugObjects2.length = 0;
 gdjs.splashScreenCode.GDtxt_9595debugObjects3.length = 0;
-gdjs.splashScreenCode.GDtxt_9595debugObjects4.length = 0;
 gdjs.splashScreenCode.GDimg_9595titleNeonObjects1.length = 0;
 gdjs.splashScreenCode.GDimg_9595titleNeonObjects2.length = 0;
 gdjs.splashScreenCode.GDimg_9595titleNeonObjects3.length = 0;
-gdjs.splashScreenCode.GDimg_9595titleNeonObjects4.length = 0;
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects1.length = 0;
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects2.length = 0;
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects3.length = 0;
-gdjs.splashScreenCode.GDtxt_9595gameVersionObjects4.length = 0;
 
 gdjs.splashScreenCode.eventsList3(runtimeScene);
 
