@@ -222,7 +222,7 @@ gdjs.MainCode.eventsList1(runtimeScene);
 }
 
 
-};gdjs.MainCode.userFunc0xcf6d78 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x89de80 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
  //window.resizeTo(window.screen.availWidth , window.screen.availHeight );
  //console.log(window.screen.availWidth , window.screen.availHeight );
@@ -271,7 +271,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug"), gdjs.MainCode.GDtxt_9595deb
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDtxt_9595debugObjects2);
-gdjs.MainCode.userFunc0xcf6d78(runtimeScene, objects);
+gdjs.MainCode.userFunc0x89de80(runtimeScene, objects);
 
 }
 
@@ -946,7 +946,7 @@ gdjs.MainCode.eventsList16(runtimeScene);
 }
 
 
-};gdjs.MainCode.userFunc0xcf6df8 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x110e378 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var idInt = runtimeScene.getVariables().get("intervalID").getAsNumber();
 if (idInt >= 1) {
@@ -963,12 +963,12 @@ gdjs.copyArray(runtimeScene.getObjects("bad_Rock"), gdjs.MainCode.GDbad_9595Rock
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDbad_9595RockObjects3);
-gdjs.MainCode.userFunc0xcf6df8(runtimeScene, objects);
+gdjs.MainCode.userFunc0x110e378(runtimeScene, objects);
 
 }
 
 
-};gdjs.MainCode.userFunc0xb97428 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x89cf88 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 /*
 var bRock = runtimeScene.getVariables().get("bisAllowedRocks").getAsBoolean();
@@ -1021,7 +1021,7 @@ gdjs.copyArray(runtimeScene.getObjects("test_ship"), gdjs.MainCode.GDtest_9595sh
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDtest_9595shipObjects3);
-gdjs.MainCode.userFunc0xb97428(runtimeScene, objects);
+gdjs.MainCode.userFunc0x89cf88(runtimeScene, objects);
 
 }
 
@@ -1216,7 +1216,7 @@ gdjs.MainCode.eventsList22(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.MainCode.userFunc0x8e73f0 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x110ac28 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var idInt = runtimeScene.getVariables().get("intervalIDDebris").getAsNumber();
 if (idInt >= 1) {
@@ -1233,12 +1233,12 @@ gdjs.copyArray(runtimeScene.getObjects("bad_Rock"), gdjs.MainCode.GDbad_9595Rock
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDbad_9595RockObjects3);
-gdjs.MainCode.userFunc0x8e73f0(runtimeScene, objects);
+gdjs.MainCode.userFunc0x110ac28(runtimeScene, objects);
 
 }
 
 
-};gdjs.MainCode.userFunc0xb96728 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.MainCode.userFunc0x972a88 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var bRunDebris = runtimeScene.getVariables().get("bIsAllowedDebris").getAsBoolean();
 var interval = setInterval(
@@ -1270,7 +1270,7 @@ gdjs.copyArray(runtimeScene.getObjects("test_ship"), gdjs.MainCode.GDtest_9595sh
 
 var objects = [];
 objects.push.apply(objects,gdjs.MainCode.GDtest_9595shipObjects3);
-gdjs.MainCode.userFunc0xb96728(runtimeScene, objects);
+gdjs.MainCode.userFunc0x972a88(runtimeScene, objects);
 
 }
 
