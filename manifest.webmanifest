@@ -1,12 +1,33 @@
 {
-  "name": "HYPLAY_test",
-  "short_name": "HYPLAY_test",
+  "name": "True Pilot",
+  "short_name": "True Pilot",
   "id": "com.example.gamename",
-  "description": "",
+  "description": "One man's junk is another space pilot's treasure!",
   "orientation": "landscape",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "black",
   "categories": ["games", "entertainment"],
-  "icons": []
+  "icons": [{
+        "src": "Tabalot2.png",
+        "sizes": "36x36"
+      },{
+        "src": "Tabalot2.png",
+        "sizes": "48x48"
+      },{
+        "src": "Tabalot2.png",
+        "sizes": "72x72"
+      },{
+        "src": "Tabalot2.png",
+        "sizes": "96x96"
+      },{
+        "src": "Tabalot2.png",
+        "sizes": "144x144"
+      },{
+        "src": "Tabalot2.png",
+        "sizes": "192x192"
+      },{
+        "src": "Tabalot2.png",
+        "sizes": "512x512"
+      }]
 }
