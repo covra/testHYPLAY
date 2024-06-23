@@ -245,6 +245,152 @@ let isConditionTrue_0 = false;
 }
 
 
+};gdjs.nodrizaAreaCode.eventsList1 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("txt_Content"), gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4.length;i<l;++i) {
+    if ( gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4[i].getVariableString(gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4[i].getVariables().getFromIndex(0)) == "scrap" ) {
+        isConditionTrue_0 = true;
+        gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4[k] = gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4[i];
+        ++k;
+    }
+}
+gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4 */
+{for(var i = 0, len = gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4.length ;i < len;++i) {
+    gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(16).getAsNumber()));
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("txt_Content"), gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4.length;i<l;++i) {
+    if ( gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4[i].getVariableString(gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4[i].getVariables().getFromIndex(0)) == "reputation" ) {
+        isConditionTrue_0 = true;
+        gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4[k] = gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4[i];
+        ++k;
+    }
+}
+gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4 */
+{for(var i = 0, len = gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4.length ;i < len;++i) {
+    gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4[i].getBehavior("Text").setText("none");
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("txt_Content"), gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4.length;i<l;++i) {
+    if ( gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4[i].getVariableString(gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4[i].getVariables().getFromIndex(0)) == "collectable" ) {
+        isConditionTrue_0 = true;
+        gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4[k] = gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4[i];
+        ++k;
+    }
+}
+gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4 */
+{for(var i = 0, len = gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4.length ;i < len;++i) {
+    gdjs.nodrizaAreaCode.GDtxt_9595ContentObjects4[i].getBehavior("Text").setText("none");
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("txt_qty"), gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4.length;i<l;++i) {
+    if ( gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4[i].getVariableString(gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4[i].getVariables().getFromIndex(0)) == "credits" ) {
+        isConditionTrue_0 = true;
+        gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4[k] = gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4[i];
+        ++k;
+    }
+}
+gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4 */
+{for(var i = 0, len = gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4.length ;i < len;++i) {
+    gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(18).getAsNumber()));
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("txt_qty"), gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4.length;i<l;++i) {
+    if ( gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4[i].getVariableString(gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4[i].getVariables().getFromIndex(0)) == "reputation" ) {
+        isConditionTrue_0 = true;
+        gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4[k] = gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4[i];
+        ++k;
+    }
+}
+gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4 */
+{for(var i = 0, len = gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4.length ;i < len;++i) {
+    gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects4[i].getBehavior("Text").setText("0");
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("txt_qty"), gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects3);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects3.length;i<l;++i) {
+    if ( gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects3[i].getVariableString(gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects3[i].getVariables().getFromIndex(0)) == "extra" ) {
+        isConditionTrue_0 = true;
+        gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects3[k] = gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects3[i];
+        ++k;
+    }
+}
+gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects3.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects3 */
+{for(var i = 0, len = gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects3.length ;i < len;++i) {
+    gdjs.nodrizaAreaCode.GDtxt_9595qtyObjects3[i].getBehavior("Text").setText("0");
+}
+}}
+
+}
+
+
 };gdjs.nodrizaAreaCode.asyncCallback16672844 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.nodrizaAreaCode.localVariables);
 gdjs.copyArray(runtimeScene.getObjects("img_marco"), gdjs.nodrizaAreaCode.GDimg_9595marcoObjects4);
@@ -281,7 +427,7 @@ for(var i = 0, len = gdjs.nodrizaAreaCode.GDimg_9595marcoObjects4.length ;i < le
 }
 }{runtimeScene.getScene().getVariables().getFromIndex(2).setBoolean(false);
 }}
-gdjs.nodrizaAreaCode.eventsList1 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList2 = function(runtimeScene) {
 
 {
 
@@ -306,7 +452,7 @@ gdjs.copyArray(asyncObjectsList.getObjects("btn_menuGame"), gdjs.nodrizaAreaCode
 }
 }{runtimeScene.getScene().getVariables().getFromIndex(1).setBoolean(false);
 }}
-gdjs.nodrizaAreaCode.eventsList2 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList3 = function(runtimeScene) {
 
 {
 
@@ -323,7 +469,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), 
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList3 = function(runtimeScene) {
+};gdjs.nodrizaAreaCode.eventsList4 = function(runtimeScene) {
 
 {
 
@@ -348,13 +494,33 @@ let isConditionTrue_0 = false;
 
 
 let isConditionTrue_0 = false;
+{
+
+{ //Subevents
+gdjs.nodrizaAreaCode.eventsList1(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getScene().getVariables().getFromIndex(2), false, false);
 if (isConditionTrue_0) {
 {runtimeScene.getScene().getVariables().getFromIndex(2).setBoolean(true);
 }
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList1(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 }
@@ -377,13 +543,13 @@ gdjs.nodrizaAreaCode.GDbtn_9595menuGameObjects2.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList2(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList4 = function(runtimeScene) {
+};gdjs.nodrizaAreaCode.eventsList5 = function(runtimeScene) {
 
 {
 
@@ -411,13 +577,13 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.createObjectsFromExternalLayout(runtimeScene, "pantalla recuento", 0, 0, 0);
 }
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList3(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList4(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList5 = function(runtimeScene) {
+};gdjs.nodrizaAreaCode.eventsList6 = function(runtimeScene) {
 
 {
 
@@ -444,7 +610,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList6 = function(runtimeScene) {
+};gdjs.nodrizaAreaCode.eventsList7 = function(runtimeScene) {
 
 {
 
@@ -466,14 +632,14 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGa
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList5(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList6(runtimeScene);} //End of subevents
 }
 
 }
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595nodriza_95959595areaObjects2Objects = Hashtable.newFrom({"img_nodriza_area": gdjs.nodrizaAreaCode.GDimg_9595nodriza_9595areaObjects2});
-gdjs.nodrizaAreaCode.eventsList7 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList8 = function(runtimeScene) {
 
 {
 
@@ -512,7 +678,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList8 = function(runtimeScene) {
+};gdjs.nodrizaAreaCode.eventsList9 = function(runtimeScene) {
 
 {
 
@@ -531,13 +697,13 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGa
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList7(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList8(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList9 = function(runtimeScene) {
+};gdjs.nodrizaAreaCode.eventsList10 = function(runtimeScene) {
 
 {
 
@@ -571,25 +737,25 @@ gdjs.nodrizaAreaCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.nodrizaAreaCode.eventsList4(runtimeScene);
+gdjs.nodrizaAreaCode.eventsList5(runtimeScene);
 }
 
 
 {
 
 
-gdjs.nodrizaAreaCode.eventsList6(runtimeScene);
+gdjs.nodrizaAreaCode.eventsList7(runtimeScene);
 }
 
 
 {
 
 
-gdjs.nodrizaAreaCode.eventsList8(runtimeScene);
+gdjs.nodrizaAreaCode.eventsList9(runtimeScene);
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList10 = function(runtimeScene) {
+};gdjs.nodrizaAreaCode.eventsList11 = function(runtimeScene) {
 
 {
 
@@ -611,7 +777,7 @@ if (isConditionTrue_0) {
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDtxt_95959595debug3Objects3Objects = Hashtable.newFrom({"txt_debug3": gdjs.nodrizaAreaCode.GDtxt_9595debug3Objects3});
 gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDbtn_95959595menuObjects3Objects = Hashtable.newFrom({"btn_menu": gdjs.nodrizaAreaCode.GDbtn_9595menuObjects3});
-gdjs.nodrizaAreaCode.eventsList11 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList12 = function(runtimeScene) {
 
 {
 
@@ -631,7 +797,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug3"), gdjs.nodrizaAreaCode.GDtxt
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.nodrizaAreaCode.localVariables);
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().getFromIndex(0), false);
 }}
-gdjs.nodrizaAreaCode.eventsList12 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList13 = function(runtimeScene) {
 
 {
 
@@ -647,7 +813,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.2)
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList13 = function(runtimeScene) {
+};gdjs.nodrizaAreaCode.eventsList14 = function(runtimeScene) {
 
 {
 
@@ -695,7 +861,7 @@ let isConditionTrue_0 = false;
 {
 
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList12(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList13(runtimeScene);} //End of subevents
 }
 
 }
@@ -706,7 +872,7 @@ gdjs.nodrizaAreaCode.asyncCallback16688252 = function (runtimeScene, asyncObject
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.nodrizaAreaCode.localVariables);
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().getFromIndex(0), false);
 }}
-gdjs.nodrizaAreaCode.eventsList14 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList15 = function(runtimeScene) {
 
 {
 
@@ -722,7 +888,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.2)
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList15 = function(runtimeScene) {
+};gdjs.nodrizaAreaCode.eventsList16 = function(runtimeScene) {
 
 {
 
@@ -743,14 +909,14 @@ let isConditionTrue_0 = false;
 {
 
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList14(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList15(runtimeScene);} //End of subevents
 }
 
 }
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595nodriza_95959595areaObjects4Objects = Hashtable.newFrom({"img_nodriza_area": gdjs.nodrizaAreaCode.GDimg_9595nodriza_9595areaObjects4});
-gdjs.nodrizaAreaCode.userFunc0xdc91c0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0xc6d7d8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Def
 setTimeout(()=>{
@@ -817,7 +983,7 @@ gdjs.nodrizaAreaCode.asyncCallback16691796 = function (runtimeScene, asyncObject
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.nodrizaAreaCode.localVariables);
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().getFromIndex(0), false);
 }}
-gdjs.nodrizaAreaCode.eventsList16 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList17 = function(runtimeScene) {
 
 {
 
@@ -833,7 +999,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.2)
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList17 = function(runtimeScene) {
+};gdjs.nodrizaAreaCode.eventsList18 = function(runtimeScene) {
 
 {
 
@@ -853,7 +1019,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_inventarioTienda"), gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDimg_9595inventarioTiendaObjects4);
-gdjs.nodrizaAreaCode.userFunc0xdc91c0(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0xc6d7d8(runtimeScene, objects);
 
 }
 
@@ -865,7 +1031,7 @@ let isConditionTrue_0 = false;
 {
 
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList16(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList17(runtimeScene);} //End of subevents
 }
 
 }
@@ -877,7 +1043,7 @@ gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595nodriza_9
 gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595nodriza_95959595areaObjects4Objects = Hashtable.newFrom({"img_nodriza_area": gdjs.nodrizaAreaCode.GDimg_9595nodriza_9595areaObjects4});
 gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595nodriza_95959595areaObjects4Objects = Hashtable.newFrom({"img_nodriza_area": gdjs.nodrizaAreaCode.GDimg_9595nodriza_9595areaObjects4});
 gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595nodriza_95959595areaObjects4Objects = Hashtable.newFrom({"img_nodriza_area": gdjs.nodrizaAreaCode.GDimg_9595nodriza_9595areaObjects4});
-gdjs.nodrizaAreaCode.eventsList18 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList19 = function(runtimeScene) {
 
 {
 
@@ -925,7 +1091,7 @@ gdjs.copyArray(runtimeScene.getObjects("neon"), gdjs.nodrizaAreaCode.GDneonObjec
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList19 = function(runtimeScene) {
+};gdjs.nodrizaAreaCode.eventsList20 = function(runtimeScene) {
 
 {
 
@@ -963,7 +1129,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_nodriza_area"), gdjs.nodrizaAreaCode
 }{gdjs.evtsExt__ScrapGameFunctions__ShowMenusLateral.func(runtimeScene, false, gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595nodriza_95959595areaObjects4Objects, true, "lateralMenuInv", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList18(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList19(runtimeScene);} //End of subevents
 }
 
 }
@@ -973,7 +1139,7 @@ gdjs.nodrizaAreaCode.eventsList18(runtimeScene);} //End of subevents
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.nodrizaAreaCode.localVariables);
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().getFromIndex(0), false);
 }}
-gdjs.nodrizaAreaCode.eventsList20 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList21 = function(runtimeScene) {
 
 {
 
@@ -989,7 +1155,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.2)
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList21 = function(runtimeScene) {
+};gdjs.nodrizaAreaCode.eventsList22 = function(runtimeScene) {
 
 {
 
@@ -1002,36 +1168,18 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug3"), gdjs.nodrizaAreaCode.GDtxt
 {gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.func(runtimeScene, gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDtxt_95959595debug3Objects4Objects, runtimeScene.getScene().getVariables().getFromIndex(1), gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDbtn_95959595menuObjects4Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList19(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-
-{ //Subevents
 gdjs.nodrizaAreaCode.eventsList20(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList22 = function(runtimeScene) {
-
 {
 
 
 let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getScene().getVariables().getFromIndex(0), false);
-if (isConditionTrue_0) {
-{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().getFromIndex(0), true);
-}
+{
+
 { //Subevents
 gdjs.nodrizaAreaCode.eventsList21(runtimeScene);} //End of subevents
 }
@@ -1044,6 +1192,24 @@ gdjs.nodrizaAreaCode.eventsList21(runtimeScene);} //End of subevents
 {
 
 
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getScene().getVariables().getFromIndex(0), false);
+if (isConditionTrue_0) {
+{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().getFromIndex(0), true);
+}
+{ //Subevents
+gdjs.nodrizaAreaCode.eventsList22(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.nodrizaAreaCode.eventsList24 = function(runtimeScene) {
+
+{
+
+
 
 }
 
@@ -1051,7 +1217,7 @@ gdjs.nodrizaAreaCode.eventsList21(runtimeScene);} //End of subevents
 {
 
 
-gdjs.nodrizaAreaCode.eventsList22(runtimeScene);
+gdjs.nodrizaAreaCode.eventsList23(runtimeScene);
 }
 
 
@@ -1134,7 +1300,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList24 = function(runtimeScene) {
+};gdjs.nodrizaAreaCode.eventsList25 = function(runtimeScene) {
 
 {
 
@@ -1165,13 +1331,13 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList23(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList24(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList25 = function(runtimeScene) {
+};gdjs.nodrizaAreaCode.eventsList26 = function(runtimeScene) {
 
 {
 
@@ -1189,7 +1355,7 @@ isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList11(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList12(runtimeScene);} //End of subevents
 }
 
 }
@@ -1235,7 +1401,7 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().getFromIndex(0), true);
 }
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList13(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList14(runtimeScene);} //End of subevents
 }
 
 }
@@ -1320,7 +1486,7 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().getFromIndex(0), true);
 }
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList15(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList16(runtimeScene);} //End of subevents
 }
 
 }
@@ -1366,7 +1532,7 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().getFromIndex(0), true);
 }
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList17(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList18(runtimeScene);} //End of subevents
 }
 
 }
@@ -1375,19 +1541,19 @@ gdjs.nodrizaAreaCode.eventsList17(runtimeScene);} //End of subevents
 {
 
 
-gdjs.nodrizaAreaCode.eventsList24(runtimeScene);
+gdjs.nodrizaAreaCode.eventsList25(runtimeScene);
 }
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595inventarioTiendaObjects2Objects = Hashtable.newFrom({"img_inventarioTienda": gdjs.nodrizaAreaCode.GDimg_9595inventarioTiendaObjects2});
 gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595jukeboxObjects4Objects = Hashtable.newFrom({"img_jukebox": gdjs.nodrizaAreaCode.GDimg_9595jukeboxObjects4});
-gdjs.nodrizaAreaCode.userFunc0xb445c0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0x8a4038 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 
 const txt = objects[0];
 txt.setString(" Vintage Jukebox \n 1800$");
 };
-gdjs.nodrizaAreaCode.eventsList26 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList27 = function(runtimeScene) {
 
 {
 
@@ -1416,7 +1582,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects2, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects5);
-gdjs.nodrizaAreaCode.userFunc0xb445c0(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0x8a4038(runtimeScene, objects);
 
 }
 
@@ -1440,12 +1606,12 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects2, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595lavaObjects4Objects = Hashtable.newFrom({"img_lava": gdjs.nodrizaAreaCode.GDimg_9595lavaObjects4});
-gdjs.nodrizaAreaCode.userFunc0xdce9c8 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0xc6dbf0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" Intergalactic Lava Lamp \n 1000$");
 };
-gdjs.nodrizaAreaCode.eventsList27 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList28 = function(runtimeScene) {
 
 {
 
@@ -1454,7 +1620,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects2, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects5);
-gdjs.nodrizaAreaCode.userFunc0xdce9c8(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0xc6dbf0(runtimeScene, objects);
 
 }
 
@@ -1478,12 +1644,12 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects2, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDneonObjects4Objects = Hashtable.newFrom({"neon": gdjs.nodrizaAreaCode.GDneonObjects4});
-gdjs.nodrizaAreaCode.userFunc0xe87640 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0xd894d8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" Space Wall Neon \n 1200$");
 };
-gdjs.nodrizaAreaCode.eventsList28 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList29 = function(runtimeScene) {
 
 {
 
@@ -1492,7 +1658,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects2, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects5);
-gdjs.nodrizaAreaCode.userFunc0xe87640(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0xd894d8(runtimeScene, objects);
 
 }
 
@@ -1516,12 +1682,12 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects2, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595billarObjects4Objects = Hashtable.newFrom({"img_billar": gdjs.nodrizaAreaCode.GDimg_9595billarObjects4});
-gdjs.nodrizaAreaCode.userFunc0x82a3e0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0x9d36f0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" Galactic Pool Table \n 3500$");
 };
-gdjs.nodrizaAreaCode.eventsList29 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList30 = function(runtimeScene) {
 
 {
 
@@ -1530,7 +1696,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects2, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects5);
-gdjs.nodrizaAreaCode.userFunc0x82a3e0(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0x9d36f0(runtimeScene, objects);
 
 }
 
@@ -1554,12 +1720,12 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects2, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595cebraObjects4Objects = Hashtable.newFrom({"img_cebra": gdjs.nodrizaAreaCode.GDimg_9595cebraObjects4});
-gdjs.nodrizaAreaCode.userFunc0x101ddb0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0x9d39f8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" Space Zebra Rug \n 2000$");
 };
-gdjs.nodrizaAreaCode.eventsList30 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList31 = function(runtimeScene) {
 
 {
 
@@ -1568,7 +1734,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects2, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects5);
-gdjs.nodrizaAreaCode.userFunc0x101ddb0(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0x9d39f8(runtimeScene, objects);
 
 }
 
@@ -1592,12 +1758,12 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects2, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595tigreObjects4Objects = Hashtable.newFrom({"img_tigre": gdjs.nodrizaAreaCode.GDimg_9595tigreObjects4});
-gdjs.nodrizaAreaCode.userFunc0xd266d0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0x7e80f0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" Cosmic Tiger Sofa \n 3500$");
 };
-gdjs.nodrizaAreaCode.eventsList31 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList32 = function(runtimeScene) {
 
 {
 
@@ -1606,7 +1772,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects2, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects5);
-gdjs.nodrizaAreaCode.userFunc0xd266d0(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0x7e80f0(runtimeScene, objects);
 
 }
 
@@ -1630,12 +1796,12 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects2, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595tienda_95959595powerup1Objects4Objects = Hashtable.newFrom({"img_tienda_powerup1": gdjs.nodrizaAreaCode.GDimg_9595tienda_9595powerup1Objects4});
-gdjs.nodrizaAreaCode.userFunc0xdce300 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0x8a3100 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" PowerUp Extend Time \n 3 x Hydrogen Cells \n 1 x Thermodynamic Vessel \n 700$");
 };
-gdjs.nodrizaAreaCode.eventsList32 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList33 = function(runtimeScene) {
 
 {
 
@@ -1644,7 +1810,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects2, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects5);
-gdjs.nodrizaAreaCode.userFunc0xdce300(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0x8a3100(runtimeScene, objects);
 
 }
 
@@ -1668,12 +1834,12 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects2, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595tienda_95959595powerup2Objects4Objects = Hashtable.newFrom({"img_tienda_powerup2": gdjs.nodrizaAreaCode.GDimg_9595tienda_9595powerup2Objects4});
-gdjs.nodrizaAreaCode.userFunc0xd8d680 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0x82b7c0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" PowerUp MotherShip  \n 2 x Fusion Cores \n 1 x Primary Capacitor \n 1000$");
 };
-gdjs.nodrizaAreaCode.eventsList33 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList34 = function(runtimeScene) {
 
 {
 
@@ -1682,7 +1848,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects2, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects5);
-gdjs.nodrizaAreaCode.userFunc0xd8d680(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0x82b7c0(runtimeScene, objects);
 
 }
 
@@ -1706,12 +1872,12 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects2, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595tienda_95959595powerup3Objects4Objects = Hashtable.newFrom({"img_tienda_powerup3": gdjs.nodrizaAreaCode.GDimg_9595tienda_9595powerup3Objects4});
-gdjs.nodrizaAreaCode.userFunc0x89ae58 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0xd268e8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" PowerUp Self Ship  \n 1 x Thermodynamic Vessel \n 1 x Fusion Core \n 1 x Primary Capacitor \n 1500$");
 };
-gdjs.nodrizaAreaCode.eventsList34 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList35 = function(runtimeScene) {
 
 {
 
@@ -1720,7 +1886,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects2, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects5);
-gdjs.nodrizaAreaCode.userFunc0x89ae58(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0xd268e8(runtimeScene, objects);
 
 }
 
@@ -1752,7 +1918,7 @@ gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595tigreObje
 gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595tienda_95959595powerup1Objects4Objects = Hashtable.newFrom({"img_tienda_powerup1": gdjs.nodrizaAreaCode.GDimg_9595tienda_9595powerup1Objects4});
 gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595tienda_95959595powerup2Objects4Objects = Hashtable.newFrom({"img_tienda_powerup2": gdjs.nodrizaAreaCode.GDimg_9595tienda_9595powerup2Objects4});
 gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595tienda_95959595powerup3Objects3Objects = Hashtable.newFrom({"img_tienda_powerup3": gdjs.nodrizaAreaCode.GDimg_9595tienda_9595powerup3Objects3});
-gdjs.nodrizaAreaCode.eventsList35 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList36 = function(runtimeScene) {
 
 {
 
@@ -1764,7 +1930,7 @@ isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.nodrizaAreaCode.mapO
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList26(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList27(runtimeScene);} //End of subevents
 }
 
 }
@@ -1791,7 +1957,7 @@ if (isConditionTrue_0) {
 }{gdjs.evtTools.sound.playSound(runtimeScene, "assets\\sounds\\sfx_simpleClick.wav", false, 10, 20);
 }
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList27(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList28(runtimeScene);} //End of subevents
 }
 
 }
@@ -1818,7 +1984,7 @@ if (isConditionTrue_0) {
 }{gdjs.evtTools.sound.playSound(runtimeScene, "assets\\sounds\\sfx_simpleClick.wav", false, 10, 20);
 }
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList28(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList29(runtimeScene);} //End of subevents
 }
 
 }
@@ -1845,7 +2011,7 @@ if (isConditionTrue_0) {
 }{gdjs.evtTools.sound.playSound(runtimeScene, "assets\\sounds\\sfx_simpleClick.wav", false, 10, 20);
 }
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList29(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList30(runtimeScene);} //End of subevents
 }
 
 }
@@ -1872,7 +2038,7 @@ if (isConditionTrue_0) {
 }{gdjs.evtTools.sound.playSound(runtimeScene, "assets\\sounds\\sfx_simpleClick.wav", false, 10, 20);
 }
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList30(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList31(runtimeScene);} //End of subevents
 }
 
 }
@@ -1899,7 +2065,7 @@ if (isConditionTrue_0) {
 }{gdjs.evtTools.sound.playSound(runtimeScene, "assets\\sounds\\sfx_simpleClick.wav", false, 10, 20);
 }
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList31(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList32(runtimeScene);} //End of subevents
 }
 
 }
@@ -1926,7 +2092,7 @@ if (isConditionTrue_0) {
 }{gdjs.evtTools.sound.playSound(runtimeScene, "assets\\sounds\\sfx_simpleClick.wav", false, 10, 20);
 }
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList32(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList33(runtimeScene);} //End of subevents
 }
 
 }
@@ -1953,7 +2119,7 @@ if (isConditionTrue_0) {
 }{gdjs.evtTools.sound.playSound(runtimeScene, "assets\\sounds\\sfx_simpleClick.wav", false, 10, 20);
 }
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList33(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList34(runtimeScene);} //End of subevents
 }
 
 }
@@ -1980,7 +2146,7 @@ if (isConditionTrue_0) {
 }{gdjs.evtTools.sound.playSound(runtimeScene, "assets\\sounds\\sfx_simpleClick.wav", false, 10, 20);
 }
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList34(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList35(runtimeScene);} //End of subevents
 }
 
 }
@@ -2193,7 +2359,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList36 = function(runtimeScene) {
+};gdjs.nodrizaAreaCode.eventsList37 = function(runtimeScene) {
 
 {
 
@@ -2223,7 +2389,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList37 = function(runtimeScene) {
+};gdjs.nodrizaAreaCode.eventsList38 = function(runtimeScene) {
 
 {
 
@@ -2239,29 +2405,29 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList36(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList37(runtimeScene);} //End of subevents
 }
 
-}
-
-
-};gdjs.nodrizaAreaCode.eventsList38 = function(runtimeScene) {
-
-{
-
-
-gdjs.nodrizaAreaCode.eventsList35(runtimeScene);
-}
-
-
-{
-
-
-gdjs.nodrizaAreaCode.eventsList37(runtimeScene);
 }
 
 
 };gdjs.nodrizaAreaCode.eventsList39 = function(runtimeScene) {
+
+{
+
+
+gdjs.nodrizaAreaCode.eventsList36(runtimeScene);
+}
+
+
+{
+
+
+gdjs.nodrizaAreaCode.eventsList38(runtimeScene);
+}
+
+
+};gdjs.nodrizaAreaCode.eventsList40 = function(runtimeScene) {
 
 {
 
@@ -2292,11 +2458,11 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.nodrizaAreaCode.eventsList38(runtimeScene);
+gdjs.nodrizaAreaCode.eventsList39(runtimeScene);
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList40 = function(runtimeScene) {
+};gdjs.nodrizaAreaCode.eventsList41 = function(runtimeScene) {
 
 {
 
@@ -2317,14 +2483,14 @@ for(var i = 0, len = gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects2.length ;i <
 }
 }
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList39(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList40(runtimeScene);} //End of subevents
 }
 
 }
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595inventarioTiendaObjects1Objects = Hashtable.newFrom({"img_inventarioTienda": gdjs.nodrizaAreaCode.GDimg_9595inventarioTiendaObjects1});
-gdjs.nodrizaAreaCode.eventsList41 = function(runtimeScene) {
+gdjs.nodrizaAreaCode.eventsList42 = function(runtimeScene) {
 
 {
 
@@ -2336,7 +2502,7 @@ isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.nodrizaAreaCode.mapO
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.nodrizaAreaCode.eventsList40(runtimeScene);} //End of subevents
+gdjs.nodrizaAreaCode.eventsList41(runtimeScene);} //End of subevents
 }
 
 }
@@ -2372,7 +2538,46 @@ for(var i = 0, len = gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects1.length ;i <
 }
 
 
-};gdjs.nodrizaAreaCode.eventsList42 = function(runtimeScene) {
+};gdjs.nodrizaAreaCode.eventsList43 = function(runtimeScene) {
+
+{
+
+
+gdjs.nodrizaAreaCode.eventsList11(runtimeScene);
+}
+
+
+{
+
+
+gdjs.nodrizaAreaCode.eventsList26(runtimeScene);
+}
+
+
+{
+
+
+gdjs.nodrizaAreaCode.eventsList42(runtimeScene);
+}
+
+
+};gdjs.nodrizaAreaCode.eventsList44 = function(runtimeScene) {
+
+{
+
+
+
+}
+
+
+{
+
+
+
+}
+
+
+};gdjs.nodrizaAreaCode.eventsList45 = function(runtimeScene) {
 
 {
 
@@ -2384,53 +2589,14 @@ gdjs.nodrizaAreaCode.eventsList10(runtimeScene);
 {
 
 
-gdjs.nodrizaAreaCode.eventsList25(runtimeScene);
-}
-
-
-{
-
-
-gdjs.nodrizaAreaCode.eventsList41(runtimeScene);
-}
-
-
-};gdjs.nodrizaAreaCode.eventsList43 = function(runtimeScene) {
-
-{
-
-
-
-}
-
-
-{
-
-
-
-}
-
-
-};gdjs.nodrizaAreaCode.eventsList44 = function(runtimeScene) {
-
-{
-
-
-gdjs.nodrizaAreaCode.eventsList9(runtimeScene);
-}
-
-
-{
-
-
-gdjs.nodrizaAreaCode.eventsList42(runtimeScene);
-}
-
-
-{
-
-
 gdjs.nodrizaAreaCode.eventsList43(runtimeScene);
+}
+
+
+{
+
+
+gdjs.nodrizaAreaCode.eventsList44(runtimeScene);
 }
 
 
@@ -2656,7 +2822,7 @@ gdjs.nodrizaAreaCode.GDtxt_9595gameVersionObjects4.length = 0;
 gdjs.nodrizaAreaCode.GDtxt_9595gameVersionObjects5.length = 0;
 gdjs.nodrizaAreaCode.GDtxt_9595gameVersionObjects6.length = 0;
 
-gdjs.nodrizaAreaCode.eventsList44(runtimeScene);
+gdjs.nodrizaAreaCode.eventsList45(runtimeScene);
 
 return;
 
