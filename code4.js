@@ -22,7 +22,7 @@ gdjs.splashScreenCode.GDtxt_9595gameVersionObjects3= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects4= [];
 
 
-gdjs.splashScreenCode.userFunc0x11504b0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.splashScreenCode.userFunc0xbe3ab8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definitions
 const bk = objects[0];
@@ -129,13 +129,15 @@ setTimeout(
             var scT = 0.01;
             var showTitulo = setInterval(
                 ()=> {
+                    /*
                     if (scT >= 1.5) {
                         scT = (scT + 0.005);
                     } else if (scT <= 1) {
                        scT = (scT + 0.001)*1.2; 
                     } else {
                         scT = (scT + 0.001)*1.001;
-                    }
+                    }*/
+                    scT = (scT + 0.001)*1.001;
                     tit.setScale(scT, scT);
                                                                                     //tdb.setString(tit.getScale())
                     if (scT >= 2) {
@@ -205,7 +207,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.G
 
 var objects = [];
 objects.push.apply(objects,gdjs.splashScreenCode.GDimg_9595backTitleObjects2);
-gdjs.splashScreenCode.userFunc0x11504b0(runtimeScene, objects);
+gdjs.splashScreenCode.userFunc0xbe3ab8(runtimeScene, objects);
 
 }
 

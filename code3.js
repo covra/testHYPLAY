@@ -79,7 +79,7 @@ gdjs.copyArray(runtimeScene.getObjects("CollisionDetect"), gdjs.testParallaxCode
 }
 
 
-};gdjs.testParallaxCode.userFunc0x89a6b0 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.testParallaxCode.userFunc0xd69cb8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definiciones
 const player = objects[0];
@@ -125,7 +125,7 @@ gdjs.copyArray(runtimeScene.getObjects("test_player"), gdjs.testParallaxCode.GDt
 
 var objects = [];
 objects.push.apply(objects,gdjs.testParallaxCode.GDtest_9595playerObjects2);
-gdjs.testParallaxCode.userFunc0x89a6b0(runtimeScene, objects);
+gdjs.testParallaxCode.userFunc0xd69cb8(runtimeScene, objects);
 
 }
 
@@ -239,7 +239,7 @@ gdjs.testParallaxCode.eventsList1(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.testParallaxCode.userFunc0xd28788 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.testParallaxCode.userFunc0xa5f5c0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const td = runtimeScene.getObjects("txt_debug2")[0];
 
@@ -286,7 +286,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_backGround"), gdjs.testParallaxCode.
 
 var objects = [];
 objects.push.apply(objects,gdjs.testParallaxCode.GDimg_9595backGroundObjects2);
-gdjs.testParallaxCode.userFunc0xd28788(runtimeScene, objects);
+gdjs.testParallaxCode.userFunc0xa5f5c0(runtimeScene, objects);
 
 }
 
@@ -354,7 +354,7 @@ gdjs.testParallaxCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.testParallaxCode.userFunc0xe89c20 = function GDJSInlineCode(runtimeScene) {
+};gdjs.testParallaxCode.userFunc0x911018 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 //Definitions
 var timeTransition = 50;
@@ -410,7 +410,7 @@ gdjs.testParallaxCode.eventsList7 = function(runtimeScene) {
 {
 
 
-gdjs.testParallaxCode.userFunc0xe89c20(runtimeScene);
+gdjs.testParallaxCode.userFunc0x911018(runtimeScene);
 
 }
 
