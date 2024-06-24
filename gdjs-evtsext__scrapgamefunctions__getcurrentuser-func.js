@@ -62,7 +62,7 @@ gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList0(runtimeScene, event
 }
 
 
-};gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0x7df040 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+};gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0xdf0da0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const tbd_user = eventsFunctionContext.getObjects("txtObject")[0];
 const keyString = "username";
@@ -79,7 +79,7 @@ gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList2 = function(runtimeS
 
 
 var objects = [];
-gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0x7df040(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0xdf0da0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
