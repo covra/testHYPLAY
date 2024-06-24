@@ -12,7 +12,7 @@ gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.GDtxtObjectObjects3= [];
 gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.GDtxtObjectObjects4= [];
 
 
-gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0xb3e7a8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0xde5c18 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const tbd_user = eventsFunctionContext.getObjects("txtObject")[0];
 tbd_user.setString(tbd_user.getString() + " >>accessToken: " + runtimeScene.getGame().getVariables().get("sessionAccessToken").getAsString())
@@ -22,7 +22,7 @@ gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList0 = function(runtimeS
 {
 
 
-gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0xb3e7a8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0xde5c18(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -55,6 +55,8 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.globalVariablesForExtension.getFromIndex(0).setString("https://api.hyplay.com/v1/users/me");
 }{eventsFunctionContext.globalVariablesForExtension.getFromIndex(1).setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("sessionAccessToken")));
+}{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(2).setString("");
+}{eventsFunctionContext.sceneVariablesForExtension.getFromIndex(1).setString("");
 }
 { //Subevents
 gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
@@ -80,7 +82,7 @@ gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList1(runtimeScene, event
 }
 
 
-};gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0x9fa368 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+};gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0x1260e18 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const tbd_user = eventsFunctionContext.getObjects("txtObject")[0];
 const keyString = "username";
@@ -98,7 +100,7 @@ gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList3 = function(runtimeS
 
 
 var objects = [];
-gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0x9fa368(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0x1260e18(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

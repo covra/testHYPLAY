@@ -117,7 +117,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.LeaderboardCode.userFunc0x8dded8 = function GDJSInlineCode(runtimeScene) {
+};gdjs.LeaderboardCode.userFunc0x98ac08 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 // Ref to score firebase collection ("scoresHyplay")
 let timestamp = gdjs.evtTools.runtimeScene.getTime("timestamp");
@@ -211,7 +211,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.LeaderboardCode.userFunc0x8dded8(runtimeScene);
+gdjs.LeaderboardCode.userFunc0x98ac08(runtimeScene);
 
 }
 
