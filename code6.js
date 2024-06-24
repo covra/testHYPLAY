@@ -25,7 +25,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_currentUser"), gdjs.testHYPLAYstorag
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.testHYPLAYstorageCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.func(runtimeScene, gdjs.testHYPLAYstorageCode.mapOfGDgdjs_9546testHYPLAYstorageCode_9546GDtxt_95959595currentUserObjects2Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.testHYPLAYstorageCode.asyncCallback12136844(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.func(runtimeScene, gdjs.testHYPLAYstorageCode.mapOfGDgdjs_9546testHYPLAYstorageCode_9546GDtxt_95959595currentUserObjects2Objects, runtimeScene.getScene().getVariables().getFromIndex(0), runtimeScene.getScene().getVariables().getFromIndex(1), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.testHYPLAYstorageCode.asyncCallback12136844(runtimeScene, asyncObjectsList)));
 }
 }
 

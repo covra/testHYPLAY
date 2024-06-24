@@ -20,7 +20,7 @@ gdjs.splashScreenCode.GDtxt_9595gameVersionObjects2= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects3= [];
 
 
-gdjs.splashScreenCode.userFunc0x903150 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.splashScreenCode.userFunc0x10f3740 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definitions
 const bk = objects[0];
@@ -231,7 +231,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.G
 
 var objects = [];
 objects.push.apply(objects,gdjs.splashScreenCode.GDimg_9595backTitleObjects1);
-gdjs.splashScreenCode.userFunc0x903150(runtimeScene, objects);
+gdjs.splashScreenCode.userFunc0x10f3740(runtimeScene, objects);
 
 }
 
