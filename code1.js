@@ -42,7 +42,7 @@ gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects4= [];
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects5= [];
 
 
-gdjs.SplashSceneCode.userFunc0xcea918 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0xcfc8c0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -136,7 +136,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
-gdjs.SplashSceneCode.userFunc0xcea918(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0xcfc8c0(runtimeScene, objects);
 
 }
 
@@ -220,7 +220,7 @@ gdjs.SplashSceneCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0xcd8d90 = function GDJSInlineCode(runtimeScene) {
+};gdjs.SplashSceneCode.userFunc0x93e190 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 setTimeout(()=>{
     //Get info variables from response
@@ -293,7 +293,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.SplashSceneCode.userFunc0xcd8d90(runtimeScene);
+gdjs.SplashSceneCode.userFunc0x93e190(runtimeScene);
 
 }
 
@@ -370,14 +370,17 @@ gdjs.SplashSceneCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0xec99c0 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.SplashSceneCode.userFunc0xcd0288 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
+
+
 
 let globalUserStruct = runtimeScene.getGame().getVariables().get("currentUser");
 let userKey = globalUserStruct.getChildNamed("username").getAsString();
 let tokenAuth = runtimeScene.getGame().getVariables().get("sessionAccessToken").getAsString();
 let url = "https://api.hyplay.com/v1/apps/ae6b8795-169f-40c9-bf60-a3736dceeffc/states?key=" + userKey;
 
+console.log("Fetching in " + url + " with token: " + tokenAuth + "    ...........");
 
 fetch(url, {
   method: "GET",
@@ -392,7 +395,7 @@ fetch(url, {
   .then((response) => response.json())
   .then((json) => {
       console.log(json.publicState.publicKey);
-      
+
   });
 };
 gdjs.SplashSceneCode.eventsList7 = function(runtimeScene, asyncObjectsList) {
@@ -403,7 +406,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects4);
-gdjs.SplashSceneCode.userFunc0xec99c0(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0xcd0288(runtimeScene, objects);
 
 }
 
@@ -423,7 +426,7 @@ gdjs.SplashSceneCode.eventsList8 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.SplashSceneCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(5), (runtimeScene) => (gdjs.SplashSceneCode.asyncCallback15415916(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(10), (runtimeScene) => (gdjs.SplashSceneCode.asyncCallback15415916(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -440,7 +443,8 @@ isConditionTrue_0 = false;
 {isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15542820);
 }
 if (isConditionTrue_0) {
-
+{gdjs.evtTools.debuggerTools.log("In 10 sec, fetch getAppState!", "info", "");
+}
 { //Subevents
 gdjs.SplashSceneCode.eventsList8(runtimeScene);} //End of subevents
 }
