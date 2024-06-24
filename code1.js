@@ -37,7 +37,7 @@ gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects4= [];
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects5= [];
 
 
-gdjs.SplashSceneCode.userFunc0xb38a68 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0xb4d890 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -100,7 +100,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
-gdjs.SplashSceneCode.userFunc0xb38a68(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0xb4d890(runtimeScene, objects);
 
 }
 
@@ -310,7 +310,7 @@ gdjs.SplashSceneCode.eventsList5(runtimeScene);} //End of subevents
 
 let isConditionTrue_0 = false;
 {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "testHYPLAYstorage", false);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "video", false);
 }}
 
 }
