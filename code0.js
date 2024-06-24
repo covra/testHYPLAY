@@ -460,7 +460,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), 
 }
 
 
-};gdjs.mainSceneCode.userFunc0x12573e0 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.mainSceneCode.userFunc0x967128 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definition
 const barra = objects[0];
@@ -555,7 +555,7 @@ gdjs.copyArray(runtimeScene.getObjects("bar_shifhtPower"), gdjs.mainSceneCode.GD
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDbar_9595shifhtPowerObjects2);
-gdjs.mainSceneCode.userFunc0x12573e0(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0x967128(runtimeScene, objects);
 
 }
 
@@ -922,7 +922,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.mainSceneCode.userFunc0x125e3b8 = function GDJSInlineCode(runtimeScene) {
+};gdjs.mainSceneCode.userFunc0xcecf58 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 //Definiciones
 var spawnPoint = runtimeScene.getVariables().get("scrapSpawnPoint");
@@ -960,13 +960,13 @@ gdjs.mainSceneCode.eventsList12 = function(runtimeScene) {
 {
 
 
-gdjs.mainSceneCode.userFunc0x125e3b8(runtimeScene);
+gdjs.mainSceneCode.userFunc0xcecf58(runtimeScene);
 
 }
 
 
 };gdjs.mainSceneCode.mapOfGDgdjs_9546mainSceneCode_9546GDimg_95959595test_95959595scrapObjects4Objects = Hashtable.newFrom({"img_test_scrap": gdjs.mainSceneCode.GDimg_9595test_9595scrapObjects4});
-gdjs.mainSceneCode.userFunc0x125f1f0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.mainSceneCode.userFunc0xadccb8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var thisScrap = objects[0];
 var rndIdx = gdjs.randomInRange(1,100);
@@ -1268,7 +1268,7 @@ gdjs.copyArray(gdjs.mainSceneCode.GDimg_9595test_9595scrapObjects4, gdjs.mainSce
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDimg_9595test_9595scrapObjects5);
-gdjs.mainSceneCode.userFunc0x125f1f0(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0xadccb8(runtimeScene, objects);
 
 }
 
@@ -1436,7 +1436,7 @@ gdjs.mainSceneCode.eventsList25(runtimeScene);
 }
 
 
-};gdjs.mainSceneCode.userFunc0x1261e50 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.mainSceneCode.userFunc0x1266590 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Defs
 const timeIntervalAsteroids = 40000; 
@@ -1525,7 +1525,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug3"), gdjs.mainSceneCode.GDtxt_9
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDtxt_9595debug3Objects2);
-gdjs.mainSceneCode.userFunc0x1261e50(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0x1266590(runtimeScene, objects);
 
 }
 
@@ -4638,7 +4638,7 @@ gdjs.mainSceneCode.eventsList101(runtimeScene);
 }
 
 
-};gdjs.mainSceneCode.userFunc0x127cfb8 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.mainSceneCode.userFunc0x9a4000 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definiciones
 const barra = objects[0];
@@ -4914,7 +4914,7 @@ gdjs.copyArray(runtimeScene.getObjects("bar_recycle"), gdjs.mainSceneCode.GDbar_
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDbar_9595recycleObjects1);
-gdjs.mainSceneCode.userFunc0x127cfb8(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0x9a4000(runtimeScene, objects);
 
 }
 
@@ -5269,7 +5269,7 @@ gdjs.mainSceneCode.eventsList109(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.mainSceneCode.userFunc0x1282688 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.mainSceneCode.userFunc0xa1af70 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const td = runtimeScene.getObjects("txt_debug2")[0];
 
@@ -5316,7 +5316,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_backGround"), gdjs.mainSceneCode.GDi
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDimg_9595backGroundObjects2);
-gdjs.mainSceneCode.userFunc0x1282688(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0xa1af70(runtimeScene, objects);
 
 }
 
@@ -5461,7 +5461,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.mainSceneCode.userFunc0x1283e38 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.mainSceneCode.userFunc0x9562e8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Calculo dato fps
 const ta = runtimeScene.getVariables().get("fps_tAntes").getAsNumber(); //get last
@@ -5498,12 +5498,12 @@ gdjs.copyArray(runtimeScene.getObjects("txt_fps"), gdjs.mainSceneCode.GDtxt_9595
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDtxt_9595fpsObjects2);
-gdjs.mainSceneCode.userFunc0x1283e38(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0x9562e8(runtimeScene, objects);
 
 }
 
 
-};gdjs.mainSceneCode.userFunc0x1284f70 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.mainSceneCode.userFunc0x901cb0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const tdb = runtimeScene.getObjects("txt_debug5")[0];
 let idx = objects.length;
@@ -5713,7 +5713,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_test_scrap"), gdjs.mainSceneCode.GDi
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDimg_9595test_9595scrapObjects2);
-gdjs.mainSceneCode.userFunc0x1284f70(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0x901cb0(runtimeScene, objects);
 
 }
 

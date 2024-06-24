@@ -17,13 +17,6 @@ gdjs.evtsExt__ScrapGameFunctions__ToggleMenuVisibility.eventsList0 = function(ru
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 {
 {gdjs.evtTools.variable.toggleVariableBoolean(eventsFunctionContext.sceneVariablesForExtension.getFromIndex(0));

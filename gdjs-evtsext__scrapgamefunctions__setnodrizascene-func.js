@@ -42,20 +42,6 @@ gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene.eventsList0(runtimeScene, even
 }
 
 
-{
-
-
-
-}
-
-
-{
-
-
-
-}
-
-
 };gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene.eventsList2 = function(runtimeScene, eventsFunctionContext) {
 
 {
