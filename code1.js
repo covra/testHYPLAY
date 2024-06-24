@@ -30,6 +30,11 @@ gdjs.SplashSceneCode.GDskipObjects2= [];
 gdjs.SplashSceneCode.GDskipObjects3= [];
 gdjs.SplashSceneCode.GDskipObjects4= [];
 gdjs.SplashSceneCode.GDskipObjects5= [];
+gdjs.SplashSceneCode.GDlogo_9595hyplayObjects1= [];
+gdjs.SplashSceneCode.GDlogo_9595hyplayObjects2= [];
+gdjs.SplashSceneCode.GDlogo_9595hyplayObjects3= [];
+gdjs.SplashSceneCode.GDlogo_9595hyplayObjects4= [];
+gdjs.SplashSceneCode.GDlogo_9595hyplayObjects5= [];
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects1= [];
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects2= [];
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects3= [];
@@ -37,7 +42,7 @@ gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects4= [];
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects5= [];
 
 
-gdjs.SplashSceneCode.userFunc0xb4d890 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0x10b1970 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -100,7 +105,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
-gdjs.SplashSceneCode.userFunc0xb4d890(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0x10b1970(runtimeScene, objects);
 
 }
 
@@ -141,7 +146,7 @@ gdjs.SplashSceneCode.eventsList0(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.asyncCallback15809284 = function (runtimeScene, asyncObjectsList) {
+};gdjs.SplashSceneCode.asyncCallback15847644 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.SplashSceneCode.localVariables);
 }
 gdjs.SplashSceneCode.eventsList2 = function(runtimeScene) {
@@ -153,7 +158,7 @@ gdjs.SplashSceneCode.eventsList2 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.SplashSceneCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "HYPLAYGetUser", runtimeScene.getScene().getVariables().getFromIndex(1), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.SplashSceneCode.asyncCallback15809284(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteRequest.func(runtimeScene, "HYPLAYGetUser", runtimeScene.getScene().getVariables().getFromIndex(1), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.SplashSceneCode.asyncCallback15847644(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -231,7 +236,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.SplashSceneCode.asyncCallback15816732 = function (runtimeScene, asyncObjectsList) {
+};gdjs.SplashSceneCode.asyncCallback15855092 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.SplashSceneCode.localVariables);
 {gdjs.evtTools.debuggerTools.log("Response from hyplay: " + runtimeScene.getScene().getVariables().getFromIndex(1).getAsString(), "info", "");
 }
@@ -247,7 +252,7 @@ gdjs.SplashSceneCode.eventsList5 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.SplashSceneCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ReadResponseJSON.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1), runtimeScene.getScene().getVariables().getFromIndex(2), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.SplashSceneCode.asyncCallback15816732(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ReadResponseJSON.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1), runtimeScene.getScene().getVariables().getFromIndex(2), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.SplashSceneCode.asyncCallback15855092(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -284,7 +289,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__AdvancedHTTP__ResponseSuccess.func(runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(1), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15815732);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15854092);
 }
 }
 if (isConditionTrue_0) {
@@ -316,7 +321,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.SplashSceneCode.asyncCallback15821084 = function (runtimeScene, asyncObjectsList) {
+};gdjs.SplashSceneCode.asyncCallback15859540 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.SplashSceneCode.localVariables);
 gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
 {for(var i = 0, len = gdjs.SplashSceneCode.GDtxt_9595debug2Objects2.length ;i < len;++i) {
@@ -335,7 +340,7 @@ gdjs.SplashSceneCode.eventsList8 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.SplashSceneCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.SplashSceneCode.asyncCallback15821084(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.SplashSceneCode.asyncCallback15859540(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -375,7 +380,7 @@ isConditionTrue_0 = isConditionTrue_1;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(13664532);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15858852);
 }
 }
 if (isConditionTrue_0) {
@@ -405,7 +410,7 @@ for (var i = 0, k = 0, l = gdjs.SplashSceneCode.GDloginObjects2.length;i<l;++i) 
 gdjs.SplashSceneCode.GDloginObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15806676);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15845036);
 }
 }
 if (isConditionTrue_0) {
@@ -505,6 +510,11 @@ gdjs.SplashSceneCode.GDskipObjects2.length = 0;
 gdjs.SplashSceneCode.GDskipObjects3.length = 0;
 gdjs.SplashSceneCode.GDskipObjects4.length = 0;
 gdjs.SplashSceneCode.GDskipObjects5.length = 0;
+gdjs.SplashSceneCode.GDlogo_9595hyplayObjects1.length = 0;
+gdjs.SplashSceneCode.GDlogo_9595hyplayObjects2.length = 0;
+gdjs.SplashSceneCode.GDlogo_9595hyplayObjects3.length = 0;
+gdjs.SplashSceneCode.GDlogo_9595hyplayObjects4.length = 0;
+gdjs.SplashSceneCode.GDlogo_9595hyplayObjects5.length = 0;
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects1.length = 0;
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects2.length = 0;
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects3.length = 0;

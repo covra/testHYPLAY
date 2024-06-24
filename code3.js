@@ -20,7 +20,7 @@ gdjs.splashScreenCode.GDtxt_9595gameVersionObjects2= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects3= [];
 
 
-gdjs.splashScreenCode.userFunc0x8f6010 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.splashScreenCode.userFunc0x1100550 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definitions
 const bk = objects[0];
@@ -37,7 +37,7 @@ const paramLineW = "lineWidth";
 const nextScene = "SplashScene";
 
 //Starting point
-var sc = 0.8;
+var sc = 1;
 var ease = 0;
 var animIncr = 0;
 var progress = 0;
@@ -231,7 +231,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.G
 
 var objects = [];
 objects.push.apply(objects,gdjs.splashScreenCode.GDimg_9595backTitleObjects1);
-gdjs.splashScreenCode.userFunc0x8f6010(runtimeScene, objects);
+gdjs.splashScreenCode.userFunc0x1100550(runtimeScene, objects);
 
 }
 
@@ -245,7 +245,7 @@ gdjs.splashScreenCode.eventsList0(runtimeScene);
 }
 
 
-};gdjs.splashScreenCode.asyncCallback15947212 = function (runtimeScene, asyncObjectsList) {
+};gdjs.splashScreenCode.asyncCallback15988524 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.splashScreenCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "SplashScene", true);
 }}
@@ -258,7 +258,7 @@ gdjs.splashScreenCode.eventsList2 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.splashScreenCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.splashScreenCode.asyncCallback15947212(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.splashScreenCode.asyncCallback15988524(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -309,7 +309,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15947292);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15988604);
 }
 }
 if (isConditionTrue_0) {
