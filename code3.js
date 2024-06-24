@@ -12,12 +12,15 @@ gdjs.splashScreenCode.GDtxt_9595debugObjects3= [];
 gdjs.splashScreenCode.GDimg_9595titleNeonObjects1= [];
 gdjs.splashScreenCode.GDimg_9595titleNeonObjects2= [];
 gdjs.splashScreenCode.GDimg_9595titleNeonObjects3= [];
+gdjs.splashScreenCode.GDspr_9595fadeObjObjects1= [];
+gdjs.splashScreenCode.GDspr_9595fadeObjObjects2= [];
+gdjs.splashScreenCode.GDspr_9595fadeObjObjects3= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects1= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects2= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects3= [];
 
 
-gdjs.splashScreenCode.userFunc0x7c6da8 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.splashScreenCode.userFunc0x10fc968 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definitions
 const bk = objects[0];
@@ -199,6 +202,20 @@ gdjs.splashScreenCode.eventsList0 = function(runtimeScene) {
 
 let isConditionTrue_0 = false;
 {
+gdjs.copyArray(runtimeScene.getObjects("spr_fadeObj"), gdjs.splashScreenCode.GDspr_9595fadeObjObjects2);
+{for(var i = 0, len = gdjs.splashScreenCode.GDspr_9595fadeObjObjects2.length ;i < len;++i) {
+    gdjs.splashScreenCode.GDspr_9595fadeObjObjects2[i].getBehavior("Tween").addObjectOpacityTween2("top", 0, "easeInSine", 1.5, true);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
 gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.GDimg_9595backTitleObjects2);
 {for(var i = 0, len = gdjs.splashScreenCode.GDimg_9595backTitleObjects2.length ;i < len;++i) {
     gdjs.splashScreenCode.GDimg_9595backTitleObjects2[i].getBehavior("Opacity").setOpacity(0);
@@ -214,7 +231,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.G
 
 var objects = [];
 objects.push.apply(objects,gdjs.splashScreenCode.GDimg_9595backTitleObjects1);
-gdjs.splashScreenCode.userFunc0x7c6da8(runtimeScene, objects);
+gdjs.splashScreenCode.userFunc0x10fc968(runtimeScene, objects);
 
 }
 
@@ -228,7 +245,7 @@ gdjs.splashScreenCode.eventsList0(runtimeScene);
 }
 
 
-};gdjs.splashScreenCode.asyncCallback15934932 = function (runtimeScene, asyncObjectsList) {
+};gdjs.splashScreenCode.asyncCallback15947212 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.splashScreenCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "SplashScene", true);
 }}
@@ -241,7 +258,7 @@ gdjs.splashScreenCode.eventsList2 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.splashScreenCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.splashScreenCode.asyncCallback15934932(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.splashScreenCode.asyncCallback15947212(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -292,7 +309,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15935012);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15947292);
 }
 }
 if (isConditionTrue_0) {
@@ -322,6 +339,9 @@ gdjs.splashScreenCode.GDtxt_9595debugObjects3.length = 0;
 gdjs.splashScreenCode.GDimg_9595titleNeonObjects1.length = 0;
 gdjs.splashScreenCode.GDimg_9595titleNeonObjects2.length = 0;
 gdjs.splashScreenCode.GDimg_9595titleNeonObjects3.length = 0;
+gdjs.splashScreenCode.GDspr_9595fadeObjObjects1.length = 0;
+gdjs.splashScreenCode.GDspr_9595fadeObjObjects2.length = 0;
+gdjs.splashScreenCode.GDspr_9595fadeObjObjects3.length = 0;
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects1.length = 0;
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects2.length = 0;
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects3.length = 0;
