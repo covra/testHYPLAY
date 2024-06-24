@@ -42,7 +42,7 @@ gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects4= [];
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects5= [];
 
 
-gdjs.SplashSceneCode.userFunc0xee7af8 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0x913ea0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -95,26 +95,6 @@ gdjs.SplashSceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
-
-var objects = [];
-objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
-gdjs.SplashSceneCode.userFunc0xee7af8(runtimeScene, objects);
-
-}
-
-
-};gdjs.SplashSceneCode.eventsList1 = function(runtimeScene) {
-
-{
-
-
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.SplashSceneCode.GDloginObjects2, gdjs.SplashSceneCode.GDloginObjects3);
@@ -132,13 +112,58 @@ gdjs.copyArray(gdjs.SplashSceneCode.GDloginObjects2, gdjs.SplashSceneCode.GDlogi
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("txt_debug"), gdjs.SplashSceneCode.GDtxt_9595debugObjects2);
+gdjs.copyArray(runtimeScene.getObjects("txt_debug"), gdjs.SplashSceneCode.GDtxt_9595debugObjects3);
 {gdjs.evtTools.camera.hideLayer(runtimeScene, "IconLayer");
 }{gdjs.evtTools.camera.hideLayer(runtimeScene, "Butons");
-}{for(var i = 0, len = gdjs.SplashSceneCode.GDtxt_9595debugObjects2.length ;i < len;++i) {
-    gdjs.SplashSceneCode.GDtxt_9595debugObjects2[i].setColor("255;255;255");
+}{for(var i = 0, len = gdjs.SplashSceneCode.GDtxt_9595debugObjects3.length ;i < len;++i) {
+    gdjs.SplashSceneCode.GDtxt_9595debugObjects3[i].setColor("255;255;255");
+}
+}}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
+
+var objects = [];
+objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
+gdjs.SplashSceneCode.userFunc0x913ea0(runtimeScene, objects);
+
+}
+
+
+};gdjs.SplashSceneCode.eventsList1 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("login"), gdjs.SplashSceneCode.GDloginObjects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.SplashSceneCode.GDloginObjects2.length;i<l;++i) {
+    if ( gdjs.SplashSceneCode.GDloginObjects2[i].IsPressed((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.SplashSceneCode.GDloginObjects2[k] = gdjs.SplashSceneCode.GDloginObjects2[i];
+        ++k;
+    }
+}
+gdjs.SplashSceneCode.GDloginObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15845036);
 }
 }
+if (isConditionTrue_0) {
+
 { //Subevents
 gdjs.SplashSceneCode.eventsList0(runtimeScene);} //End of subevents
 }
@@ -227,10 +252,38 @@ let isConditionTrue_0 = false;
 {
 
 
+
+}
+
+
+{
+
+
 let isConditionTrue_0 = false;
 {
 {runtimeScene.getGame().getVariables().getFromIndex(2).getChild("id").setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(2).getChild("id")));
 }{runtimeScene.getGame().getVariables().getFromIndex(2).getChild("username").setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(2).getChild("username")));
+}}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{gdjs.evtTools.debuggerTools.log("id: " + gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(2).getChild("id").getAsNumber()), "info", "info");
+}{gdjs.evtTools.debuggerTools.log("username: " + gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(2).getChild("username").getAsNumber()), "info", "info");
+}{gdjs.evtTools.debuggerTools.log("token: " + gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber()), "info", "info");
+}{gdjs.evtTools.debuggerTools.log("gameID: " + gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(21).getAsNumber()), "info", "info");
 }}
 
 }
@@ -277,6 +330,13 @@ if (isConditionTrue_0) {
 { //Subevents
 gdjs.SplashSceneCode.eventsList3(runtimeScene);} //End of subevents
 }
+
+}
+
+
+{
+
+
 
 }
 
@@ -396,29 +456,8 @@ gdjs.SplashSceneCode.eventsList9(runtimeScene);} //End of subevents
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("login"), gdjs.SplashSceneCode.GDloginObjects2);
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.SplashSceneCode.GDloginObjects2.length;i<l;++i) {
-    if ( gdjs.SplashSceneCode.GDloginObjects2[i].IsPressed((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.SplashSceneCode.GDloginObjects2[k] = gdjs.SplashSceneCode.GDloginObjects2[i];
-        ++k;
-    }
-}
-gdjs.SplashSceneCode.GDloginObjects2.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15845036);
-}
-}
-if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.SplashSceneCode.eventsList1(runtimeScene);} //End of subevents
-}
-
+gdjs.SplashSceneCode.eventsList1(runtimeScene);
 }
 
 
