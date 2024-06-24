@@ -42,7 +42,7 @@ gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects4= [];
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects5= [];
 
 
-gdjs.SplashSceneCode.userFunc0xc21850 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0x8d27a0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -136,7 +136,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
-gdjs.SplashSceneCode.userFunc0xc21850(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0x8d27a0(runtimeScene, objects);
 
 }
 
@@ -220,7 +220,42 @@ gdjs.SplashSceneCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.eventsList4 = function(runtimeScene, asyncObjectsList) {
+};gdjs.SplashSceneCode.userFunc0x922e40 = function GDJSInlineCode(runtimeScene) {
+"use strict";
+
+setTimeout(()=>{
+    //Get info variables from response
+    let responseObject = runtimeScene.getVariables().get("responseGetUser");
+    let id = responseObject.getChildNamed("id").getAsString();
+    let username = responseObject.getChildNamed("username").getAsString();
+
+    //Log response
+    console.group("userData from response");
+        console.log("id: ", id);
+        console.log("username: ", username);
+    console.groupEnd();
+
+    //Pass variables data
+    let globalUserStruct = runtimeScene.getGame().getVariables().get("currentUser");
+    globalUserStruct.getChildNamed("id").setString(id);
+    globalUserStruct.getChildNamed("username").setString(id);
+
+    //Get info variables from response
+    let idGlobal = globalUserStruct.getChildNamed("id").getAsString();
+    let usernameGlobal = globalUserStruct.getChildNamed("username").getAsString();
+
+    //Log Global
+    console.group("userData from Global");
+        console.log("id: ", idGlobal);
+        console.log("username: ", usernameGlobal);
+    console.groupEnd();
+
+    //Token
+    let tokenAuth = runtimeScene.getGame().getVariables().get("sessionAccessToken").getAsString();
+    console.log("Token Global: ", tokenAuth);
+},250);
+};
+gdjs.SplashSceneCode.eventsList4 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -259,11 +294,6 @@ let isConditionTrue_0 = false;
 {
 
 
-let isConditionTrue_0 = false;
-{
-{runtimeScene.getGame().getVariables().getFromIndex(2).getChild("id").setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(2).getChild("id")));
-}{runtimeScene.getGame().getVariables().getFromIndex(2).getChild("username").setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().getFromIndex(2).getChild("username")));
-}}
 
 }
 
@@ -278,13 +308,14 @@ let isConditionTrue_0 = false;
 {
 
 
-let isConditionTrue_0 = false;
+
+}
+
+
 {
-{gdjs.evtTools.debuggerTools.log("id: " + gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(2).getChild("id").getAsNumber()), "info", "info");
-}{gdjs.evtTools.debuggerTools.log("username: " + gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(2).getChild("username").getAsNumber()), "info", "info");
-}{gdjs.evtTools.debuggerTools.log("token: " + gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber()), "info", "info");
-}{gdjs.evtTools.debuggerTools.log("gameID: " + gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(21).getAsNumber()), "info", "info");
-}}
+
+
+gdjs.SplashSceneCode.userFunc0x922e40(runtimeScene);
 
 }
 
