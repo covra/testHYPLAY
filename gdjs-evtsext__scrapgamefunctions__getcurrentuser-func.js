@@ -38,8 +38,8 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteR
 
 let isConditionTrue_0 = false;
 {
-{eventsFunctionContext.globalVariablesForExtension.getFromIndex(0).setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("game_param_endPoint_users")));
-}{eventsFunctionContext.globalVariablesForExtension.getFromIndex(0).setString(eventsFunctionContext.globalVariablesForExtension.getFromIndex(0).getAsString() + "/me");
+{eventsFunctionContext.globalVariablesForExtension.getFromIndex(0).setString("https://api.hyplay.com/v1/users/me");
+}{eventsFunctionContext.globalVariablesForExtension.getFromIndex(1).setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("sessionAccessToken")));
 }}
 
 }
@@ -50,10 +50,10 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 {
-{gdjs.evtsExt__AdvancedHTTP__CreateRequest.func(runtimeScene, "getCurrentUser", eventsFunctionContext.globalVariablesForExtension.getFromIndex(0).getAsString(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__AdvancedHTTP__CreateRequest.func(runtimeScene, "getCurrentUser", "https://api.hyplay.com/v1/users/me", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__AdvancedHTTP__SetRequestMethod.func(runtimeScene, "getCurrentUser", "GET", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, "application/json", "getCurrentUser", "accept", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, "application/json", "getCurrentUser", "x-session-authorization", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, eventsFunctionContext.globalVariablesForExtension.getFromIndex(1).getAsString(), "getCurrentUser", "x-session-authorization", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 { //Subevents
 gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
@@ -62,7 +62,7 @@ gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList0(runtimeScene, event
 }
 
 
-};gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0xe188c0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+};gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0x7df040 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const tbd_user = eventsFunctionContext.getObjects("txtObject")[0];
 const keyString = "username";
@@ -79,7 +79,7 @@ gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList2 = function(runtimeS
 
 
 var objects = [];
-gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0xe188c0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0x7df040(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -113,7 +113,8 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ReadResp
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(15276196);
+}
 if (isConditionTrue_0) {
 
 { //Subevents
