@@ -12,10 +12,25 @@ gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.GDtxtObjectObjects3= [];
 gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.GDtxtObjectObjects4= [];
 
 
-gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.asyncCallback9668612 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0xb3e7a8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+"use strict";
+const tbd_user = eventsFunctionContext.getObjects("txtObject")[0];
+tbd_user.setString(tbd_user.getString() + " >>accessToken: " + runtimeScene.getGame().getVariables().get("sessionAccessToken").getAsString())
+};
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0xb3e7a8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+
+}
+
+
+};gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.asyncCallback9668612 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(eventsFunctionContext.localVariables);
 }
-gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList1 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
@@ -31,7 +46,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ExecuteR
 }
 
 
-};gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList1 = function(runtimeScene, eventsFunctionContext) {
+};gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList2 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
@@ -40,7 +55,10 @@ let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.globalVariablesForExtension.getFromIndex(0).setString("https://api.hyplay.com/v1/users/me");
 }{eventsFunctionContext.globalVariablesForExtension.getFromIndex(1).setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("sessionAccessToken")));
-}}
+}
+{ //Subevents
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
+}
 
 }
 
@@ -53,33 +71,34 @@ let isConditionTrue_0 = false;
 {gdjs.evtsExt__AdvancedHTTP__CreateRequest.func(runtimeScene, "getCurrentUser", "https://api.hyplay.com/v1/users/me", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__AdvancedHTTP__SetRequestMethod.func(runtimeScene, "getCurrentUser", "GET", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, "application/json", "getCurrentUser", "accept", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, eventsFunctionContext.globalVariablesForExtension.getFromIndex(1).getAsString(), "getCurrentUser", "x-session-authorization", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__AdvancedHTTP__SetRequestHeader.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().get("sessionAccessToken")), "getCurrentUser", "x-session-authorization", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 { //Subevents
-gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList1(runtimeScene, eventsFunctionContext);} //End of subevents
 }
 
 }
 
 
-};gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0x10f20e8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+};gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0x9fa368 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const tbd_user = eventsFunctionContext.getObjects("txtObject")[0];
 const keyString = "username";
 const responseObject = runtimeScene.getVariables().get("responseObject");
+tbd_user.setString(tbd_user.getString() + " >> " + responseObject);
 tbd_user.setString(tbd_user.getString() + " >> [" + responseObject.getChildrenCount()+ "] datos");
 tbd_user.setString(tbd_user.getString() + " >> [" + keyString + "]: " + responseObject.getChildNamed(keyString).getAsString());
 
 
 
 };
-gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList2 = function(runtimeScene, eventsFunctionContext, asyncObjectsList) {
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList3 = function(runtimeScene, eventsFunctionContext, asyncObjectsList) {
 
 {
 
 
 var objects = [];
-gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0x10f20e8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0x9fa368(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -88,9 +107,9 @@ gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.userFunc0x10f20e8(runtimeScene,
 asyncObjectsList.restoreLocalVariablesContainers(eventsFunctionContext.localVariables);
 
 { //Subevents
-gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList2(runtimeScene, eventsFunctionContext, asyncObjectsList);} //End of subevents
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList3(runtimeScene, eventsFunctionContext, asyncObjectsList);} //End of subevents
 }
-gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList3 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList4 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
@@ -106,7 +125,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__AdvancedHTTP__ReadResp
 }
 
 
-};gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList4 = function(runtimeScene, eventsFunctionContext) {
+};gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList5 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
@@ -118,7 +137,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList1(runtimeScene, eventsFunctionContext);} //End of subevents
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList2(runtimeScene, eventsFunctionContext);} //End of subevents
 }
 
 }
@@ -138,18 +157,9 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList3(runtimeScene, eventsFunctionContext);} //End of subevents
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList4(runtimeScene, eventsFunctionContext);} //End of subevents
 }
 
-}
-
-
-};gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList5 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList4(runtimeScene, eventsFunctionContext);
 }
 
 
@@ -159,6 +169,15 @@ gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList4(runtimeScene, event
 
 
 gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList5(runtimeScene, eventsFunctionContext);
+}
+
+
+};gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList7 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList6(runtimeScene, eventsFunctionContext);
 }
 
 
@@ -225,7 +244,7 @@ gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.GDtxtObjectObjects2.length = 0;
 gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.GDtxtObjectObjects3.length = 0;
 gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.GDtxtObjectObjects4.length = 0;
 
-gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList6(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.eventsList7(runtimeScene, eventsFunctionContext);
 
 return eventsFunctionContext.task
 }
