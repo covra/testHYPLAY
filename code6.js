@@ -11,7 +11,7 @@ gdjs.testHYPLAYstorageCode.GDtxt_9595gameVersionObjects2= [];
 gdjs.testHYPLAYstorageCode.GDtxt_9595gameVersionObjects3= [];
 
 
-gdjs.testHYPLAYstorageCode.asyncCallback17504196 = function (runtimeScene, asyncObjectsList) {
+gdjs.testHYPLAYstorageCode.asyncCallback12136844 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.testHYPLAYstorageCode.localVariables);
 }
 gdjs.testHYPLAYstorageCode.mapOfGDgdjs_9546testHYPLAYstorageCode_9546GDtxt_95959595currentUserObjects2Objects = Hashtable.newFrom({"txt_currentUser": gdjs.testHYPLAYstorageCode.GDtxt_9595currentUserObjects2});
@@ -25,7 +25,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_currentUser"), gdjs.testHYPLAYstorag
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.testHYPLAYstorageCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.func(runtimeScene, gdjs.testHYPLAYstorageCode.mapOfGDgdjs_9546testHYPLAYstorageCode_9546GDtxt_95959595currentUserObjects2Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.testHYPLAYstorageCode.asyncCallback17504196(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__ScrapGameFunctions__getCurrentUser.func(runtimeScene, gdjs.testHYPLAYstorageCode.mapOfGDgdjs_9546testHYPLAYstorageCode_9546GDtxt_95959595currentUserObjects2Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.testHYPLAYstorageCode.asyncCallback12136844(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -33,18 +33,6 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__ScrapGameFunctions__ge
 
 
 };gdjs.testHYPLAYstorageCode.eventsList1 = function(runtimeScene) {
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-}
-
-}
-
-
-};gdjs.testHYPLAYstorageCode.eventsList2 = function(runtimeScene) {
 
 {
 
@@ -59,14 +47,43 @@ gdjs.testHYPLAYstorageCode.eventsList0(runtimeScene);} //End of subevents
 }
 
 
+};gdjs.testHYPLAYstorageCode.eventsList2 = function(runtimeScene) {
+
 {
 
 
-gdjs.testHYPLAYstorageCode.eventsList1(runtimeScene);
+let isConditionTrue_0 = false;
+{
+}
+
 }
 
 
 };gdjs.testHYPLAYstorageCode.eventsList3 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.testHYPLAYstorageCode.eventsList1(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+gdjs.testHYPLAYstorageCode.eventsList2(runtimeScene);
+}
+
+
+};gdjs.testHYPLAYstorageCode.eventsList4 = function(runtimeScene) {
 
 {
 
@@ -101,19 +118,19 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.testHYPLAYstorageCode.eventsList4 = function(runtimeScene) {
+};gdjs.testHYPLAYstorageCode.eventsList5 = function(runtimeScene) {
 
 {
 
 
-gdjs.testHYPLAYstorageCode.eventsList2(runtimeScene);
+gdjs.testHYPLAYstorageCode.eventsList3(runtimeScene);
 }
 
 
 {
 
 
-gdjs.testHYPLAYstorageCode.eventsList3(runtimeScene);
+gdjs.testHYPLAYstorageCode.eventsList4(runtimeScene);
 }
 
 
@@ -132,7 +149,7 @@ gdjs.testHYPLAYstorageCode.GDtxt_9595gameVersionObjects1.length = 0;
 gdjs.testHYPLAYstorageCode.GDtxt_9595gameVersionObjects2.length = 0;
 gdjs.testHYPLAYstorageCode.GDtxt_9595gameVersionObjects3.length = 0;
 
-gdjs.testHYPLAYstorageCode.eventsList4(runtimeScene);
+gdjs.testHYPLAYstorageCode.eventsList5(runtimeScene);
 
 return;
 
