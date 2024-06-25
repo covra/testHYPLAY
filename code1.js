@@ -42,7 +42,7 @@ gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects4= [];
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects5= [];
 
 
-gdjs.SplashSceneCode.userFunc0xaa7bb8 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0xd42450 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -136,7 +136,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
-gdjs.SplashSceneCode.userFunc0xaa7bb8(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0xd42450(runtimeScene, objects);
 
 }
 
@@ -220,7 +220,7 @@ gdjs.SplashSceneCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0x97c910 = function GDJSInlineCode(runtimeScene) {
+};gdjs.SplashSceneCode.userFunc0xa9ed28 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 setTimeout(()=>{
     //Get info variables from response
@@ -294,7 +294,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.SplashSceneCode.userFunc0x97c910(runtimeScene);
+gdjs.SplashSceneCode.userFunc0xa9ed28(runtimeScene);
 
 }
 
@@ -371,7 +371,7 @@ gdjs.SplashSceneCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0xa5fec0 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.SplashSceneCode.userFunc0x9d5198 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 let globalUserStruct = runtimeScene.getGame().getVariables().get("currentUser");
 let userKey = globalUserStruct.getChildNamed("username").getAsString();
@@ -393,20 +393,30 @@ fetch(url, {
   .then(async (response) => {
     console.log("GetAppState :: Respuesta de Hyplay = ", response);
     console.log("GetAppState :: parseando json...");
-    await response.json();
+    try {
+      await response.json();
+    } catch (ex){
+        console.log("GetAppState :: tryCatch : ", ex)
+    }
+    
   })
   .then((json) => {
       console.log("GetAppState :: response json.protectedState.player_param_credits: " ,  json);
-      if (json.protectedState.player_param_credits != undefined) {
-          let crIn = json.protectedState.player_param_credits;
-          let repIn = json.protectedState.player_param_reputation;
-          let numCr = parseInt(crIn);
-          let numRep = parseInt(repIn);
-          runtimeScene.getGame().getVariables().get("player_param_credits").setNumber(numCr);
-          runtimeScene.getGame().getVariables().get("player_param_reputation").setNumber(numRep);
-          runtimeScene.getGame().getVariables().get("bIsGetAppState").setBoolean(true);
-          runtimeScene.getGame().getSceneStack().replace("video");
+
+      try {
+
+              if (json.protectedState.player_param_credits != undefined) {
+                  let crIn = json.protectedState.player_param_credits;
+                  let repIn = json.protectedState.player_param_reputation;
+                  let numCr = parseInt(crIn);
+                  let numRep = parseInt(repIn);
+                  runtimeScene.getGame().getVariables().get("player_param_credits").setNumber(numCr);
+                  runtimeScene.getGame().getVariables().get("player_param_reputation").setNumber(numRep);
+                  runtimeScene.getGame().getVariables().get("bIsGetAppState").setBoolean(true);
+                  runtimeScene.getGame().getSceneStack().replace("video");
+              }
       }
+      catch {
 
           if (json.publicState.publicCredits == undefined) {
              console.log("GetAppState :: SetAppState (por undefined) response json.protectedState.player_param_credits: " ,  json.protectedState.player_param_credits);
@@ -444,8 +454,9 @@ fetch(url, {
                                runtimeScene.getGame().getSceneStack().replace("video");
                             });
 
-
+                  
           }
+      }
 
   });
 };
@@ -457,7 +468,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects4);
-gdjs.SplashSceneCode.userFunc0xa5fec0(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0x9d5198(runtimeScene, objects);
 
 }
 
