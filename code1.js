@@ -47,7 +47,7 @@ gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects4= [];
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects5= [];
 
 
-gdjs.SplashSceneCode.userFunc0x1145f18 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0xd2d330 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -141,7 +141,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
-gdjs.SplashSceneCode.userFunc0x1145f18(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0xd2d330(runtimeScene, objects);
 
 }
 
@@ -247,7 +247,7 @@ gdjs.SplashSceneCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0x1193c70 = function GDJSInlineCode(runtimeScene) {
+};gdjs.SplashSceneCode.userFunc0xbe49f0 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 setTimeout(()=>{
     //Get info variables from response
@@ -323,7 +323,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.SplashSceneCode.userFunc0x1193c70(runtimeScene);
+gdjs.SplashSceneCode.userFunc0xbe49f0(runtimeScene);
 
 }
 
@@ -363,6 +363,7 @@ if (isConditionTrue_0) {
 {runtimeScene.getScene().getVariables().getFromIndex(3).setBoolean(false);
 }{runtimeScene.getScene().getVariables().getFromIndex(4).setBoolean(false);
 }{runtimeScene.getScene().getVariables().getFromIndex(9).setBoolean(false);
+}{runtimeScene.getGame().getVariables().getFromIndex(3).setBoolean(false);
 }}
 
 }
@@ -416,7 +417,7 @@ gdjs.SplashSceneCode.eventsList6(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0x118c388 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.SplashSceneCode.userFunc0x7d8348 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const tbd = objects[0];
 const tokenAuth = runtimeScene.getGame().getVariables().get("sessionAccessToken").getAsString();
@@ -479,7 +480,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects3);
-gdjs.SplashSceneCode.userFunc0x118c388(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0x7d8348(runtimeScene, objects);
 
 }
 
@@ -532,7 +533,7 @@ gdjs.SplashSceneCode.eventsList8(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0x118cf18 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.SplashSceneCode.userFunc0xd24e58 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const tbd = objects[0];
 const tokenAuth = runtimeScene.getGame().getVariables().get("sessionAccessToken").getAsString();
@@ -562,7 +563,7 @@ async function setAppState(newState) {
     runtimeScene.getVariables().get("bIsGetAppState").setBoolean(true);
                   runtimeScene.getVariables().get("bIsSetAppState").setBoolean(true);
   } catch (error) {
-    console.error('GetAppState :: response: Error al establecer el estado de la aplicación:', error);
+    console.error('SetAppState :: response: Error al establecer el estado de la aplicación:', error);
   }
 }
 
@@ -597,7 +598,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects3);
-gdjs.SplashSceneCode.userFunc0x118cf18(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0xd24e58(runtimeScene, objects);
 
 }
 
@@ -663,7 +664,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("txt_debug"), gdjs.SplashSceneCode.GDtxt_9595debugObjects2);
 {for(var i = 0, len = gdjs.SplashSceneCode.GDtxt_9595debugObjects2.length ;i < len;++i) {
-    gdjs.SplashSceneCode.GDtxt_9595debugObjects2[i].getBehavior("Text").setText("UV: " + runtimeScene.getScene().getVariables().getFromIndex(4).getAsString() + " UC: " + runtimeScene.getScene().getVariables().getFromIndex(3).getAsString() + " GAS: " + runtimeScene.getScene().getVariables().getFromIndex(9).getAsString() + " SAS: " + runtimeScene.getScene().getVariables().getFromIndex(10).getAsString());
+    gdjs.SplashSceneCode.GDtxt_9595debugObjects2[i].getBehavior("Text").setText("Console: UV: " + runtimeScene.getScene().getVariables().getFromIndex(4).getAsString() + " UC: " + runtimeScene.getScene().getVariables().getFromIndex(3).getAsString() + " GAS: " + runtimeScene.getScene().getVariables().getFromIndex(9).getAsString() + " SAS: " + runtimeScene.getScene().getVariables().getFromIndex(10).getAsString());
 }
 }}
 

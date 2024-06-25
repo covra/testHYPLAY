@@ -9,7 +9,7 @@ gdjs.evtsExt__ScrapGameFunctions__ShowMenu = {};
 gdjs.evtsExt__ScrapGameFunctions__ShowMenu.GDpointFromReferenceObjects1= [];
 
 
-gdjs.evtsExt__ScrapGameFunctions__ShowMenu.userFunc0x974ff0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ScrapGameFunctions__ShowMenu.userFunc0xdfef18 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 //Defs
 const tbd = runtimeScene.getObjects("txt_debug3")[0]; 
@@ -87,7 +87,7 @@ gdjs.evtsExt__ScrapGameFunctions__ShowMenu.eventsList0 = function(runtimeScene, 
 {
 
 
-gdjs.evtsExt__ScrapGameFunctions__ShowMenu.userFunc0x974ff0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ScrapGameFunctions__ShowMenu.userFunc0xdfef18(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
