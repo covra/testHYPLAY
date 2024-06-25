@@ -468,7 +468,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), 
 }
 
 
-};gdjs.mainSceneCode.userFunc0xdd7ab8 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.mainSceneCode.userFunc0xbcf2e8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definition
 const barra = objects[0];
@@ -563,7 +563,7 @@ gdjs.copyArray(runtimeScene.getObjects("bar_shifhtPower"), gdjs.mainSceneCode.GD
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDbar_9595shifhtPowerObjects2);
-gdjs.mainSceneCode.userFunc0xdd7ab8(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0xbcf2e8(runtimeScene, objects);
 
 }
 
@@ -927,7 +927,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.mainSceneCode.userFunc0x101ba30 = function GDJSInlineCode(runtimeScene) {
+};gdjs.mainSceneCode.userFunc0xfc7330 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 //Definiciones
 var spawnPoint = runtimeScene.getVariables().get("scrapSpawnPoint");
@@ -965,13 +965,13 @@ gdjs.mainSceneCode.eventsList12 = function(runtimeScene) {
 {
 
 
-gdjs.mainSceneCode.userFunc0x101ba30(runtimeScene);
+gdjs.mainSceneCode.userFunc0xfc7330(runtimeScene);
 
 }
 
 
 };gdjs.mainSceneCode.mapOfGDgdjs_9546mainSceneCode_9546GDimg_95959595test_95959595scrapObjects4Objects = Hashtable.newFrom({"img_test_scrap": gdjs.mainSceneCode.GDimg_9595test_9595scrapObjects4});
-gdjs.mainSceneCode.userFunc0x1016ea0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.mainSceneCode.userFunc0x101b5d0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var thisScrap = objects[0];
 var rndIdx = gdjs.randomInRange(1,100);
@@ -1273,7 +1273,7 @@ gdjs.copyArray(gdjs.mainSceneCode.GDimg_9595test_9595scrapObjects4, gdjs.mainSce
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDimg_9595test_9595scrapObjects5);
-gdjs.mainSceneCode.userFunc0x1016ea0(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0x101b5d0(runtimeScene, objects);
 
 }
 
@@ -1441,7 +1441,7 @@ gdjs.mainSceneCode.eventsList25(runtimeScene);
 }
 
 
-};gdjs.mainSceneCode.userFunc0x967870 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.mainSceneCode.userFunc0x101a838 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Defs
 const timeIntervalAsteroids = 40000; 
@@ -1530,7 +1530,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug3"), gdjs.mainSceneCode.GDtxt_9
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDtxt_9595debug3Objects2);
-gdjs.mainSceneCode.userFunc0x967870(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0x101a838(runtimeScene, objects);
 
 }
 
@@ -4763,7 +4763,7 @@ gdjs.mainSceneCode.eventsList104(runtimeScene);
 }
 
 
-};gdjs.mainSceneCode.userFunc0xd675f0 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.mainSceneCode.userFunc0xd64e60 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definiciones
 const barra = objects[0];
@@ -5079,7 +5079,7 @@ gdjs.copyArray(runtimeScene.getObjects("bar_recycle"), gdjs.mainSceneCode.GDbar_
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDbar_9595recycleObjects2);
-gdjs.mainSceneCode.userFunc0xd675f0(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0xd64e60(runtimeScene, objects);
 
 }
 
@@ -5441,7 +5441,7 @@ gdjs.mainSceneCode.eventsList112(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.mainSceneCode.userFunc0xa84df8 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.mainSceneCode.userFunc0xa82660 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const td = runtimeScene.getObjects("txt_debug2")[0];
 
@@ -5488,7 +5488,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_backGround"), gdjs.mainSceneCode.GDi
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDimg_9595backGroundObjects2);
-gdjs.mainSceneCode.userFunc0xa84df8(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0xa82660(runtimeScene, objects);
 
 }
 
@@ -5765,7 +5765,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.mainSceneCode.userFunc0x98e848 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.mainSceneCode.userFunc0xd023b8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const tdb = runtimeScene.getObjects("txt_debug5")[0];
 let idx = objects.length;
@@ -5879,7 +5879,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_test_scrap"), gdjs.mainSceneCode.GDi
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDimg_9595test_9595scrapObjects2);
-gdjs.mainSceneCode.userFunc0x98e848(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0xd023b8(runtimeScene, objects);
 
 }
 
