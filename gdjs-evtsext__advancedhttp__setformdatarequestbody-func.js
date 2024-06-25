@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody !== "undefined") {
 gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody = {};
 
 
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.userFunc0x972dd0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.userFunc0x95a110 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 gdjs.Variable.copy(
     eventsFunctionContext.getArgument("Body"),
@@ -32,7 +32,7 @@ gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.eventsList0 = function(runtim
 {
 
 
-gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.userFunc0x972dd0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__AdvancedHTTP__SetFormDataRequestBody.userFunc0x95a110(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
