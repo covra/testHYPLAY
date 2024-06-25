@@ -42,7 +42,7 @@ gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects4= [];
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects5= [];
 
 
-gdjs.SplashSceneCode.userFunc0xa6bbe0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0xa21e00 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -136,7 +136,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
-gdjs.SplashSceneCode.userFunc0xa6bbe0(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0xa21e00(runtimeScene, objects);
 
 }
 
@@ -220,7 +220,7 @@ gdjs.SplashSceneCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0xafce90 = function GDJSInlineCode(runtimeScene) {
+};gdjs.SplashSceneCode.userFunc0xee9f98 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 setTimeout(()=>{
     //Get info variables from response
@@ -294,7 +294,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.SplashSceneCode.userFunc0xafce90(runtimeScene);
+gdjs.SplashSceneCode.userFunc0xee9f98(runtimeScene);
 
 }
 
@@ -371,7 +371,7 @@ gdjs.SplashSceneCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0xa960d0 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.SplashSceneCode.userFunc0xd6cba0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 let globalUserStruct = runtimeScene.getGame().getVariables().get("currentUser");
 let userKey = globalUserStruct.getChildNamed("username").getAsString();
@@ -390,10 +390,10 @@ fetch(url, {
     "x-session-authorization": tokenAuth
   }
 })
-  .then((response) => {
+  .then(async (response) => {
     console.log("GetAppState :: Respuesta de Hyplay = ", response);
     console.log("GetAppState :: parseando json...");
-    response.json();
+    await response.json();
   })
   .then((json) => {
       console.log("GetAppState :: response json.publicState.publicCredits: " ,  json.publicState.publicCredits);
@@ -426,10 +426,10 @@ fetch(url, {
                               "x-session-authorization": tokenAuth
                             }
                           })
-                            .then((response) => {
+                            .then(async (response) => {
                               console.log("SetAppState :: Respuesta de Hyplay = ", response);
                               console.log("SetAppState :: parseando json...");
-                              response.json();
+                              await response.json();
                             })
                             .then((json) => {
                                 let credits = json.publicState.publicCredits;
@@ -457,7 +457,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects4);
-gdjs.SplashSceneCode.userFunc0xa960d0(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0xd6cba0(runtimeScene, objects);
 
 }
 
