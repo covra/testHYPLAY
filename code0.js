@@ -468,7 +468,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), 
 }
 
 
-};gdjs.mainSceneCode.userFunc0xd2bea8 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.mainSceneCode.userFunc0xbe4898 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definition
 const barra = objects[0];
@@ -563,7 +563,7 @@ gdjs.copyArray(runtimeScene.getObjects("bar_shifhtPower"), gdjs.mainSceneCode.GD
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDbar_9595shifhtPowerObjects2);
-gdjs.mainSceneCode.userFunc0xd2bea8(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0xbe4898(runtimeScene, objects);
 
 }
 
@@ -606,7 +606,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 {
-{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(0.04);
+{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(0.08);
 }{runtimeScene.getGame().getVariables().getFromIndex(14).setNumber(400);
 }{runtimeScene.getGame().getVariables().getFromIndex(13).setNumber(100);
 }{runtimeScene.getScene().getVariables().getFromIndex(22).setNumber(25);
@@ -637,7 +637,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 {
-{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(0.04);
+{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(0.08);
 }{runtimeScene.getGame().getVariables().getFromIndex(14).setNumber(400);
 }{runtimeScene.getGame().getVariables().getFromIndex(13).setNumber(100);
 }{runtimeScene.getScene().getVariables().getFromIndex(22).setNumber(30);
@@ -668,7 +668,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 {
-{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(0.04);
+{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(0.08);
 }{runtimeScene.getGame().getVariables().getFromIndex(14).setNumber(400);
 }{runtimeScene.getGame().getVariables().getFromIndex(13).setNumber(100);
 }{runtimeScene.getScene().getVariables().getFromIndex(22).setNumber(50);
@@ -699,7 +699,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 {
-{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(0.04);
+{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(0.08);
 }{runtimeScene.getGame().getVariables().getFromIndex(14).setNumber(400);
 }{runtimeScene.getGame().getVariables().getFromIndex(13).setNumber(100);
 }{runtimeScene.getScene().getVariables().getFromIndex(22).setNumber(70);
@@ -730,7 +730,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 {
-{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(0.04);
+{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(0.08);
 }{runtimeScene.getGame().getVariables().getFromIndex(14).setNumber(400);
 }{runtimeScene.getGame().getVariables().getFromIndex(13).setNumber(100);
 }{runtimeScene.getScene().getVariables().getFromIndex(22).setNumber(90);
@@ -927,7 +927,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.mainSceneCode.userFunc0xd24958 = function GDJSInlineCode(runtimeScene) {
+};gdjs.mainSceneCode.userFunc0xa75e80 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 //Definiciones
 var spawnPoint = runtimeScene.getVariables().get("scrapSpawnPoint");
@@ -965,13 +965,13 @@ gdjs.mainSceneCode.eventsList12 = function(runtimeScene) {
 {
 
 
-gdjs.mainSceneCode.userFunc0xd24958(runtimeScene);
+gdjs.mainSceneCode.userFunc0xa75e80(runtimeScene);
 
 }
 
 
 };gdjs.mainSceneCode.mapOfGDgdjs_9546mainSceneCode_9546GDimg_95959595test_95959595scrapObjects4Objects = Hashtable.newFrom({"img_test_scrap": gdjs.mainSceneCode.GDimg_9595test_9595scrapObjects4});
-gdjs.mainSceneCode.userFunc0xd17478 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.mainSceneCode.userFunc0xbea020 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 var thisScrap = objects[0];
 var rndIdx = gdjs.randomInRange(1,100);
@@ -1273,7 +1273,7 @@ gdjs.copyArray(gdjs.mainSceneCode.GDimg_9595test_9595scrapObjects4, gdjs.mainSce
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDimg_9595test_9595scrapObjects5);
-gdjs.mainSceneCode.userFunc0xd17478(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0xbea020(runtimeScene, objects);
 
 }
 
@@ -1441,7 +1441,7 @@ gdjs.mainSceneCode.eventsList25(runtimeScene);
 }
 
 
-};gdjs.mainSceneCode.userFunc0x112cc88 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.mainSceneCode.userFunc0x8954d0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Defs
 const timeIntervalAsteroids = 40000; 
@@ -1530,7 +1530,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug3"), gdjs.mainSceneCode.GDtxt_9
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDtxt_9595debug3Objects2);
-gdjs.mainSceneCode.userFunc0x112cc88(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0x8954d0(runtimeScene, objects);
 
 }
 
@@ -4763,7 +4763,7 @@ gdjs.mainSceneCode.eventsList104(runtimeScene);
 }
 
 
-};gdjs.mainSceneCode.userFunc0x9fc300 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.mainSceneCode.userFunc0x9fec08 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definiciones
 const barra = objects[0];
@@ -4782,7 +4782,7 @@ const mRadius = 300;  // radio de busqueda en px
 const speedBar = 0.5; //Incremento velocidad barra reciclaje
 const scn = runtimeScene.getScene();
 const origScoreColor = txtScore.getColor();
-var scTw = txtScore.getBehavior();
+var scTw = txtScore.getBehavior("Tween");
 var scrapCerca = [];
 var arrayCercas = [];
 var array_hc = [];
@@ -5079,7 +5079,7 @@ gdjs.copyArray(runtimeScene.getObjects("bar_recycle"), gdjs.mainSceneCode.GDbar_
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDbar_9595recycleObjects2);
-gdjs.mainSceneCode.userFunc0x9fc300(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0x9fec08(runtimeScene, objects);
 
 }
 
@@ -5441,7 +5441,7 @@ gdjs.mainSceneCode.eventsList112(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.mainSceneCode.userFunc0xdb6cf8 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.mainSceneCode.userFunc0xa24bb8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const td = runtimeScene.getObjects("txt_debug2")[0];
 
@@ -5488,7 +5488,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_backGround"), gdjs.mainSceneCode.GDi
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDimg_9595backGroundObjects2);
-gdjs.mainSceneCode.userFunc0xdb6cf8(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0xa24bb8(runtimeScene, objects);
 
 }
 
@@ -5765,7 +5765,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.mainSceneCode.userFunc0xbffaa8 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.mainSceneCode.userFunc0x9f9b70 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const tdb = runtimeScene.getObjects("txt_debug5")[0];
 let idx = objects.length;
@@ -5879,7 +5879,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_test_scrap"), gdjs.mainSceneCode.GDi
 
 var objects = [];
 objects.push.apply(objects,gdjs.mainSceneCode.GDimg_9595test_9595scrapObjects2);
-gdjs.mainSceneCode.userFunc0xbffaa8(runtimeScene, objects);
+gdjs.mainSceneCode.userFunc0x9f9b70(runtimeScene, objects);
 
 }
 
