@@ -42,7 +42,7 @@ gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects4= [];
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects5= [];
 
 
-gdjs.SplashSceneCode.userFunc0xd06010 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0x107e888 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -136,7 +136,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
-gdjs.SplashSceneCode.userFunc0xd06010(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0x107e888(runtimeScene, objects);
 
 }
 
@@ -220,7 +220,7 @@ gdjs.SplashSceneCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0x912618 = function GDJSInlineCode(runtimeScene) {
+};gdjs.SplashSceneCode.userFunc0x9d8aa0 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 setTimeout(()=>{
     //Get info variables from response
@@ -277,7 +277,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 let isConditionTrue_0 = false;
 {
-{runtimeScene.getScene().getVariables().getFromIndex(4).setBoolean(false);
+{runtimeScene.getScene().getVariables().getFromIndex(4).setBoolean(true);
 }}
 
 }
@@ -293,7 +293,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.SplashSceneCode.userFunc0x912618(runtimeScene);
+gdjs.SplashSceneCode.userFunc0x9d8aa0(runtimeScene);
 
 }
 
@@ -331,7 +331,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = (gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1))).includes("sca_sat");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getScene().getVariables().getFromIndex(3), false);
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getScene().getVariables().getFromIndex(3), false, false);
 }
 if (isConditionTrue_0) {
 {runtimeScene.getScene().getVariables().getFromIndex(3).setBoolean(true);
@@ -370,7 +370,7 @@ gdjs.SplashSceneCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0x87fab0 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.SplashSceneCode.userFunc0x97e5a0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 
 
@@ -406,7 +406,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects4);
-gdjs.SplashSceneCode.userFunc0x87fab0(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0x97e5a0(runtimeScene, objects);
 
 }
 
