@@ -89,7 +89,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.LeaderboardCode.asyncCallback16178636 = function (runtimeScene, asyncObjectsList) {
+};gdjs.LeaderboardCode.asyncCallback16346796 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.LeaderboardCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("BlueButton"), gdjs.LeaderboardCode.GDBlueButtonObjects4);
 
@@ -110,14 +110,14 @@ gdjs.LeaderboardCode.eventsList1 = function(runtimeScene) {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.LeaderboardCode.localVariables);
 for (const obj of gdjs.LeaderboardCode.GDBlueButtonObjects2) asyncObjectsList.addObject("BlueButton", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback16178636(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback16346796(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.LeaderboardCode.userFunc0xe19078 = function GDJSInlineCode(runtimeScene) {
+};gdjs.LeaderboardCode.userFunc0x1411c18 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 // Ref to score firebase collection ("scoresHyplay")
 let timestamp = gdjs.evtTools.runtimeScene.getTime("timestamp");
@@ -211,7 +211,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.LeaderboardCode.userFunc0xe19078(runtimeScene);
+gdjs.LeaderboardCode.userFunc0x1411c18(runtimeScene);
 
 }
 
@@ -351,7 +351,7 @@ gdjs.LeaderboardCode.eventsList6(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.LeaderboardCode.asyncCallback16201612 = function (runtimeScene, asyncObjectsList) {
+};gdjs.LeaderboardCode.asyncCallback16369772 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.LeaderboardCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("BlueButton"), gdjs.LeaderboardCode.GDBlueButtonObjects2);
 
@@ -372,7 +372,7 @@ gdjs.LeaderboardCode.eventsList8 = function(runtimeScene) {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.LeaderboardCode.localVariables);
 for (const obj of gdjs.LeaderboardCode.GDBlueButtonObjects1) asyncObjectsList.addObject("BlueButton", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback16201612(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback16369772(runtimeScene, asyncObjectsList)));
 }
 }
 
