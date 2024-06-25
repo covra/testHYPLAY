@@ -47,7 +47,7 @@ gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects4= [];
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects5= [];
 
 
-gdjs.SplashSceneCode.userFunc0xa80288 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0x918938 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -141,7 +141,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
-gdjs.SplashSceneCode.userFunc0xa80288(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0x918938(runtimeScene, objects);
 
 }
 
@@ -247,7 +247,7 @@ gdjs.SplashSceneCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0xa52b28 = function GDJSInlineCode(runtimeScene) {
+};gdjs.SplashSceneCode.userFunc0xbd0200 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 setTimeout(()=>{
     //Get info variables from response
@@ -323,7 +323,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.SplashSceneCode.userFunc0xa52b28(runtimeScene);
+gdjs.SplashSceneCode.userFunc0xbd0200(runtimeScene);
 
 }
 
@@ -417,14 +417,14 @@ gdjs.SplashSceneCode.eventsList6(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0x7d78a0 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.SplashSceneCode.userFunc0xa00320 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const tbd = objects[0];
 const tokenAuth = runtimeScene.getGame().getVariables().get("sessionAccessToken").getAsString();
 const globalUserStruct = runtimeScene.getGame().getVariables().get("currentUser");
 const usernameGlobal = globalUserStruct.getChildNamed("username").getAsString();
 let url = "https://api.hyplay.com/v1/apps/ae6b8795-169f-40c9-bf60-a3736dceeffc/states?key=";
-url = "api.hyplay.com/v1/apps/ae6b8795-169f-40c9-bf60-a3736dceeffc/states"
+url = "https:/api.hyplay.com/v1/apps/ae6b8795-169f-40c9-bf60-a3736dceeffc/states"
 let urlUser = url + usernameGlobal; 
 
 async function getAppState() {
@@ -481,7 +481,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects3);
-gdjs.SplashSceneCode.userFunc0x7d78a0(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0xa00320(runtimeScene, objects);
 
 }
 
@@ -534,7 +534,7 @@ gdjs.SplashSceneCode.eventsList8(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0xd238f8 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.SplashSceneCode.userFunc0x918b90 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const tbd = objects[0];
 const tokenAuth = runtimeScene.getGame().getVariables().get("sessionAccessToken").getAsString();
@@ -598,7 +598,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects3);
-gdjs.SplashSceneCode.userFunc0xd238f8(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0x918b90(runtimeScene, objects);
 
 }
 
