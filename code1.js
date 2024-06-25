@@ -42,7 +42,7 @@ gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects4= [];
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects5= [];
 
 
-gdjs.SplashSceneCode.userFunc0x107e888 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0xc20cd0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -136,7 +136,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
-gdjs.SplashSceneCode.userFunc0x107e888(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0xc20cd0(runtimeScene, objects);
 
 }
 
@@ -220,7 +220,7 @@ gdjs.SplashSceneCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0x9d8aa0 = function GDJSInlineCode(runtimeScene) {
+};gdjs.SplashSceneCode.userFunc0xdf4ce8 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 setTimeout(()=>{
     //Get info variables from response
@@ -293,7 +293,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.SplashSceneCode.userFunc0x9d8aa0(runtimeScene);
+gdjs.SplashSceneCode.userFunc0xdf4ce8(runtimeScene);
 
 }
 
@@ -370,7 +370,7 @@ gdjs.SplashSceneCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0x97e5a0 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.SplashSceneCode.userFunc0xc229c0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 
 
@@ -396,6 +396,29 @@ fetch(url, {
   .then((json) => {
       console.log(json.publicState.publicKey);
 
+          if (json.publicState.publicKey == undefined) {
+
+                        fetch("https://api.hyplay.com/v1/apps/ae6b8795-169f-40c9-bf60-a3736dceeffc/states", {
+                            method: "POST",
+                            body: JSON.stringify({
+                            "publicState": {
+                              "publicKey": "111"
+                            },
+                            "key": userKey
+                          }),
+                            headers: {
+                              "accept": "application/json",
+                              "content-type": "application/json",
+                              "x-app-authorization": "test_app_sk_qFU3lFRW9-vh8fbGsfsP13_Gu8YVKSLVlFwtFPS2-fgFNesOY155Sfgdp8tOZo4Q",
+                              "x-session-authorization": tokenAuth
+                            }
+                          })
+                            .then((response) => response.json())
+                            .then((json) => console.log(json.publicState.publicKey));
+
+
+          }
+
   });
 };
 gdjs.SplashSceneCode.eventsList7 = function(runtimeScene, asyncObjectsList) {
@@ -406,7 +429,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects4);
-gdjs.SplashSceneCode.userFunc0x97e5a0(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0xc229c0(runtimeScene, objects);
 
 }
 
