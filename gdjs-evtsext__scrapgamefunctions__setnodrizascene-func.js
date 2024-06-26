@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene !== "undefined") {
 gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene = {};
 
 
-gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene.asyncCallback15743324 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
+gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene.asyncCallback15786628 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(eventsFunctionContext.localVariables);
 }
 gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -20,7 +20,7 @@ gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene.eventsList0 = function(runtime
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(eventsFunctionContext.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene.asyncCallback15743324(runtimeScene, eventsFunctionContext, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.evtsExt__ScrapGameFunctions__SetNodrizaScene.asyncCallback15786628(runtimeScene, eventsFunctionContext, asyncObjectsList)));
 }
 }
 
