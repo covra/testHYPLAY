@@ -667,7 +667,7 @@ gdjs.nodrizaAreaCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.nodrizaAreaCode.userFunc0x106b0b8 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.nodrizaAreaCode.userFunc0xad0928 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Defs
 const tbd = objects[0];
@@ -739,7 +739,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug3"), gdjs.nodrizaAreaCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595debug3Objects2);
-gdjs.nodrizaAreaCode.userFunc0x106b0b8(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0xad0928(runtimeScene, objects);
 
 }
 
@@ -1321,7 +1321,7 @@ gdjs.nodrizaAreaCode.eventsList18(runtimeScene);} //End of subevents
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595nodriza_95959595areaObjects4Objects = Hashtable.newFrom({"img_nodriza_area": gdjs.nodrizaAreaCode.GDimg_9595nodriza_9595areaObjects4});
-gdjs.nodrizaAreaCode.userFunc0xcbce18 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0xb88d28 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Def
 setTimeout(()=>{
@@ -1424,7 +1424,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_inventarioTienda"), gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDimg_9595inventarioTiendaObjects4);
-gdjs.nodrizaAreaCode.userFunc0xcbce18(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0xb88d28(runtimeScene, objects);
 
 }
 
@@ -1472,6 +1472,7 @@ let isConditionTrue_0 = false;
 {
 {gdjs.evtTools.firebaseTools.firestore.startQuery("testQuery", "testScores");
 }{gdjs.evtTools.firebaseTools.firestore.queryOrderBy("testQuery", "maxScrap", "desc");
+}{gdjs.evtTools.firebaseTools.firestore.queryLimit("testQuery", 5, true);
 }{gdjs.evtTools.firebaseTools.firestore.executeQuery("testQuery", runtimeScene.getScene().getVariables().getFromIndex(8), runtimeScene.getScene().getVariables().getFromIndex(7));
 }}
 
@@ -1508,37 +1509,118 @@ gdjs.nodrizaAreaCode.eventsList22(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.nodrizaAreaCode.userFunc0x108f320 = function GDJSInlineCode(runtimeScene) {
+};gdjs.nodrizaAreaCode.userFunc0xac3e88 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 setTimeout(()=>{
     let obj = runtimeScene.getVariables().get("responseObject");
-    //console.log("responseObject: ", obj);
-    //let lenghtObj = obj.getChildrenCount()
-    //for(let i=0; i < lenghtObj; i++){
-    //    console.log("for i: ", obj.getChildAt(i), " type: ", obj.getChildAt(i).getType());
-    //}
-    console.log("Query response: objs:", obj.getChildAt(0).getAsNumber(), " found? ", obj.getChildAt(1).getAsBoolean(), " structureResponse: ", obj.getChildAt(2));
-    let resultQuery = obj.getChildAt(2);
-    let lenghtQuery = resultQuery.getChildrenCount()
-    
-    for (let j=0; j<lenghtQuery; j++){
-        let current =resultQuery.getChildAt(k);        
-         
-        let name = current.getChildAt(2).getAsString();
-        //let maxScrap = current.getChildAt(0).maxScrap.getAsNumber();
-        //let reputation = current.getChildAt(1).reputation.getAsNumber();
 
-        console.log("FOund: ", name); //, " > ", maxScrap, " > ", reputation);
+    console.log("Query response: objs:", obj.getChildAt(0).getAsNumber(), " found? ", obj.getChildAt(1).getAsBoolean(), " structureResponse: ", obj.getChildAt(2)._type);
+    let listadoDeUsuarios = obj.getChildAt(2);
+
+        let user1 = listadoDeUsuarios.getChildAt(0);
+
+            let name1 = user1.getChildAt(2).getAsString();
+            
+            let boolean1 =  user1.getChildAt(1).getAsBoolean();
+            let datosStr1 = user1.getChildAt(0);
+
+                let maxScrap1 = datosStr1.getChildAt(0).getAsString();
+                let reputation1 = datosStr1.getChildAt(1).getAsNumber();
+
+       
+        let user2 = listadoDeUsuarios.getChildAt(1);
+
+            let name2 = user2.getChildAt(2).getAsString();
+            let boolean2 =  user2.getChildAt(1).getAsBoolean();
+            let datosStr2 = user2.getChildAt(0);
+
+                let maxScrap2 = datosStr2.getChildAt(0).getAsNumber();
+                let reputation2 = datosStr2.getChildAt(1).getAsNumber();
+
+
+        let user3 = listadoDeUsuarios.getChildAt(2);
+
+            let name3 = user3.getChildAt(2).getAsString();
+            let boolean3 =  user3.getChildAt(1).getAsBoolean();
+            let datosStr3 = user3.getChildAt(0);
+
+                let maxScrap3 = datosStr3.getChildAt(0).getAsNumber();
+                let reputation3 = datosStr3.getChildAt(1).getAsNumber();
         
-        /*
-         let lst = current.getChildrenCount();
-         for(let k=0; k<lst; k++){
-             let currentIn = current.getChildAt(k);
-            console.log("Query response obj: ", currentIn.getAsString());
-         }
-         */
-    }
+        let user4 = listadoDeUsuarios.getChildAt(3);
+
+            let name4 = user4.getChildAt(2).getAsString();
+            let boolean4 =  user4.getChildAt(1).getAsBoolean();
+            let datosStr4 = user4.getChildAt(0);
+
+                let maxScrap4 = datosStr4.getChildAt(0).getAsNumber();
+                let reputation4 = datosStr4.getChildAt(1).getAsNumber();
     
+        let user5 = listadoDeUsuarios.getChildAt(4);
+
+            let name5 = user5.getChildAt(2).getAsString();
+            let boolean5 =  user5.getChildAt(1).getAsBoolean();
+            let datosStr5 = user5.getChildAt(0);
+
+                let maxScrap5 = datosStr5.getChildAt(0).getAsNumber();
+                let reputation5 = datosStr5.getChildAt(1).getAsNumber();
+    
+        //Elementos de pantalla
+
+        //NAMES
+        let txtA = runtimeScene.getObjects("txt_nombre");        
+        txtA.forEach((txt)=>{
+            let idx = txt.getVariables().get("pos").getAsNumber();
+            
+        
+            if (idx == 0) {
+                txt.setString(name1);
+            } else if (idx == 1) {
+                txt.setString(name2);
+            } else if (idx == 2) {
+                txt.setString(name3);
+            } else if (idx == 3) {
+                txt.setString(name4);
+            } else if (idx == 4) {
+                txt.setString(name5);
+            }
+            
+        });
+        
+        //POSICIONES
+        let poss = runtimeScene.getObjects("txt_posicion");
+        poss.forEach((p)=>{
+            p.setText(p.getVariables().get("pos").getAsNumber() + 1);
+        });
+
+        //MAXSCRAP
+        let scrapsM = runtimeScene.getObjects("txt_maxScrap");        
+        scrapsM.forEach((txt)=>{
+            let idx = txt.getVariables().get("pos").getAsNumber();
+            
+        
+            if (idx == 0) {
+                txt.setString(maxScrap1);
+            } else if (idx == 1) {
+                txt.setString(maxScrap2);
+            } else if (idx == 2) {
+                txt.setString(maxScrap3);
+            } else if (idx == 3) {
+                txt.setString(maxScrap4);
+            } else if (idx == 4) {
+                txt.setString(maxScrap5);
+            }
+            
+        });
+
+
+
+
+        //Pasar a pantalla
+        let strucScore = runtimeScene.getVariables().get("scores_maxScrap");
+        strucScore[0]
+    //console.log("user1: ", maxScrap1, " >> ", maxScrap2, " >> ", maxScrap3, " >> ", maxScrap4, " >> ", maxScrap5);
+
 
 },200)
 
@@ -1548,9 +1630,6 @@ gdjs.nodrizaAreaCode.eventsList24 = function(runtimeScene) {
 {
 
 
-let isConditionTrue_0 = false;
-{
-}
 
 }
 
@@ -1558,7 +1637,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.nodrizaAreaCode.userFunc0x108f320(runtimeScene);
+gdjs.nodrizaAreaCode.userFunc0xac3e88(runtimeScene);
 
 }
 
@@ -2254,7 +2333,7 @@ gdjs.nodrizaAreaCode.eventsList34(runtimeScene);
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595inventarioTiendaObjects3Objects = Hashtable.newFrom({"img_inventarioTienda": gdjs.nodrizaAreaCode.GDimg_9595inventarioTiendaObjects3});
 gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595jukeboxObjects5Objects = Hashtable.newFrom({"img_jukebox": gdjs.nodrizaAreaCode.GDimg_9595jukeboxObjects5});
-gdjs.nodrizaAreaCode.userFunc0xcc3db0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0xdd1ee8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" Vintage Jukebox \n 1800$");
@@ -2288,7 +2367,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects6);
-gdjs.nodrizaAreaCode.userFunc0xcc3db0(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0xdd1ee8(runtimeScene, objects);
 
 }
 
@@ -2312,7 +2391,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595lavaObjects5Objects = Hashtable.newFrom({"img_lava": gdjs.nodrizaAreaCode.GDimg_9595lavaObjects5});
-gdjs.nodrizaAreaCode.userFunc0xecfa88 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0xce17a0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" Intergalactic Lava Lamp \n 1000$");
@@ -2326,7 +2405,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects6);
-gdjs.nodrizaAreaCode.userFunc0xecfa88(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0xce17a0(runtimeScene, objects);
 
 }
 
@@ -2350,7 +2429,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDneonObjects5Objects = Hashtable.newFrom({"neon": gdjs.nodrizaAreaCode.GDneonObjects5});
-gdjs.nodrizaAreaCode.userFunc0x10b0788 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0xd56ce8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" Space Wall Neon \n 1200$");
@@ -2364,7 +2443,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects6);
-gdjs.nodrizaAreaCode.userFunc0x10b0788(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0xd56ce8(runtimeScene, objects);
 
 }
 
@@ -2388,7 +2467,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595billarObjects5Objects = Hashtable.newFrom({"img_billar": gdjs.nodrizaAreaCode.GDimg_9595billarObjects5});
-gdjs.nodrizaAreaCode.userFunc0xec0f18 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0x1206f10 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" Galactic Pool Table \n 3500$");
@@ -2402,7 +2481,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects6);
-gdjs.nodrizaAreaCode.userFunc0xec0f18(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0x1206f10(runtimeScene, objects);
 
 }
 
@@ -2426,7 +2505,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595cebraObjects5Objects = Hashtable.newFrom({"img_cebra": gdjs.nodrizaAreaCode.GDimg_9595cebraObjects5});
-gdjs.nodrizaAreaCode.userFunc0x11d7fe0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0xca7df0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" Space Zebra Rug \n 2000$");
@@ -2440,7 +2519,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects6);
-gdjs.nodrizaAreaCode.userFunc0x11d7fe0(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0xca7df0(runtimeScene, objects);
 
 }
 
@@ -2464,7 +2543,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595tigreObjects5Objects = Hashtable.newFrom({"img_tigre": gdjs.nodrizaAreaCode.GDimg_9595tigreObjects5});
-gdjs.nodrizaAreaCode.userFunc0x1204460 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0xb254e0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" Cosmic Tiger Sofa \n 3500$");
@@ -2478,7 +2557,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects6);
-gdjs.nodrizaAreaCode.userFunc0x1204460(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0xb254e0(runtimeScene, objects);
 
 }
 
@@ -2502,7 +2581,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595tienda_95959595powerup1Objects5Objects = Hashtable.newFrom({"img_tienda_powerup1": gdjs.nodrizaAreaCode.GDimg_9595tienda_9595powerup1Objects5});
-gdjs.nodrizaAreaCode.userFunc0x1074d30 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0xd85a00 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" PowerUp Extend Time \n 3 x Hydrogen Cells \n 1 x Thermodynamic Vessel \n 700$");
@@ -2516,7 +2595,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects6);
-gdjs.nodrizaAreaCode.userFunc0x1074d30(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0xd85a00(runtimeScene, objects);
 
 }
 
@@ -2540,7 +2619,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595tienda_95959595powerup2Objects5Objects = Hashtable.newFrom({"img_tienda_powerup2": gdjs.nodrizaAreaCode.GDimg_9595tienda_9595powerup2Objects5});
-gdjs.nodrizaAreaCode.userFunc0xc92b38 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0x11d36b8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" PowerUp MotherShip  \n 2 x Fusion Cores \n 1 x Primary Capacitor \n 1000$");
@@ -2554,7 +2633,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects6);
-gdjs.nodrizaAreaCode.userFunc0xc92b38(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0x11d36b8(runtimeScene, objects);
 
 }
 
@@ -2578,7 +2657,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595tienda_95959595powerup3Objects5Objects = Hashtable.newFrom({"img_tienda_powerup3": gdjs.nodrizaAreaCode.GDimg_9595tienda_9595powerup3Objects5});
-gdjs.nodrizaAreaCode.userFunc0xbdb0b0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0x11c3410 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" PowerUp Self Ship  \n 1 x Thermodynamic Vessel \n 1 x Fusion Core \n 1 x Primary Capacitor \n 1500$");
@@ -2592,7 +2671,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects6);
-gdjs.nodrizaAreaCode.userFunc0xbdb0b0(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0x11c3410(runtimeScene, objects);
 
 }
 
