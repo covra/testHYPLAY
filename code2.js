@@ -131,7 +131,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.LeaderboardCode.asyncCallback16684796 = function (runtimeScene, asyncObjectsList) {
+};gdjs.LeaderboardCode.asyncCallback16684524 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.LeaderboardCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("BlueButton"), gdjs.LeaderboardCode.GDBlueButtonObjects6);
 
@@ -153,7 +153,7 @@ const parentAsyncObjectsList = asyncObjectsList;
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
 asyncObjectsList.backupLocalVariablesContainers(gdjs.LeaderboardCode.localVariables);
 /* Don't save BlueButton as it will be provided by the parent asyncObjectsList. */
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback16684796(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback16684524(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -182,7 +182,7 @@ gdjs.LeaderboardCode.eventsList1(runtimeScene, asyncObjectsList);} //End of sube
 }
 
 
-};gdjs.LeaderboardCode.asyncCallback16684156 = function (runtimeScene, asyncObjectsList) {
+};gdjs.LeaderboardCode.asyncCallback16683884 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.LeaderboardCode.localVariables);
 
 { //Subevents
@@ -199,14 +199,14 @@ const parentAsyncObjectsList = asyncObjectsList;
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
 asyncObjectsList.backupLocalVariablesContainers(gdjs.LeaderboardCode.localVariables);
 /* Don't save BlueButton as it will be provided by the parent asyncObjectsList. */
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__ScrapGameFunctions__AddScoreFireBase.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback16684156(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__ScrapGameFunctions__AddScoreFireBase.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback16683884(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.LeaderboardCode.asyncCallback16683892 = function (runtimeScene, asyncObjectsList) {
+};gdjs.LeaderboardCode.asyncCallback16683620 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.LeaderboardCode.localVariables);
 
 { //Subevents
@@ -222,7 +222,7 @@ gdjs.LeaderboardCode.eventsList4 = function(runtimeScene) {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.LeaderboardCode.localVariables);
 for (const obj of gdjs.LeaderboardCode.GDBlueButtonObjects2) asyncObjectsList.addObject("BlueButton", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback16683892(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(3), (runtimeScene) => (gdjs.LeaderboardCode.asyncCallback16683620(runtimeScene, asyncObjectsList)));
 }
 }
 
