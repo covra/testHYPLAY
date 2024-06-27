@@ -47,7 +47,7 @@ gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects4= [];
 gdjs.SplashSceneCode.GDtxt_9595gameVersionObjects5= [];
 
 
-gdjs.SplashSceneCode.userFunc0xe3f1d8 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.SplashSceneCode.userFunc0xa131a0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
     var appId = "ae6b8795-169f-40c9-bf60-a3736dceeffc";
     var redirectUri = encodeURIComponent("https://covra.github.io/testHYPLAY/redirect.html"); // Add an empty html file at this URL, and add it to your hyplay app
@@ -141,7 +141,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects2);
-gdjs.SplashSceneCode.userFunc0xe3f1d8(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0xa131a0(runtimeScene, objects);
 
 }
 
@@ -247,7 +247,7 @@ gdjs.SplashSceneCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0xc9ac80 = function GDJSInlineCode(runtimeScene) {
+};gdjs.SplashSceneCode.userFunc0x10388f8 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 setTimeout(()=>{
     //Get info variables from response
@@ -323,7 +323,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.SplashSceneCode.userFunc0xc9ac80(runtimeScene);
+gdjs.SplashSceneCode.userFunc0x10388f8(runtimeScene);
 
 }
 
@@ -417,7 +417,7 @@ gdjs.SplashSceneCode.eventsList6(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0xe446e0 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.SplashSceneCode.userFunc0xd3e040 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const tbd = objects[0];
 const tokenAuth = runtimeScene.getGame().getVariables().get("sessionAccessToken").getAsString();
@@ -495,7 +495,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects3);
-gdjs.SplashSceneCode.userFunc0xe446e0(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0xd3e040(runtimeScene, objects);
 
 }
 
@@ -548,7 +548,7 @@ gdjs.SplashSceneCode.eventsList8(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.SplashSceneCode.userFunc0x11d3838 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.SplashSceneCode.userFunc0xdef9b0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const tbd = objects[0];
 const tokenAuth = runtimeScene.getGame().getVariables().get("sessionAccessToken").getAsString();
@@ -614,7 +614,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug2"), gdjs.SplashSceneCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.SplashSceneCode.GDtxt_9595debug2Objects3);
-gdjs.SplashSceneCode.userFunc0x11d3838(runtimeScene, objects);
+gdjs.SplashSceneCode.userFunc0xdef9b0(runtimeScene, objects);
 
 }
 
