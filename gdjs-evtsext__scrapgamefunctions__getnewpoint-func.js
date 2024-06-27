@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ScrapGameFunctions__getNewPoint !== "undefined") {
 gdjs.evtsExt__ScrapGameFunctions__getNewPoint = {};
 
 
-gdjs.evtsExt__ScrapGameFunctions__getNewPoint.userFunc0x9886a0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ScrapGameFunctions__getNewPoint.userFunc0x966f60 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 //runtimeScene.getVariables().get("bIsAddingScrap").setBoolean(true);
 
@@ -56,7 +56,7 @@ gdjs.evtsExt__ScrapGameFunctions__getNewPoint.eventsList0 = function(runtimeScen
 {
 
 
-gdjs.evtsExt__ScrapGameFunctions__getNewPoint.userFunc0x9886a0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ScrapGameFunctions__getNewPoint.userFunc0x966f60(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
