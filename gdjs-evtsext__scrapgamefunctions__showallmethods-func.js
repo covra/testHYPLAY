@@ -10,7 +10,7 @@ gdjs.evtsExt__ScrapGameFunctions__ShowAllMethods.GDtxtDebugObjects1= [];
 gdjs.evtsExt__ScrapGameFunctions__ShowAllMethods.GDtxtDebugObjects2= [];
 
 
-gdjs.evtsExt__ScrapGameFunctions__ShowAllMethods.userFunc0xcb0670 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__ScrapGameFunctions__ShowAllMethods.userFunc0xbb6570 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const objectToGetMethods = eventsFunctionContext.getArgument("objectToGetMethods");
 const tbd = eventsFunctionContext.getObjects("txtDebug")[0];
@@ -43,7 +43,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("txtDebug"), gdjs.evtsExt__Scrap
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__ScrapGameFunctions__ShowAllMethods.GDtxtDebugObjects1);
-gdjs.evtsExt__ScrapGameFunctions__ShowAllMethods.userFunc0xcb0670(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ScrapGameFunctions__ShowAllMethods.userFunc0xbb6570(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
