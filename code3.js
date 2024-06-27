@@ -20,7 +20,7 @@ gdjs.splashScreenCode.GDtxt_9595gameVersionObjects2= [];
 gdjs.splashScreenCode.GDtxt_9595gameVersionObjects3= [];
 
 
-gdjs.splashScreenCode.userFunc0x1087558 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.splashScreenCode.userFunc0xafe3b8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Definitions
 const bk = objects[0];
@@ -231,7 +231,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_backTitle"), gdjs.splashScreenCode.G
 
 var objects = [];
 objects.push.apply(objects,gdjs.splashScreenCode.GDimg_9595backTitleObjects1);
-gdjs.splashScreenCode.userFunc0x1087558(runtimeScene, objects);
+gdjs.splashScreenCode.userFunc0xafe3b8(runtimeScene, objects);
 
 }
 
@@ -245,7 +245,7 @@ gdjs.splashScreenCode.eventsList0(runtimeScene);
 }
 
 
-};gdjs.splashScreenCode.asyncCallback16769028 = function (runtimeScene, asyncObjectsList) {
+};gdjs.splashScreenCode.asyncCallback17232780 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.splashScreenCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "SplashScene", true);
 }}
@@ -258,7 +258,7 @@ gdjs.splashScreenCode.eventsList2 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.splashScreenCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.splashScreenCode.asyncCallback16769028(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.splashScreenCode.asyncCallback17232780(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -309,7 +309,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(16769108);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(17232860);
 }
 }
 if (isConditionTrue_0) {
