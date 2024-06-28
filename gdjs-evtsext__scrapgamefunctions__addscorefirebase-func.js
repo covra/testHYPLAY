@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ScrapGameFunctions__AddScoreFireBase !== "undefined") {
 gdjs.evtsExt__ScrapGameFunctions__AddScoreFireBase = {};
 
 
-gdjs.evtsExt__ScrapGameFunctions__AddScoreFireBase.userFunc0x106a070 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ScrapGameFunctions__AddScoreFireBase.userFunc0x112aa00 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 //setTimeout(()=>{
       // Ref to score firebase collection ("scoresHyplay")
@@ -20,12 +20,16 @@ gdjs.evtsExt__ScrapGameFunctions__AddScoreFireBase.userFunc0x106a070 = function 
       let globalUserStruct = runtimeScene.getGame().getVariables().get("currentUser");
       let nameIn = globalUserStruct.getChildNamed("username").getAsString();
       let scoreIn = runtimeScene.getGame().getVariables().get("player_param_totalScrap").getAsNumber();
+      let repIn = runtimeScene.getGame().getVariables().get("player_param_reputation").getAsNumber();
+      let maxscore = runtimeScene.getGame().getVariables().get("score_lastTurn").getAsNumber();
       console.log(" Adding score to FB: idPlayer: " + nameIn + " nameIn: " + nameIn + " scoreIn: " + scoreIn);
 
       // New player data In
-      var playerData = {
-        name: nameIn , 
-        score: scoreIn
+      var playerData = {         
+        maxScrap: scoreIn,
+        reputation: repIn,
+        hScore: maxscore,
+        name: nameIn 
       };
 
       // New document with custom ID from playerDataStr.playerId
@@ -51,7 +55,7 @@ gdjs.evtsExt__ScrapGameFunctions__AddScoreFireBase.eventsList0 = function(runtim
 {
 
 
-gdjs.evtsExt__ScrapGameFunctions__AddScoreFireBase.userFunc0x106a070(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ScrapGameFunctions__AddScoreFireBase.userFunc0x112aa00(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
