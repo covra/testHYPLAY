@@ -667,7 +667,7 @@ gdjs.nodrizaAreaCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.nodrizaAreaCode.userFunc0xaaed10 = function GDJSInlineCode(runtimeScene, objects) {
+};gdjs.nodrizaAreaCode.userFunc0x122edd8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Defs
 const tbd = objects[0];
@@ -739,7 +739,7 @@ gdjs.copyArray(runtimeScene.getObjects("txt_debug3"), gdjs.nodrizaAreaCode.GDtxt
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595debug3Objects2);
-gdjs.nodrizaAreaCode.userFunc0xaaed10(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0x122edd8(runtimeScene, objects);
 
 }
 
@@ -1321,7 +1321,7 @@ gdjs.nodrizaAreaCode.eventsList18(runtimeScene);} //End of subevents
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595nodriza_95959595areaObjects4Objects = Hashtable.newFrom({"img_nodriza_area": gdjs.nodrizaAreaCode.GDimg_9595nodriza_9595areaObjects4});
-gdjs.nodrizaAreaCode.userFunc0xdd2158 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0x122e0d8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 //Def
 setTimeout(()=>{
@@ -1424,7 +1424,7 @@ gdjs.copyArray(runtimeScene.getObjects("img_inventarioTienda"), gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDimg_9595inventarioTiendaObjects4);
-gdjs.nodrizaAreaCode.userFunc0xdd2158(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0x122e0d8(runtimeScene, objects);
 
 }
 
@@ -1694,7 +1694,7 @@ gdjs.nodrizaAreaCode.eventsList23(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.nodrizaAreaCode.userFunc0xd192c0 = function GDJSInlineCode(runtimeScene) {
+};gdjs.nodrizaAreaCode.userFunc0xdccc28 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 setTimeout(()=>{
     let obj = runtimeScene.getVariables().get("responseObject");
@@ -1709,8 +1709,8 @@ setTimeout(()=>{
             let boolean1 =  user1.getChildAt(1).getAsBoolean();
             let datosStr1 = user1.getChildAt(0);
 
-                let maxScrap1 = datosStr1.getChildAt(0).getAsString();
-                let reputation1 = datosStr1.getChildAt(1).getAsNumber();
+                let maxScrap1 = datosStr1.getChildNamed("maxScrap").getAsString();
+ 
 
        
         let user2 = listadoDeUsuarios.getChildAt(1);
@@ -1719,8 +1719,7 @@ setTimeout(()=>{
             let boolean2 =  user2.getChildAt(1).getAsBoolean();
             let datosStr2 = user2.getChildAt(0);
 
-                let maxScrap2 = datosStr2.getChildAt(0).getAsNumber();
-                let reputation2 = datosStr2.getChildAt(1).getAsNumber();
+                let maxScrap2 = datosStr2.getChildNamed("maxScrap").getAsString();
 
 
         let user3 = listadoDeUsuarios.getChildAt(2);
@@ -1729,8 +1728,7 @@ setTimeout(()=>{
             let boolean3 =  user3.getChildAt(1).getAsBoolean();
             let datosStr3 = user3.getChildAt(0);
 
-                let maxScrap3 = datosStr3.getChildAt(0).getAsNumber();
-                let reputation3 = datosStr3.getChildAt(1).getAsNumber();
+                let maxScrap3 = datosStr3.getChildNamed("maxScrap").getAsString();
         
         let user4 = listadoDeUsuarios.getChildAt(3);
 
@@ -1738,8 +1736,7 @@ setTimeout(()=>{
             let boolean4 =  user4.getChildAt(1).getAsBoolean();
             let datosStr4 = user4.getChildAt(0);
 
-                let maxScrap4 = datosStr4.getChildAt(0).getAsNumber();
-                let reputation4 = datosStr4.getChildAt(1).getAsNumber();
+                let maxScrap4 = datosStr4.getChildNamed("maxScrap").getAsString();
     
         let user5 = listadoDeUsuarios.getChildAt(4);
 
@@ -1747,8 +1744,7 @@ setTimeout(()=>{
             let boolean5 =  user5.getChildAt(1).getAsBoolean();
             let datosStr5 = user5.getChildAt(0);
 
-                let maxScrap5 = datosStr5.getChildAt(0).getAsNumber();
-                let reputation5 = datosStr5.getChildAt(1).getAsNumber();
+           let maxScrap5 = datosStr5.getChildNamed("maxScrap").getAsString();
     
         //Elementos de pantalla
 
@@ -1843,7 +1839,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 {
 
 
-gdjs.nodrizaAreaCode.userFunc0xd192c0(runtimeScene);
+gdjs.nodrizaAreaCode.userFunc0xdccc28(runtimeScene);
 
 }
 
@@ -2220,12 +2216,14 @@ gdjs.nodrizaAreaCode.eventsList38(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.nodrizaAreaCode.userFunc0x10df938 = function GDJSInlineCode(runtimeScene) {
+};gdjs.nodrizaAreaCode.userFunc0xa42780 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 setTimeout(()=>{
     let obj = runtimeScene.getVariables().get("responseObject");
 
     console.log("Query response: objs:", obj.getChildAt(0).getAsNumber(), " found? ", obj.getChildAt(1).getAsBoolean(), " structureResponse: ", obj.getChildAt(2)._type);
+
+   
     let listadoDeUsuarios = obj.getChildAt(2);
 
         let user1 = listadoDeUsuarios.getChildAt(0);
@@ -2235,20 +2233,18 @@ setTimeout(()=>{
             let boolean1 =  user1.getChildAt(1).getAsBoolean();
             let datosStr1 = user1.getChildAt(0);
 
-                let maxScrap1 = datosStr1.getChildAt(0).getAsString();
-                let reputation1 = datosStr1.getChildAt(1).getAsNumber();
-                let maxScore1 = datosStr5.getChildAt(2).getAsNumber();
 
-       
+                let maxScore1 = datosStr1.getChildNamed("hScore").getAsNumber();
+
+      
         let user2 = listadoDeUsuarios.getChildAt(1);
 
             let name2 = user2.getChildAt(2).getAsString();
             let boolean2 =  user2.getChildAt(1).getAsBoolean();
             let datosStr2 = user2.getChildAt(0);
 
-                let maxScrap2 = datosStr2.getChildAt(0).getAsNumber();
-                let reputation2 = datosStr2.getChildAt(1).getAsNumber();
-                let maxScore2 = datosStr5.getChildAt(2).getAsNumber();
+
+                let maxScore2 = datosStr2.getChildNamed("hScore").getAsNumber();
 
 
         let user3 = listadoDeUsuarios.getChildAt(2);
@@ -2257,9 +2253,8 @@ setTimeout(()=>{
             let boolean3 =  user3.getChildAt(1).getAsBoolean();
             let datosStr3 = user3.getChildAt(0);
 
-                let maxScrap3 = datosStr3.getChildAt(0).getAsNumber();
-                let reputation3 = datosStr3.getChildAt(1).getAsNumber();
-                let maxScore3 = datosStr5.getChildAt(2).getAsNumber();
+
+                let maxScore3 = datosStr3.getChildNamed("hScore").getAsNumber();
         
         let user4 = listadoDeUsuarios.getChildAt(3);
 
@@ -2267,9 +2262,8 @@ setTimeout(()=>{
             let boolean4 =  user4.getChildAt(1).getAsBoolean();
             let datosStr4 = user4.getChildAt(0);
 
-                let maxScrap4 = datosStr4.getChildAt(0).getAsNumber();
-                let reputation4 = datosStr4.getChildAt(1).getAsNumber();
-                let maxScore4 = datosStr5.getChildAt(2).getAsNumber();
+
+                let maxScore4 = datosStr4.getChildNamed("hScore").getAsNumber();
     
         let user5 = listadoDeUsuarios.getChildAt(4);
 
@@ -2277,9 +2271,8 @@ setTimeout(()=>{
             let boolean5 =  user5.getChildAt(1).getAsBoolean();
             let datosStr5 = user5.getChildAt(0);
 
-                let maxScrap5 = datosStr5.getChildAt(0).getAsNumber();
-                let reputation5 = datosStr5.getChildAt(1).getAsNumber();
-                let maxScore5 = datosStr5.getChildAt(2).getAsNumber();
+
+                let maxScore5 = datosStr5.getChildNamed("hScore").getAsNumber();
     
         //Elementos de pantalla
 
@@ -2347,12 +2340,12 @@ gdjs.nodrizaAreaCode.eventsList40 = function(runtimeScene) {
 {
 
 
-gdjs.nodrizaAreaCode.userFunc0x10df938(runtimeScene);
+gdjs.nodrizaAreaCode.userFunc0xa42780(runtimeScene);
 
 }
 
 
-};gdjs.nodrizaAreaCode.userFunc0x10dfc48 = function GDJSInlineCode(runtimeScene) {
+};gdjs.nodrizaAreaCode.userFunc0xab44f0 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 setTimeout(()=>{
     let obj = runtimeScene.getVariables().get("responseObject");
@@ -2367,9 +2360,8 @@ setTimeout(()=>{
             let boolean1 =  user1.getChildAt(1).getAsBoolean();
             let datosStr1 = user1.getChildAt(0);
 
-                let maxScrap1 = datosStr1.getChildAt(0).getAsString();
-                let reputation1 = datosStr1.getChildAt(1).getAsNumber();
-
+                let reputation1 = datosStr1.getChildNamed("reputation").getAsNumber();
+                console.log("reputation1: ", reputation1);
        
         let user2 = listadoDeUsuarios.getChildAt(1);
 
@@ -2377,8 +2369,7 @@ setTimeout(()=>{
             let boolean2 =  user2.getChildAt(1).getAsBoolean();
             let datosStr2 = user2.getChildAt(0);
 
-                let maxScrap2 = datosStr2.getChildAt(0).getAsNumber();
-                let reputation2 = datosStr2.getChildAt(1).getAsNumber();
+                let reputation2 = datosStr2.getChildNamed("reputation").getAsNumber();
 
 
         let user3 = listadoDeUsuarios.getChildAt(2);
@@ -2387,8 +2378,7 @@ setTimeout(()=>{
             let boolean3 =  user3.getChildAt(1).getAsBoolean();
             let datosStr3 = user3.getChildAt(0);
 
-                let maxScrap3 = datosStr3.getChildAt(0).getAsNumber();
-                let reputation3 = datosStr3.getChildAt(1).getAsNumber();
+                let reputation3 = datosStr3.getChildNamed("reputation").getAsNumber();
         
         let user4 = listadoDeUsuarios.getChildAt(3);
 
@@ -2396,8 +2386,7 @@ setTimeout(()=>{
             let boolean4 =  user4.getChildAt(1).getAsBoolean();
             let datosStr4 = user4.getChildAt(0);
 
-                let maxScrap4 = datosStr4.getChildAt(0).getAsNumber();
-                let reputation4 = datosStr4.getChildAt(1).getAsNumber();
+                let reputation4 = datosStr4.getChildNamed("reputation").getAsNumber();
     
         let user5 = listadoDeUsuarios.getChildAt(4);
 
@@ -2405,8 +2394,7 @@ setTimeout(()=>{
             let boolean5 =  user5.getChildAt(1).getAsBoolean();
             let datosStr5 = user5.getChildAt(0);
 
-                let maxScrap5 = datosStr5.getChildAt(0).getAsNumber();
-                let reputation5 = datosStr5.getChildAt(1).getAsNumber();
+                let reputation5 = datosStr5.getChildNamed("reputation").getAsNumber();
     
         //Elementos de pantalla
 
@@ -2442,15 +2430,15 @@ setTimeout(()=>{
             let idx = txt.getVariables().get("pos").getAsNumber();
             
         
-            if (idx == 203) {
+            if (idx == 303) {
                 txt.setString(reputation1);
-            } else if (idx == 213) {
+            } else if (idx == 313) {
                 txt.setString(reputation2);
-            } else if (idx == 223) {
+            } else if (idx == 323) {
                 txt.setString(reputation3);
-            } else if (idx == 233) {
+            } else if (idx == 333) {
                 txt.setString(reputation4);
-            } else if (idx == 243) {
+            } else if (idx == 343) {
                 txt.setString(reputation5);
             }
             
@@ -2476,7 +2464,7 @@ gdjs.nodrizaAreaCode.eventsList41 = function(runtimeScene) {
 {
 
 
-gdjs.nodrizaAreaCode.userFunc0x10dfc48(runtimeScene);
+gdjs.nodrizaAreaCode.userFunc0xab44f0(runtimeScene);
 
 }
 
@@ -3275,7 +3263,7 @@ gdjs.nodrizaAreaCode.eventsList51(runtimeScene);
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595inventarioTiendaObjects3Objects = Hashtable.newFrom({"img_inventarioTienda": gdjs.nodrizaAreaCode.GDimg_9595inventarioTiendaObjects3});
 gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595jukeboxObjects5Objects = Hashtable.newFrom({"img_jukebox": gdjs.nodrizaAreaCode.GDimg_9595jukeboxObjects5});
-gdjs.nodrizaAreaCode.userFunc0x111afb8 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0xe18e18 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" Vintage Jukebox \n 1800$");
@@ -3309,7 +3297,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects6);
-gdjs.nodrizaAreaCode.userFunc0x111afb8(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0xe18e18(runtimeScene, objects);
 
 }
 
@@ -3333,7 +3321,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595lavaObjects5Objects = Hashtable.newFrom({"img_lava": gdjs.nodrizaAreaCode.GDimg_9595lavaObjects5});
-gdjs.nodrizaAreaCode.userFunc0xd62e58 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0x942360 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" Intergalactic Lava Lamp \n 1000$");
@@ -3347,7 +3335,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects6);
-gdjs.nodrizaAreaCode.userFunc0xd62e58(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0x942360(runtimeScene, objects);
 
 }
 
@@ -3371,7 +3359,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDneonObjects5Objects = Hashtable.newFrom({"neon": gdjs.nodrizaAreaCode.GDneonObjects5});
-gdjs.nodrizaAreaCode.userFunc0xd1a680 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0xcf6e48 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" Space Wall Neon \n 1200$");
@@ -3385,7 +3373,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects6);
-gdjs.nodrizaAreaCode.userFunc0xd1a680(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0xcf6e48(runtimeScene, objects);
 
 }
 
@@ -3409,7 +3397,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595billarObjects5Objects = Hashtable.newFrom({"img_billar": gdjs.nodrizaAreaCode.GDimg_9595billarObjects5});
-gdjs.nodrizaAreaCode.userFunc0x9487a0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0x9059c8 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" Galactic Pool Table \n 3500$");
@@ -3423,7 +3411,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects6);
-gdjs.nodrizaAreaCode.userFunc0x9487a0(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0x9059c8(runtimeScene, objects);
 
 }
 
@@ -3447,7 +3435,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595cebraObjects5Objects = Hashtable.newFrom({"img_cebra": gdjs.nodrizaAreaCode.GDimg_9595cebraObjects5});
-gdjs.nodrizaAreaCode.userFunc0xd1b4d8 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0xdf7450 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" Space Zebra Rug \n 2000$");
@@ -3461,7 +3449,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects6);
-gdjs.nodrizaAreaCode.userFunc0xd1b4d8(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0xdf7450(runtimeScene, objects);
 
 }
 
@@ -3485,7 +3473,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595tigreObjects5Objects = Hashtable.newFrom({"img_tigre": gdjs.nodrizaAreaCode.GDimg_9595tigreObjects5});
-gdjs.nodrizaAreaCode.userFunc0xd19bb0 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0x7eb798 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" Cosmic Tiger Sofa \n 3500$");
@@ -3499,7 +3487,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects6);
-gdjs.nodrizaAreaCode.userFunc0xd19bb0(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0x7eb798(runtimeScene, objects);
 
 }
 
@@ -3523,7 +3511,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595tienda_95959595powerup1Objects5Objects = Hashtable.newFrom({"img_tienda_powerup1": gdjs.nodrizaAreaCode.GDimg_9595tienda_9595powerup1Objects5});
-gdjs.nodrizaAreaCode.userFunc0xd24bc8 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0xa4b1e0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" PowerUp Extend Time \n 3 x Hydrogen Cells \n 1 x Thermodynamic Vessel \n 700$");
@@ -3537,7 +3525,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects6);
-gdjs.nodrizaAreaCode.userFunc0xd24bc8(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0xa4b1e0(runtimeScene, objects);
 
 }
 
@@ -3561,7 +3549,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595tienda_95959595powerup2Objects5Objects = Hashtable.newFrom({"img_tienda_powerup2": gdjs.nodrizaAreaCode.GDimg_9595tienda_9595powerup2Objects5});
-gdjs.nodrizaAreaCode.userFunc0xa3af08 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0xd347f0 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" PowerUp MotherShip  \n 2 x Fusion Cores \n 1 x Primary Capacitor \n 1000$");
@@ -3575,7 +3563,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects6);
-gdjs.nodrizaAreaCode.userFunc0xa3af08(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0xd347f0(runtimeScene, objects);
 
 }
 
@@ -3599,7 +3587,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 
 };gdjs.nodrizaAreaCode.mapOfGDgdjs_9546nodrizaAreaCode_9546GDimg_95959595tienda_95959595powerup3Objects5Objects = Hashtable.newFrom({"img_tienda_powerup3": gdjs.nodrizaAreaCode.GDimg_9595tienda_9595powerup3Objects5});
-gdjs.nodrizaAreaCode.userFunc0xa3b908 = function GDJSInlineCode(runtimeScene, objects) {
+gdjs.nodrizaAreaCode.userFunc0xd3aa18 = function GDJSInlineCode(runtimeScene, objects) {
 "use strict";
 const txt = objects[0];
 txt.setString(" PowerUp Self Ship  \n 1 x Thermodynamic Vessel \n 1 x Fusion Core \n 1 x Primary Capacitor \n 1500$");
@@ -3613,7 +3601,7 @@ gdjs.copyArray(gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects3, gdjs.nodrizaArea
 
 var objects = [];
 objects.push.apply(objects,gdjs.nodrizaAreaCode.GDtxt_9595nfoStoreObjects6);
-gdjs.nodrizaAreaCode.userFunc0xa3b908(runtimeScene, objects);
+gdjs.nodrizaAreaCode.userFunc0xd3aa18(runtimeScene, objects);
 
 }
 

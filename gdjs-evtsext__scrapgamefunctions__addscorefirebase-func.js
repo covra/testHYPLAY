@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ScrapGameFunctions__AddScoreFireBase !== "undefined") {
 gdjs.evtsExt__ScrapGameFunctions__AddScoreFireBase = {};
 
 
-gdjs.evtsExt__ScrapGameFunctions__AddScoreFireBase.userFunc0x112aa00 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ScrapGameFunctions__AddScoreFireBase.userFunc0xe21308 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 //setTimeout(()=>{
       // Ref to score firebase collection ("scoresHyplay")
@@ -55,7 +55,7 @@ gdjs.evtsExt__ScrapGameFunctions__AddScoreFireBase.eventsList0 = function(runtim
 {
 
 
-gdjs.evtsExt__ScrapGameFunctions__AddScoreFireBase.userFunc0x112aa00(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ScrapGameFunctions__AddScoreFireBase.userFunc0xe21308(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
